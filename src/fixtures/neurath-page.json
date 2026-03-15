@@ -55,7 +55,7 @@
   "prepared_at": "2026-03-14T23:15:42.697049",
   "presentation_content_hash": "e2d2ed20d54c9a0104451efc4c4ef047edcf75d657107775098bf26c4f5a511e",
   "presentation_contract_version": 1,
-  "presentation_hash": "684ee9029317b3b3087dbe478a1188c5deb95065c15fb7cac5c76d7ce10d15d3",
+  "presentation_hash": "40bafc5e646d408c6f9d6dd16e71e890a0db4a21538ee18ac5cdadb6d079270f",
   "presentation_version": 2,
   "refinement_applied": false,
   "refinement_summary": "",
@@ -89,102 +89,10 @@
           "raw_prose": null,
           "reading_scaffold": null,
           "renderer_config": {
-            "_section_descriptions": {
-              "aoi_source_documents": "Each card represents a primary text grounding the thematic analysis — examine the document type and scope to understand what evidence shapes the AOI findings."
-            },
-            "_style_overrides": {
-              "accent_color": "#d63232",
-              "badge": {
-                "backgroundColor": "#f0f0ee",
-                "border": "1px solid #cccccc",
-                "borderRadius": "2px",
-                "color": "#444444",
-                "display": "inline-block",
-                "fontSize": "0.68rem",
-                "fontWeight": "600",
-                "letterSpacing": "0.04em",
-                "marginBottom": "5px",
-                "padding": "2px 6px",
-                "textTransform": "uppercase"
-              },
-              "card": {
-                "backgroundColor": "#ffffff",
-                "border": "1px solid #e0e0de",
-                "borderRadius": "2px",
-                "borderTop": "3px solid #aaaaaa",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.06)",
-                "padding": "10px 12px"
-              },
-              "card_body": {
-                "color": "#555555",
-                "fontSize": "0.78rem",
-                "lineHeight": "1.5",
-                "marginTop": "4px"
-              },
-              "card_header": {
-                "color": "#333333",
-                "fontSize": "0.9rem",
-                "fontWeight": "700",
-                "letterSpacing": "0.01em",
-                "lineHeight": "1.35",
-                "marginBottom": "3px"
-              },
-              "chip": null,
-              "chip_expanded": null,
-              "chip_label": null,
-              "hero_card": {
-                "backgroundColor": "#ffffff",
-                "border": "1px solid #d0d0ce",
-                "borderRadius": "2px",
-                "borderTop": "3px solid #d63232",
-                "boxShadow": "0 2px 6px rgba(0,0,0,0.09)",
-                "gridColumn": "1 / -1",
-                "padding": "12px 14px"
-              },
-              "items_container": {
-                "display": "grid",
-                "gap": "10px",
-                "gridTemplateColumns": "minmax(0,1fr) minmax(0,1fr)",
-                "marginTop": "8px"
-              },
-              "prose": {
-                "color": "#555555",
-                "fontSize": "0.82rem",
-                "lineHeight": "1.5"
-              },
-              "prose_body": null,
-              "prose_lede": {
-                "color": "#333333",
-                "fontSize": "0.92rem",
-                "fontWeight": "500",
-                "lineHeight": "1.55",
-                "marginBottom": "8px"
-              },
-              "prose_quote": null,
-              "section_content": null,
-              "section_description": null,
-              "section_header": null,
-              "section_title": null,
-              "stat_label": null,
-              "stat_number": null,
-              "timeline_connector": null,
-              "timeline_node": null,
-              "view_header": {
-                "borderBottom": "2px solid #333333",
-                "marginBottom": "14px",
-                "paddingBottom": "10px"
-              },
-              "view_wrapper": {
-                "backgroundColor": "#f7f7f5",
-                "fontFamily": "Franklin Gothic, Arial, sans-serif",
-                "padding": "16px 20px 20px 20px"
-              }
-            },
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
-            "expand_first": true,
-            "hero_first": true,
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },

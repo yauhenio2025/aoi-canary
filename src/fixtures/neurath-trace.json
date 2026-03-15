@@ -96,6 +96,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -567,6 +568,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -816,6 +818,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -1065,6 +1068,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -1314,6 +1318,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -1563,6 +1568,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -1944,6 +1950,7 @@
             "badge_field": "badge",
             "columns": 2,
             "description_field": "description",
+            "expandable": false,
             "subtitle_field": "subtitle",
             "title_field": "title"
           },
@@ -2185,7 +2192,7 @@
     "prepared_at": "2026-03-14T23:15:42.697049",
     "presentation_content_hash": "e2d2ed20d54c9a0104451efc4c4ef047edcf75d657107775098bf26c4f5a511e",
     "presentation_contract_version": 1,
-    "presentation_hash": "684ee9029317b3b3087dbe478a1188c5deb95065c15fb7cac5c76d7ce10d15d3",
+    "presentation_hash": "40bafc5e646d408c6f9d6dd16e71e890a0db4a21538ee18ac5cdadb6d079270f",
     "resolver_version": "bounded-dynamism-phase2",
     "strategy_summary": "This AOI analysis examines Aaron Benanav's work through the lens of Otto Neurath's political economy — specifically Neurath's theory of in-kind calculation, war economy as a planning model, socialist utility, and the critique of monetary commensuration. The four source corpus texts span Neurath's core arguments: that a socialist economy should operate through calculation in kind rather than money, that war economies demonstrate the feasibility of non-market coordination, that international planning is both necessary and achievable, and that socialist utility is categorically different from capitalist profit calculation. These are tightly clustered, technically dense texts with a distinctive vocabulary (Verwaltungswirtschaft, naturalwirtschaft, in-kind balances) and a polemical edge directed at both market socialists and orthodox Marxists. The analytical task is to determine whether Benanav genuinely engages, partially engages, ignores, or distorts these Neurathian commitments.\n\nBecause all four source documents belong to a single thinker and constitute a coherent, internally cross-referencing corpus, Phase 1.0 (Thematic Synthesis) is the interpretive keystone of the workflow. Neurath's themes are not self-evident to readers unfamiliar with the socialist calculation debate, and his claim-structure involves technical distinctions — between in-kind and monetary calculation, between war-economy planning and market socialism — that must be carefully reconstructed before engagement can be mapped. Standard depth is appropriate throughout: the corpus is substantive but bounded, and the four texts are relatively short and focused. The engagement mapping and sin-finding phases can proceed efficiently once the thematic map is established.",
     "style_school": "explanatory_narrative",
@@ -2237,6 +2244,7 @@
           "badge_field": "badge",
           "columns": 2,
           "description_field": "description",
+          "expandable": false,
           "subtitle_field": "subtitle",
           "title_field": "title"
         },

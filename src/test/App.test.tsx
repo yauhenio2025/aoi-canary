@@ -16,6 +16,7 @@ describe('AOI canary app', () => {
     expect(screen.getByRole('tablist', { name: 'Thematic Analysis' }).parentElement).toHaveClass(
       'tab-shell--underline',
     )
+    expect(screen.queryByText(/click to expand/i)).not.toBeInTheDocument()
 
     await userEvent.click(screen.getByRole('tab', { name: 'By Sin Type' }))
     const groupBadges = Array.from(container.querySelectorAll('.ar-grid-group-badge')).map((node) =>
