@@ -12,7 +12,10 @@ describe('AOI canary app', () => {
     expect(screen.getByRole('tab', { name: 'Source Documents' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'By Theme' })).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'By Sin Type' })).toBeInTheDocument()
-    expect(screen.getByRole('tab', { name: 'Report' })).toBeInTheDocument()
+    expect(screen.getByRole('tab', { name: 'Full Report' })).toBeInTheDocument()
+    expect(screen.getByRole('tablist', { name: 'Thematic Analysis' }).parentElement).toHaveClass(
+      'tab-shell--underline',
+    )
 
     await userEvent.click(screen.getByRole('tab', { name: 'By Sin Type' }))
     const groupBadges = Array.from(container.querySelectorAll('.ar-grid-group-badge')).map((node) =>
@@ -21,9 +24,12 @@ describe('AOI canary app', () => {
     expect(groupBadges).toContain('Strategic Silence')
     expect(groupBadges).toContain('Unacknowledged Debt')
 
-    await userEvent.click(screen.getByRole('tab', { name: 'Report' }))
+    await userEvent.click(screen.getByRole('tab', { name: 'Full Report' }))
     expect(screen.getByText('Reading Implications')).toBeInTheDocument()
     expect(screen.getByText('Key Divergences')).toBeInTheDocument()
+    expect(
+      screen.getByText(/five themes and five interpretive sins compose into a coherent/i),
+    ).toBeInTheDocument()
     expect(screen.queryByText('Unsupported renderer in canary')).not.toBeInTheDocument()
   })
 
@@ -38,6 +44,15 @@ describe('AOI canary app', () => {
 
     const fetchMock = vi.fn((input: string | URL | Request) => {
       const url = String(input)
+
+      if (url.includes('/v1/styles/tokens/')) {
+        return Promise.resolve({
+          ok: false,
+          status: 404,
+          statusText: 'Not Found',
+          json: async () => ({}),
+        })
+      }
 
       if (url.includes('/v1/presenter/page/')) {
         return Promise.resolve({
@@ -89,12 +104,10 @@ describe('AOI canary app', () => {
     await userEvent.click(liveButton)
 
     await waitFor(() => {
-      expect(fetchMock).toHaveBeenCalled()
-    })
-
-    const calledUrls = fetchMock.mock.calls.map((call) => String(call[0]))
-    expect(calledUrls.every((url) => url.includes('consumer_key=aoi-canary'))).toBe(true)
-    await waitFor(() => {
+      const calledUrls = fetchMock.mock.calls.map((call) => String(call[0]))
+      const presenterUrls = calledUrls.filter((url) => url.includes('/v1/presenter/'))
+      expect(presenterUrls.length).toBeGreaterThan(0)
+      expect(presenterUrls.every((url) => url.includes('consumer_key=aoi-canary'))).toBe(true)
       expect(screen.getByRole('heading', { name: 'Source Documents' })).toBeInTheDocument()
     })
     expect(screen.getByText('Live page loaded')).toBeInTheDocument()

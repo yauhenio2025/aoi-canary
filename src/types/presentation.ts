@@ -16,6 +16,8 @@ export interface PagePresentation {
   plan_id: string
   thinker_name: string
   strategy_summary: string
+  style_school?: string
+  polish_state?: 'raw' | 'partial' | 'polished'
   views: ViewPayload[]
   view_count: number
 }

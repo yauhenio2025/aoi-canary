@@ -4,12 +4,14 @@
   "job_id": "job-abe51e9f629f",
   "manifest_schema_version": 1,
   "plan_id": "plan-37746ee2a2cd",
+  "polish_state": "polished",
   "prepared_at": "2026-03-14T23:15:42.697049",
-  "presentation_content_hash": "4eab43c9a62b201b37c703f5a8c0fc924df23d1bdb024fd6f55e40604949f4b0",
+  "presentation_content_hash": "832a6e3aa2a12f7722c8f2a0546c5f5fdf0366f96823ebc7364222268668ac03",
   "presentation_contract_version": 1,
-  "presentation_hash": "1615532ca060e443be452dc2c5f19708b0c2c0ed80515ca053abd26ea8de3593",
+  "presentation_hash": "88ca6ebb7c16f9b22335be49fa7cc80cda5084c772fa9352de8987dd1052e162",
   "resolver_version": "bounded-dynamism-phase2",
   "strategy_summary": "This AOI analysis examines Aaron Benanav's work through the lens of Otto Neurath's political economy — specifically Neurath's theory of in-kind calculation, war economy as a planning model, socialist utility, and the critique of monetary commensuration. The four source corpus texts span Neurath's core arguments: that a socialist economy should operate through calculation in kind rather than money, that war economies demonstrate the feasibility of non-market coordination, that international planning is both necessary and achievable, and that socialist utility is categorically different from capitalist profit calculation. These are tightly clustered, technically dense texts with a distinctive vocabulary (Verwaltungswirtschaft, naturalwirtschaft, in-kind balances) and a polemical edge directed at both market socialists and orthodox Marxists. The analytical task is to determine whether Benanav genuinely engages, partially engages, ignores, or distorts these Neurathian commitments.\n\nBecause all four source documents belong to a single thinker and constitute a coherent, internally cross-referencing corpus, Phase 1.0 (Thematic Synthesis) is the interpretive keystone of the workflow. Neurath's themes are not self-evident to readers unfamiliar with the socialist calculation debate, and his claim-structure involves technical distinctions — between in-kind and monetary calculation, between war-economy planning and market socialism — that must be carefully reconstructed before engagement can be mapped. Standard depth is appropriate throughout: the corpus is substantive but bounded, and the four texts are relatively short and focused. The engagement mapping and sin-finding phases can proceed efficiently once the thematic map is established.",
+  "style_school": "explanatory_narrative",
   "thinker_name": "Aaron Benanav",
   "trace_schema_version": 1,
   "view_count": 5,
@@ -83,6 +85,39 @@
       "promoted_to_top_level": false,
       "renderer_config": {
         "expand_first": true,
+        "section_renderers": {
+          "_default": {
+            "sub_renderers": {
+              "argumentative_moves": {
+                "renderer_type": "chip_grid"
+              },
+              "engagement": {
+                "renderer_type": "annotated_prose"
+              },
+              "findings": {
+                "config": {
+                  "badge_field": "badge",
+                  "description_field": "description",
+                  "subtitle_field": "subtitle",
+                  "title_field": "title"
+                },
+                "renderer_type": "mini_card_list"
+              },
+              "key_claims": {
+                "renderer_type": "chip_grid"
+              },
+              "overview": {
+                "renderer_type": "annotated_prose"
+              },
+              "philosophical_commitments": {
+                "renderer_type": "chip_grid"
+              },
+              "source_documents": {
+                "renderer_type": "chip_grid"
+              }
+            }
+          }
+        },
         "sections": [
           {
             "key": "theme_war_economy_as_planning_template",
@@ -138,6 +173,7 @@
         "badge_field": "badge",
         "columns": 2,
         "description_field": "description",
+        "group_by": "_category",
         "subtitle_field": "theme_name",
         "title_field": "title"
       },

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { DesignTokenProvider } from '@the-syllabus/analysis-renderers'
 
 import artifactManifest from './fixtures/neurath-manifest.json'
 import artifactPage from './fixtures/neurath-page.json'
@@ -55,7 +56,9 @@ async function fetchJson<T>(url: string): Promise<T> {
 export default function App() {
   const [mode, setMode] = useState<Mode>(DEFAULT_MODE)
   const [jobId, setJobId] = useState(DEFAULT_JOB_ID)
-  const [liveState, setLiveState] = useState<LoadState | null>(null)
+  const [liveState, setLiveState] = useState<LoadState | null>(
+    DEFAULT_MODE === 'live' ? EMPTY_LIVE_STATE : null,
+  )
   const [error, setError] = useState<string | null>(null)
   const [debugOpen, setDebugOpen] = useState(false)
 
@@ -65,8 +68,6 @@ export default function App() {
     let cancelled = false
 
     const qs = `consumer_key=${encodeURIComponent(CONSUMER_KEY)}`
-    setLiveState(EMPTY_LIVE_STATE)
-    setError(null)
 
     fetchJson<PagePresentation>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/page/${jobId}?slim=true&${qs}`)
       .then((page) => {
@@ -130,7 +131,7 @@ export default function App() {
   }, [jobId, mode])
 
   const loading = mode === 'live' && !(liveState?.page) && error === null
-  const state = mode === 'live' && liveState?.page ? liveState : mode === 'live' ? null : ARTIFACT_STATE
+  const state = mode === 'live' ? (liveState?.page ? liveState : ARTIFACT_STATE) : ARTIFACT_STATE
   const page = state?.page ?? null
   const manifest = state?.manifest ?? null
   const trace = state?.trace ?? null
@@ -146,6 +147,8 @@ export default function App() {
       planId: page.plan_id,
       consumerKey: CONSUMER_KEY,
       viewCount: page.view_count,
+      styleSchool: page.style_school ?? '',
+      polishState: page.polish_state ?? 'raw',
     }
   }, [page])
 
@@ -160,7 +163,8 @@ export default function App() {
         : 'Frozen artifact-backed mode'
 
   return (
-    <main className="app-shell">
+    <DesignTokenProvider schoolKey={activeSummary?.styleSchool ?? ''}>
+      <main className="app-shell">
       <header className="app-header">
         <div>
           <p className="eyebrow">AOI Thin Consumer Canary</p>
@@ -189,7 +193,7 @@ export default function App() {
               className={mode === 'live' ? 'active' : ''}
               onClick={() => {
                 setMode('live')
-                setLiveState(null)
+                setLiveState(EMPTY_LIVE_STATE)
                 setError(null)
               }}
               disabled={!canUseLiveMode}
@@ -205,7 +209,7 @@ export default function App() {
               onChange={(event) => {
                 setJobId(event.target.value)
                 if (mode === 'live') {
-                  setLiveState(null)
+                  setLiveState(EMPTY_LIVE_STATE)
                   setError(null)
                 }
               }}
@@ -227,6 +231,14 @@ export default function App() {
         <div className="status-card status-wide">
           <span className="status-label">State</span>
           <strong>{liveStatusLabel}</strong>
+        </div>
+        <div className="status-card">
+          <span className="status-label">Style</span>
+          <strong>{activeSummary?.styleSchool || 'fallback'}</strong>
+        </div>
+        <div className="status-card">
+          <span className="status-label">Polish</span>
+          <strong>{activeSummary?.polishState ?? 'raw'}</strong>
         </div>
       </section>
 
@@ -289,7 +301,8 @@ export default function App() {
           </div>
         ) : null}
       </section>
-    </main>
+      </main>
+    </DesignTokenProvider>
   )
 }
 

@@ -164,6 +164,7 @@
 }
 
 .tab-shell {
+  --tab-accent-color: #7f1d1d;
   display: grid;
   gap: 1rem;
 }
@@ -186,9 +187,30 @@
 }
 
 .tab-button.active {
-  background: #7f1d1d;
+  background: var(--tab-accent-color);
   color: #fff;
-  border-color: #7f1d1d;
+  border-color: var(--tab-accent-color);
+}
+
+.tab-shell--underline .tab-list {
+  gap: 0.25rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab-shell--underline .tab-button {
+  padding: 0.75rem 0.4rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #64748b;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tab-shell--underline .tab-button.active {
+  background: transparent;
+  color: var(--tab-accent-color);
+  border-bottom-color: var(--tab-accent-color);
 }
 
 .tab-panel-header {
