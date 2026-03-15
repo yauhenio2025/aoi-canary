@@ -51,11 +51,11 @@
   "job_id": "job-abe51e9f629f",
   "manifest_schema_version": 1,
   "plan_id": "plan-37746ee2a2cd",
-  "polish_state": "polished",
+  "polish_state": "partial",
   "prepared_at": "2026-03-14T23:15:42.697049",
-  "presentation_content_hash": "832a6e3aa2a12f7722c8f2a0546c5f5fdf0366f96823ebc7364222268668ac03",
+  "presentation_content_hash": "e2d2ed20d54c9a0104451efc4c4ef047edcf75d657107775098bf26c4f5a511e",
   "presentation_contract_version": 1,
-  "presentation_hash": "88ca6ebb7c16f9b22335be49fa7cc80cda5084c772fa9352de8987dd1052e162",
+  "presentation_hash": "684ee9029317b3b3087dbe478a1188c5deb95065c15fb7cac5c76d7ce10d15d3",
   "presentation_version": 2,
   "refinement_applied": false,
   "refinement_summary": "",
@@ -251,179 +251,16 @@
           "raw_prose": null,
           "reading_scaffold": null,
           "renderer_config": {
-            "_section_descriptions": {
-              "theme_conditions_of_life_quality_of_life_and_socialist_utility": "Beyond GDP and profit — how socialist thinkers redefined welfare, need, and the good life as the proper metric of economic success.",
-              "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation": "The audacious proposal to replace prices with physical accounting — tracing the logic, limits, and lasting debate around Naturalrechnung.",
-              "theme_planning_freedom_and_democratic_pluralism": "The hardest question: can collective planning coexist with individual freedom? This theme maps the contested terrain between rationality and democratic self-determination.",
-              "theme_social_engineering_utopia_and_scientific_planning": "The tension between technocratic confidence and utopian ambition — how socialist planners imagined science as the arbiter of social transformation.",
-              "theme_the_economic_plan_as_central_institution_of_socialist_administration": "What it means to govern through a plan: the plan as both technical instrument and political constitution of the socialist economy.",
-              "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money": "The sharpest theoretical boundary in socialist economics — why true planning requires abolishing money entirely, not just reforming it.",
-              "theme_war_economy_as_planning_template": "How wartime command economies became the blueprint for socialist planners — and why this analogy both illuminated and constrained their vision."
-            },
-            "_style_overrides": {
-              "accent_color": "#d63232",
-              "badge": {
-                "backgroundColor": "#333333",
-                "borderRadius": "2px",
-                "color": "#ffffff",
-                "fontSize": "0.65rem",
-                "fontWeight": "600",
-                "letterSpacing": "0.04em",
-                "padding": "1px 5px",
-                "textTransform": "uppercase"
-              },
-              "card": {
-                "backgroundColor": "#ffffff",
-                "border": "1px solid #e0e0de",
-                "borderLeft": "3px solid #1e90ff",
-                "borderRadius": "3px",
-                "padding": "0.45rem 0.6rem"
-              },
-              "card_body": {
-                "color": "#555555",
-                "fontSize": "0.75rem",
-                "lineHeight": "1.45"
-              },
-              "card_header": {
-                "color": "#222222",
-                "fontSize": "0.8rem",
-                "fontWeight": "700",
-                "letterSpacing": "0.01em",
-                "marginBottom": "0.15rem"
-              },
-              "chip": {
-                "backgroundColor": "#f0f0ee",
-                "border": "1px solid #dddddd",
-                "borderRadius": "3px",
-                "color": "#333333",
-                "fontSize": "0.72rem",
-                "fontWeight": "500",
-                "letterSpacing": "0.01em",
-                "padding": "3px 7px"
-              },
-              "chip_expanded": {
-                "backgroundColor": "#fafaf8",
-                "borderTop": "1px solid #eeeeee",
-                "color": "#555555",
-                "fontSize": "0.75rem",
-                "lineHeight": "1.45",
-                "padding": "0.4rem 0.6rem"
-              },
-              "chip_label": {
-                "color": "#333333",
-                "fontSize": "0.72rem",
-                "fontWeight": "500",
-                "lineHeight": "1.3"
-              },
-              "hero_card": {
-                "backgroundColor": "#fafaf8",
-                "border": "1px solid #cccccc",
-                "borderLeft": "4px solid #d63232",
-                "borderRadius": "3px",
-                "gridColumn": "1 / -1",
-                "padding": "0.65rem 0.75rem"
-              },
-              "items_container": {
-                "display": "grid",
-                "gap": "0.4rem",
-                "gridTemplateColumns": "minmax(0,1fr) minmax(0,1fr)"
-              },
-              "prose": {
-                "color": "#333333",
-                "fontSize": "0.82rem",
-                "lineHeight": "1.55",
-                "margin": "0 0 0.5rem 0"
-              },
-              "prose_body": {
-                "color": "#444444",
-                "fontSize": "0.8rem",
-                "lineHeight": "1.55"
-              },
-              "prose_lede": {
-                "borderLeft": "3px solid #d63232",
-                "color": "#222222",
-                "fontSize": "0.9rem",
-                "fontWeight": "600",
-                "lineHeight": "1.5",
-                "marginBottom": "0.6rem",
-                "paddingLeft": "0.6rem"
-              },
-              "prose_quote": {
-                "backgroundColor": "#f7f7f5",
-                "borderLeft": "3px solid #aaaaaa",
-                "color": "#555555",
-                "fontSize": "0.82rem",
-                "fontStyle": "italic",
-                "margin": "0.5rem 0",
-                "padding": "0.4rem 0.65rem"
-              },
-              "section_content": {
-                "backgroundColor": "#ffffff",
-                "borderLeft": "4px solid #eeeeee",
-                "marginBottom": "0.25rem",
-                "padding": "0.75rem 0.875rem"
-              },
-              "section_description": {
-                "color": "#666666",
-                "fontSize": "0.75rem",
-                "fontStyle": "italic",
-                "lineHeight": "1.4",
-                "marginTop": "0.2rem"
-              },
-              "section_header": {
-                "backgroundColor": "#f7f7f5",
-                "borderBottom": "1px solid #dddddd",
-                "borderLeft": "4px solid #d63232",
-                "cursor": "pointer",
-                "padding": "0.55rem 0.75rem"
-              },
-              "section_title": {
-                "color": "#333333",
-                "fontSize": "0.88rem",
-                "fontWeight": "700",
-                "letterSpacing": "0.02em",
-                "lineHeight": "1.35"
-              },
-              "stat_label": {
-                "color": "#666666",
-                "fontSize": "0.7rem",
-                "letterSpacing": "0.03em",
-                "textTransform": "uppercase"
-              },
-              "stat_number": {
-                "color": "#d63232",
-                "fontSize": "1.5rem",
-                "fontWeight": "700",
-                "lineHeight": "1.1"
-              },
-              "timeline_connector": {
-                "borderColor": "#aaaaaa",
-                "borderWidth": "1px"
-              },
-              "timeline_node": {
-                "backgroundColor": "#333333",
-                "borderRadius": "3px",
-                "color": "#ffffff",
-                "fontSize": "0.7rem",
-                "fontWeight": "600",
-                "padding": "0.25rem 0.5rem"
-              },
-              "view_header": {
-                "borderBottom": "3px solid #333333",
-                "marginBottom": "0.75rem",
-                "paddingBottom": "0.5rem"
-              },
-              "view_wrapper": {
-                "backgroundColor": "#f7f7f5",
-                "padding": "0.75rem 0.5rem"
-              }
-            },
             "expand_first": true,
             "section_renderers": {
               "_default": {
                 "sub_renderers": {
                   "argumentative_moves": {
-                    "renderer_type": "chip_grid"
+                    "config": {
+                      "description_field": "description",
+                      "title_field": "title"
+                    },
+                    "renderer_type": "rich_description_list"
                   },
                   "engagement": {
                     "renderer_type": "annotated_prose"
@@ -438,13 +275,21 @@
                     "renderer_type": "mini_card_list"
                   },
                   "key_claims": {
-                    "renderer_type": "chip_grid"
+                    "config": {
+                      "description_field": "description",
+                      "title_field": "title"
+                    },
+                    "renderer_type": "rich_description_list"
                   },
                   "overview": {
                     "renderer_type": "annotated_prose"
                   },
                   "philosophical_commitments": {
-                    "renderer_type": "chip_grid"
+                    "config": {
+                      "description_field": "description",
+                      "title_field": "title"
+                    },
+                    "renderer_type": "rich_description_list"
                   },
                   "source_documents": {
                     "renderer_type": "chip_grid"
@@ -455,38 +300,31 @@
             "sections": [
               {
                 "key": "theme_war_economy_as_planning_template",
-                "section_description": "How wartime command economies became the blueprint for socialist planners — and why this analogy both illuminated and constrained their vision.",
                 "title": "War Economy as Planning Template"
               },
               {
                 "key": "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation",
-                "section_description": "The audacious proposal to replace prices with physical accounting — tracing the logic, limits, and lasting debate around Naturalrechnung.",
-                "title": "In-Kind Calculation & the Rejection of Money"
+                "title": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation"
               },
               {
                 "key": "theme_the_economic_plan_as_central_institution_of_socialist_administration",
-                "section_description": "What it means to govern through a plan: the plan as both technical instrument and political constitution of the socialist economy.",
-                "title": "The Economic Plan as Central Institution"
+                "title": "The Economic Plan as Central Institution of Socialist Administration"
               },
               {
                 "key": "theme_conditions_of_life_quality_of_life_and_socialist_utility",
-                "section_description": "Beyond GDP and profit — how socialist thinkers redefined welfare, need, and the good life as the proper metric of economic success.",
-                "title": "Conditions of Life, Quality of Life & Socialist Utility"
+                "title": "Conditions of Life, Quality of Life, and Socialist Utility"
               },
               {
                 "key": "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money",
-                "section_description": "The sharpest theoretical boundary in socialist economics — why true planning requires abolishing money entirely, not just reforming it.",
-                "title": "A Moneyless Order: Against Market Socialism & Labour-Money"
+                "title": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money"
               },
               {
                 "key": "theme_social_engineering_utopia_and_scientific_planning",
-                "section_description": "The tension between technocratic confidence and utopian ambition — how socialist planners imagined science as the arbiter of social transformation.",
-                "title": "Social Engineering, Utopia & Scientific Planning"
+                "title": "Social Engineering, Utopia, and Scientific Planning"
               },
               {
                 "key": "theme_planning_freedom_and_democratic_pluralism",
-                "section_description": "The hardest question: can collective planning coexist with individual freedom? This theme maps the contested terrain between rationality and democratic self-determination.",
-                "title": "Planning, Freedom & Democratic Pluralism"
+                "title": "Planning, Freedom, and Democratic Pluralism"
               }
             ]
           },
@@ -499,11 +337,26 @@
           "structured_data": {
             "theme_conditions_of_life_quality_of_life_and_socialist_utility": {
               "argumentative_moves": [
-                "Introduces the Robinson Crusoe analogy (following Marx) to show that a single economic actor allocates resources by direct comparison of alternatives without any need for a common monetary unit, then scales this up to social planning.",
-                "Uses the two-farmer example to demonstrate that interpersonal welfare comparisons sometimes yield clear verdicts (both better off under one plan) and sometimes yield no verdict at all (one better off, one worse off), establishing that aggregate calculation is not always possible.",
-                "Draws on Marx's and Engels's empirical descriptions of proletarian conditions of life to show that the concept was doing analytical work in Marxism from the beginning, even without systematic elaboration.",
-                "Distinguishes the 'inventory of conditions of life' (the empirically accessible proxy for quality of life) from quality of life itself, making the theory practically applicable through statistics without claiming to measure subjective welfare directly.",
-                "Argues against the Austrian value theory (Wieser) that a greater amount of goods can have 'less value' than a smaller amount only makes sense in a monetary context; this nonsensical result reveals the monetary presuppositions of the entire theoretical framework."
+                {
+                  "description": "Introduces the Robinson Crusoe analogy (following Marx) to show that a single economic actor allocates resources by direct comparison of alternatives without any need for a common monetary unit, then scales this up to social planning.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Uses the two-farmer example to demonstrate that interpersonal welfare comparisons sometimes yield clear verdicts (both better off under one plan) and sometimes yield no verdict at all (one better off, one worse off), establishing that aggregate calculation is not always possible.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Draws on Marx's and Engels's empirical descriptions of proletarian conditions of life to show that the concept was doing analytical work in Marxism from the beginning, even without systematic elaboration.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Distinguishes the 'inventory of conditions of life' (the empirically accessible proxy for quality of life) from quality of life itself, making the theory practically applicable through statistics without claiming to measure subjective welfare directly.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Argues against the Austrian value theory (Wieser) that a greater amount of goods can have 'less value' than a smaller amount only makes sense in a monetary context; this nonsensical result reveals the monetary presuppositions of the entire theoretical framework.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [
@@ -535,20 +388,53 @@
                 }
               ],
               "key_claims": [
-                "Qualities of life can be ordinally ranked (higher, lower, equal) but cannot be measured in cardinal units; it is meaningless to say one quality of life is 'twice as high' as another.",
-                "When measures produce gains for some and losses for others, there is often no way to calculate which total is preferable; such cases require direct political judgment, not computation.",
-                "The appropriate analytical tool is the 'relief map of qualities of life': a representation of the distribution of welfare across a population, showing who gains and who loses under different plans, without collapsing into a single aggregate figure.",
-                "Income descriptions are insufficient as welfare measures: two people with the same income but different life expectancies, working conditions, or access to non-market goods have different conditions of life.",
-                "The socialist economy is concerned with utility in the Epicurean-utilitarian sense—the full range of pleasure and pain, including freedom, friendship, security, and cultural life—not only with material goods that can be bought for money.",
-                "Conventional point systems can be introduced for purposes of distribution (equating heavy and light work, for instance) but must be checked against holistic judgments and do not constitute genuine measurement.",
-                "Social utility calculation means comparing alternative economic orders in their entirety; the productivity of individual enterprises can only be assessed by their contribution to the better total plan."
+                {
+                  "description": "Qualities of life can be ordinally ranked (higher, lower, equal) but cannot be measured in cardinal units; it is meaningless to say one quality of life is 'twice as high' as another.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "When measures produce gains for some and losses for others, there is often no way to calculate which total is preferable; such cases require direct political judgment, not computation.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "The appropriate analytical tool is the 'relief map of qualities of life': a representation of the distribution of welfare across a population, showing who gains and who loses under different plans, without collapsing into a single aggregate figure.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "Income descriptions are insufficient as welfare measures: two people with the same income but different life expectancies, working conditions, or access to non-market goods have different conditions of life.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "The socialist economy is concerned with utility in the Epicurean-utilitarian sense—the full range of pleasure and pain, including freedom, friendship, security, and cultural life—not only with material goods that can be bought for money.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "Conventional point systems can be introduced for purposes of distribution (equating heavy and light work, for instance) but must be checked against holistic judgments and do not constitute genuine measurement.",
+                  "title": "Claim 6"
+                },
+                {
+                  "description": "Social utility calculation means comparing alternative economic orders in their entirety; the productivity of individual enterprises can only be assessed by their contribution to the better total plan.",
+                  "title": "Claim 7"
+                }
               ],
               "overview": "Neurath develops a distinctive technical vocabulary for socialist welfare analysis that displaces both utility maximization (as typically understood) and monetary income measurement. 'Condition of life' (Lebenslage) names the proximate environment of the subject—food, housing, clothing, health, education, working time, leisure, freedom—that causally produces the 'quality of life' (Lebensstimmung), the experiential pleasantness or unpleasantness of existence. Neither can be reduced to a scalar quantity; comparisons between conditions or qualities of life yield ordinal rankings at best, and often cannot be ranked at all. 'Socialist utility' is the goal of the socialist economy understood in these terms: the maximum quality of life for all, not the maximum of any single measurable quantity.",
               "philosophical_commitments": [
-                "Social Epicureanism: the socialist order is the institutional expression of the Epicurean project of maximizing human happiness, extended from individuals to social groups and freed from theological obstruction.",
-                "Anti-individualism in welfare theory: the relevant unit of analysis is the class or the whole society, not the isolated individual maximizing utility; solidarity and freedom from dependence are components of welfare.",
-                "Ordinal rather than cardinal welfare: Neurath consistently resists the move from ranking to measurement, treating the demand for a cardinal unit as a confusion imported from monetary thinking.",
-                "Pluralism about welfare components: there is no reason to distinguish 'economic' from 'non-economic' items in the analysis of happiness conditions; freedom, friendship, and self-governance belong to the welfare inventory alongside food and housing."
+                {
+                  "description": "Social Epicureanism: the socialist order is the institutional expression of the Epicurean project of maximizing human happiness, extended from individuals to social groups and freed from theological obstruction.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Anti-individualism in welfare theory: the relevant unit of analysis is the class or the whole society, not the isolated individual maximizing utility; solidarity and freedom from dependence are components of welfare.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Ordinal rather than cardinal welfare: Neurath consistently resists the move from ranking to measurement, treating the demand for a cardinal unit as a confusion imported from monetary thinking.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Pluralism about welfare components: there is no reason to distinguish 'economic' from 'non-economic' items in the analysis of happiness conditions; freedom, friendship, and self-governance belong to the welfare inventory alongside food and housing.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Economic Plan and Calculation in Kind",
@@ -558,11 +444,26 @@
             },
             "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation": {
               "argumentative_moves": [
-                "Engages Mises directly: shows that Mises's own discussion of monopoly destruction concedes the existence of a non-monetary welfare standard, and then generalizes this concession to undermine the entire case for monetary calculation as the uniquely rational basis for economic administration.",
-                "Distinguishes socialist 'negative quantities' from capitalist 'costs': in capitalism, both labour expended and raw materials consumed appear as money costs; in socialism, only the displeasure of labour counts as a genuine negative entry, while raw materials used are simply reallocated from one side of the ledger to another.",
-                "Uses the example of comparing economic plans differing in working hours and illness frequency to show that the choice cannot be resolved by calculation but requires direct judgment about which combination is preferable.",
-                "Draws the contrast between school/hospital administration (which functions without individual monetary balance sheets) and capitalist enterprise, arguing that socialist enterprises should be understood on the school/hospital model.",
-                "Points to the war economy as a historical instance where even partial in-kind calculation sufficed to direct large-scale production, vindicating the practical applicability of Naturalrechnung."
+                {
+                  "description": "Engages Mises directly: shows that Mises's own discussion of monopoly destruction concedes the existence of a non-monetary welfare standard, and then generalizes this concession to undermine the entire case for monetary calculation as the uniquely rational basis for economic administration.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Distinguishes socialist 'negative quantities' from capitalist 'costs': in capitalism, both labour expended and raw materials consumed appear as money costs; in socialism, only the displeasure of labour counts as a genuine negative entry, while raw materials used are simply reallocated from one side of the ledger to another.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Uses the example of comparing economic plans differing in working hours and illness frequency to show that the choice cannot be resolved by calculation but requires direct judgment about which combination is preferable.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Draws the contrast between school/hospital administration (which functions without individual monetary balance sheets) and capitalist enterprise, arguing that socialist enterprises should be understood on the school/hospital model.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Points to the war economy as a historical instance where even partial in-kind calculation sufficed to direct large-scale production, vindicating the practical applicability of Naturalrechnung.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [
@@ -594,21 +495,57 @@
                 }
               ],
               "key_claims": [
-                "Money calculation tells us nothing about true social wealth: dead people, ecological destruction, and intentional restriction of production do not appear as negative entries in capitalist profit accounts.",
-                "No single unit—not money, not labour hours, not energy units—can serve as the basis of socialist economic calculation, because the relevant quantities are incommensurable.",
-                "Calculation in kind means accounting for heterogeneous quantities (iron, coal, working hours, illness rates, housing) side by side, without a common denominator.",
-                "In a planned socialist economy, money prices are fixed arbitrarily by associations or the state and lose their function as spontaneous signals of relative scarcity; monetary calculation therefore loses its 'autonomous character' even before full socialism.",
-                "The Austrian theory of value (Mises, Wieser) is 'money theory without money': its concepts are derived from money institutions and cannot be transferred to a non-monetary order.",
-                "Even defenders of money calculation (including Mises) implicitly invoke a non-monetary concept of wealth when condemning monopoly destruction of goods, thereby conceding the point.",
-                "Calculation in kind can be applied both to the whole economy (the economic plan) and to individual enterprises (technical rationality assessments), but in neither case reduces to a single balance figure."
+                {
+                  "description": "Money calculation tells us nothing about true social wealth: dead people, ecological destruction, and intentional restriction of production do not appear as negative entries in capitalist profit accounts.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "No single unit—not money, not labour hours, not energy units—can serve as the basis of socialist economic calculation, because the relevant quantities are incommensurable.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "Calculation in kind means accounting for heterogeneous quantities (iron, coal, working hours, illness rates, housing) side by side, without a common denominator.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "In a planned socialist economy, money prices are fixed arbitrarily by associations or the state and lose their function as spontaneous signals of relative scarcity; monetary calculation therefore loses its 'autonomous character' even before full socialism.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "The Austrian theory of value (Mises, Wieser) is 'money theory without money': its concepts are derived from money institutions and cannot be transferred to a non-monetary order.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "Even defenders of money calculation (including Mises) implicitly invoke a non-monetary concept of wealth when condemning monopoly destruction of goods, thereby conceding the point.",
+                  "title": "Claim 6"
+                },
+                {
+                  "description": "Calculation in kind can be applied both to the whole economy (the economic plan) and to individual enterprises (technical rationality assessments), but in neither case reduces to a single balance figure.",
+                  "title": "Claim 7"
+                }
               ],
               "overview": "The technical centerpiece of Neurath's economic thought. Neurath argues that monetary calculation is not merely impractical under socialism but structurally incapable of measuring true economic efficiency or social wealth, because money prices are determined by market forces that include monopoly manipulation, speculation, and the systematic exclusion of social costs. The correct alternative is calculation in kind (Naturalrechnung): accounting for all inputs and outputs in their heterogeneous physical and social units—tons of coal, working hours, frequency of illness, quantities of food—without reducing them to any common denominator. This irreducible multidimensionality is not a defect to be overcome but a permanent feature of rational social choice.",
               "philosophical_commitments": [
-                "Incommensurability of values: different components of human welfare cannot be reduced to a common scale; comparisons between economic plans require direct judgment, not calculation.",
-                "Anti-reductionism: the attempt to find a single unit for social calculation is a category error, not a technical challenge awaiting solution.",
-                "Empiricist suspicion of monetary abstraction: money prices veil rather than reveal underlying economic realities; 'currency', 'exchange rate', 'boom', 'depression' are conceptual obstructions to clear thought.",
-                "Commitment to Marx's and Engels's position that money and commodity are specifically capitalist categories that do not carry over into socialism.",
-                "The architect analogy: an economic planner, like an architect designing a fortress, combines available materials toward a complex of goals without needing to reduce their work to a single monetary figure."
+                {
+                  "description": "Incommensurability of values: different components of human welfare cannot be reduced to a common scale; comparisons between economic plans require direct judgment, not calculation.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Anti-reductionism: the attempt to find a single unit for social calculation is a category error, not a technical challenge awaiting solution.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Empiricist suspicion of monetary abstraction: money prices veil rather than reveal underlying economic realities; 'currency', 'exchange rate', 'boom', 'depression' are conceptual obstructions to clear thought.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Commitment to Marx's and Engels's position that money and commodity are specifically capitalist categories that do not carry over into socialism.",
+                  "title": "Commitment 4"
+                },
+                {
+                  "description": "The architect analogy: an economic planner, like an architect designing a fortress, combines available materials toward a complex of goals without needing to reduce their work to a single monetary figure.",
+                  "title": "Commitment 5"
+                }
               ],
               "source_documents": [
                 "Through War Economy to Economy in Kind",
@@ -618,28 +555,73 @@
             },
             "theme_planning_freedom_and_democratic_pluralism": {
               "argumentative_moves": [
-                "Inverts the standard argument that planning requires sacrificing freedom: argues instead that comprehensive planning, by removing market uniformity, actually enables more variety in life-forms and working arrangements than competition.",
-                "Uses the English fireplace example to illustrate that efficiency standards cannot override the happiness value of traditional customs and homely comfort; social engineers must treat such attachments as genuine welfare inputs, not as irrationalities to be corrected.",
-                "Develops a typology of eight possible social orders (differentiated by profit as director of production, profit as income source, and party plurality) and argues that types 3-8 are in principle compatible with international planning, while only types 1-2 (unrestricted capitalism) are not.",
-                "Appeals to historical examples (Netherlands, England, USA) showing that civil liberty and toleration were built by merchants and patricians, not by ideological enthusiasts; this genealogy supports the claim that freedom-preserving planning requires attention to material interests and existing habits rather than ideological transformation.",
-                "Distinguishes regional, national, and international planning as relatively independent but mutually supporting levels, arguing that far-reaching international planning does not require prior completion of national or regional planning."
+                {
+                  "description": "Inverts the standard argument that planning requires sacrificing freedom: argues instead that comprehensive planning, by removing market uniformity, actually enables more variety in life-forms and working arrangements than competition.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Uses the English fireplace example to illustrate that efficiency standards cannot override the happiness value of traditional customs and homely comfort; social engineers must treat such attachments as genuine welfare inputs, not as irrationalities to be corrected.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Develops a typology of eight possible social orders (differentiated by profit as director of production, profit as income source, and party plurality) and argues that types 3-8 are in principle compatible with international planning, while only types 1-2 (unrestricted capitalism) are not.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Appeals to historical examples (Netherlands, England, USA) showing that civil liberty and toleration were built by merchants and patricians, not by ideological enthusiasts; this genealogy supports the claim that freedom-preserving planning requires attention to material interests and existing habits rather than ideological transformation.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Distinguishes regional, national, and international planning as relatively independent but mutually supporting levels, arguing that far-reaching international planning does not require prior completion of national or regional planning.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [],
               "key_claims": [
-                "A socialized economy can accommodate greater variety of life-forms than free competition: six-hour days for the elderly, part-time work for parents, agricultural and industrial rotation—all are possible under planning and impossible under market uniformity.",
-                "Freedom and civil liberty are 'happiness conditions', not merely instruments for other goods; they belong in the welfare inventory alongside food, housing, and health.",
-                "Planning for freedom requires attention to the 'production of freedom': civil liberty is like a forest—easily destroyed, slow to grow, requiring specific institutional conditions to flourish.",
-                "Democratic planning is characterized by more-than-one-party organization, multiplicity of loyalties, tolerance of dissent, and the muddle of self-government; these features, though technically inefficient, constitute part of the happiness they protect.",
-                "Economic tolerance: socialist planning must respect the variety of civilizations and fit each into the administrative economy in its own way; 'world revolution' imposing a single socialist model is tyrannical and self-defeating.",
-                "International planning bodies organized around specific resources (food, rubber, steel) operating with overlapping jurisdictions could reduce international tensions without requiring a world state, by creating a functional substitute for the integrative role formerly played by the international money order."
+                {
+                  "description": "A socialized economy can accommodate greater variety of life-forms than free competition: six-hour days for the elderly, part-time work for parents, agricultural and industrial rotation—all are possible under planning and impossible under market uniformity.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "Freedom and civil liberty are 'happiness conditions', not merely instruments for other goods; they belong in the welfare inventory alongside food, housing, and health.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "Planning for freedom requires attention to the 'production of freedom': civil liberty is like a forest—easily destroyed, slow to grow, requiring specific institutional conditions to flourish.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "Democratic planning is characterized by more-than-one-party organization, multiplicity of loyalties, tolerance of dissent, and the muddle of self-government; these features, though technically inefficient, constitute part of the happiness they protect.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "Economic tolerance: socialist planning must respect the variety of civilizations and fit each into the administrative economy in its own way; 'world revolution' imposing a single socialist model is tyrannical and self-defeating.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "International planning bodies organized around specific resources (food, rubber, steel) operating with overlapping jurisdictions could reduce international tensions without requiring a world state, by creating a functional substitute for the integrative role formerly played by the international money order.",
+                  "title": "Claim 6"
+                }
               ],
               "overview": "Neurath resists the identification of comprehensive planning with authoritarian uniformity. Across his corpus, he argues that a well-designed administrative economy can accommodate greater variety of life-forms, working arrangements, and individual choices than the market, because the market's equalizing tendencies (through competition and uniform 'world working hours') enforce a uniformity that planning can relax. The 1942 'International Planning for Freedom' essay develops this into an explicit defense of civil liberty, democratic pluralism, and tolerance as goals of and conditions for legitimate planning, not sacrifices to it. Neurath also introduces the concept of 'economic tolerance': the recognition that different civilizations may require different forms of socialist organization.",
               "philosophical_commitments": [
-                "Pluralism about forms of life and social organization: just as there should be multiple utopias rather than one, there should be multiple socialist forms rather than one mandatory model.",
-                "Anti-sacrificial ethics of planning: organizations based on readiness to provide immediate happiness are more likely to preserve civil liberty than organizations based on readiness to sacrifice present welfare for future goals.",
-                "Empirical approach to institutional design: the persistence of social atmospheres (Prussian obedience, Russian violence against rulers, English constitutional evolution) must be studied empirically; democratic institutions cannot be imposed without attending to existing habits and traditions.",
-                "Pragmatic tolerance: the peaceful co-existence of socialism, guild socialism, and communal settlements within an overarching administrative plan is both possible and desirable; only violent revolutionary forms require exclusion."
+                {
+                  "description": "Pluralism about forms of life and social organization: just as there should be multiple utopias rather than one, there should be multiple socialist forms rather than one mandatory model.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Anti-sacrificial ethics of planning: organizations based on readiness to provide immediate happiness are more likely to preserve civil liberty than organizations based on readiness to sacrifice present welfare for future goals.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Empirical approach to institutional design: the persistence of social atmospheres (Prussian obedience, Russian violence against rulers, English constitutional evolution) must be studied empirically; democratic institutions cannot be imposed without attending to existing habits and traditions.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Pragmatic tolerance: the peaceful co-existence of socialism, guild socialism, and communal settlements within an overarching administrative plan is both possible and desirable; only violent revolutionary forms require exclusion.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Through War Economy to Economy in Kind",
@@ -649,11 +631,26 @@
             },
             "theme_social_engineering_utopia_and_scientific_planning": {
               "argumentative_moves": [
-                "Historicizes the negative connotation of 'utopia': the same fantastic quality that characterized early mechanical engineering (Leonardo's flying machines) now characterizes social engineering; Daedalus's plans were not less engineering for being unrealized.",
-                "Contrasts the social engineer's approach (multiple possible designs, empirical knowledge of constraints, democratic submission) with the propagandist's approach (single utopia, exaggerated claims, partisan struggle) and argues that the former produces better results even for practical purposes.",
-                "Uses military planning as a positive analogy: generals maintained detailed knowledge of strategic precedent ('antiquarian method') and practiced constructing alternative war plans ('scientific utopianism') before every campaign; peacetime social planning should adopt the same methodology.",
-                "Argues that the war demonstrated what social engineering can achieve: the unprecedented scale of industrial transformation achieved in years shows that deliberate reorganization of production is not inherently slower or less efficient than market evolution.",
-                "Defends the 'converse Taylor system' as a concrete application of social engineering: rather than selecting workers for given roles (Taylor's method), reorganize roles to fit the actual distribution of human capacities, including the disabled and the non-standard."
+                {
+                  "description": "Historicizes the negative connotation of 'utopia': the same fantastic quality that characterized early mechanical engineering (Leonardo's flying machines) now characterizes social engineering; Daedalus's plans were not less engineering for being unrealized.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Contrasts the social engineer's approach (multiple possible designs, empirical knowledge of constraints, democratic submission) with the propagandist's approach (single utopia, exaggerated claims, partisan struggle) and argues that the former produces better results even for practical purposes.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Uses military planning as a positive analogy: generals maintained detailed knowledge of strategic precedent ('antiquarian method') and practiced constructing alternative war plans ('scientific utopianism') before every campaign; peacetime social planning should adopt the same methodology.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Argues that the war demonstrated what social engineering can achieve: the unprecedented scale of industrial transformation achieved in years shows that deliberate reorganization of production is not inherently slower or less efficient than market evolution.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Defends the 'converse Taylor system' as a concrete application of social engineering: rather than selecting workers for given roles (Taylor's method), reorganize roles to fit the actual distribution of human capacities, including the disabled and the non-standard.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [
@@ -672,19 +669,49 @@
                 }
               ],
               "key_claims": [
-                "Social engineering treats the whole economy as a giant concern and applies the same rationality a factory manager or architect applies, but must treat human psychological characteristics as given constraints rather than as obstacles to be overcome.",
-                "Utopias are social engineering constructions; the history of utopian thought is the prehistory of scientific social planning, and utopianism belongs within economic theory, not in its history.",
-                "Scientific utopianism requires constructing multiple alternative social orders ('teams of utopias'), not selecting a single utopia and propagandizing for it.",
-                "The 'converse Taylor system' exemplifies the social engineering approach: instead of fitting workers to given organizational forms, design organizational forms that fit the existing variety of human capacities and inclinations.",
-                "Social planning cannot be separated from democratic legitimacy: the choice between plans belongs to the people and their representatives, not to expert social engineers, who should present arrays of possibilities but not make the final selection.",
-                "The economic plan is itself a form of utopian construction: it is a scientifically elaborated picture of a possible future state of the total economy, designed to be realizable under specified conditions."
+                {
+                  "description": "Social engineering treats the whole economy as a giant concern and applies the same rationality a factory manager or architect applies, but must treat human psychological characteristics as given constraints rather than as obstacles to be overcome.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "Utopias are social engineering constructions; the history of utopian thought is the prehistory of scientific social planning, and utopianism belongs within economic theory, not in its history.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "Scientific utopianism requires constructing multiple alternative social orders ('teams of utopias'), not selecting a single utopia and propagandizing for it.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "The 'converse Taylor system' exemplifies the social engineering approach: instead of fitting workers to given organizational forms, design organizational forms that fit the existing variety of human capacities and inclinations.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "Social planning cannot be separated from democratic legitimacy: the choice between plans belongs to the people and their representatives, not to expert social engineers, who should present arrays of possibilities but not make the final selection.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "The economic plan is itself a form of utopian construction: it is a scientifically elaborated picture of a possible future state of the total economy, designed to be realizable under specified conditions.",
+                  "title": "Claim 6"
+                }
               ],
               "overview": "Neurath develops a methodology for socialist planning under the label 'social engineering' and 'scientific utopianism'. Against both the Marxist dismissal of utopian thinking as unscientific and the technocratic aspiration to discover a single optimal solution, Neurath argues that the proper model for planning is the engineer who constructs multiple possible designs and submits them for democratic selection. The social planner must attend to psychological realities (human loves of novelty, attachment to tradition, willfulness) as the mechanical engineer attends to the properties of materials. Utopias, properly understood, are not unscientific fantasies but scientific constructions of possible social orders that can be compared and evaluated.",
               "philosophical_commitments": [
-                "Constructivism about social order: the social world is not a natural given but a human artifact that can be consciously designed and redesigned; the chief obstacle to rational planning is not technical difficulty but conceptual conservatism.",
-                "Empiricism about future possibilities: the future is not deducible from past tendencies; multiple futures are open, and planning requires working through teams of possible orders rather than projecting a single trajectory.",
-                "Anti-technocracy: expertise should inform but not replace democratic decision; social engineers are like brain trusts preparing options, not like rulers selecting ends.",
-                "Humanism about planning: the goal is always human happiness in the full Epicurean sense, including freedom, self-development, and variety; planning that enforces uniformity or sacrifices present welfare to future goals is already failing on its own terms."
+                {
+                  "description": "Constructivism about social order: the social world is not a natural given but a human artifact that can be consciously designed and redesigned; the chief obstacle to rational planning is not technical difficulty but conceptual conservatism.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Empiricism about future possibilities: the future is not deducible from past tendencies; multiple futures are open, and planning requires working through teams of possible orders rather than projecting a single trajectory.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Anti-technocracy: expertise should inform but not replace democratic decision; social engineers are like brain trusts preparing options, not like rulers selecting ends.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Humanism about planning: the goal is always human happiness in the full Epicurean sense, including freedom, self-development, and variety; planning that enforces uniformity or sacrifices present welfare to future goals is already failing on its own terms.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Through War Economy to Economy in Kind",
@@ -694,11 +721,26 @@
             },
             "theme_the_economic_plan_as_central_institution_of_socialist_administration": {
               "argumentative_moves": [
-                "Draws an analogy between the economic plan and the state budget, then argues that the plan is more fundamental: even the budget does not reduce school construction and hospital construction to a single monetary result but weighs them directly.",
-                "Generalizes from the military commander's decision-making—which does not proceed from 'firing units' or 'war units' but directly from strategic judgment—to socialist economic decision-making.",
-                "Uses the wage-spiral argument to show that money wage negotiations are self-defeating: workers cannot see what their demands amount to because labour markets and goods markets are separated; in-kind negotiation over economic plans makes the real stakes immediately visible.",
-                "Argues that existing war-economy organizations (central offices, rationing, bulk reserves) provide the institutional skeleton that socialization can immediately occupy and extend.",
-                "Invokes Ballod-Atlanticus and Popper-Lynkeus as concrete precedents for planning in kind, showing that such plans can be scientifically constructed and are not utopian fantasies."
+                {
+                  "description": "Draws an analogy between the economic plan and the state budget, then argues that the plan is more fundamental: even the budget does not reduce school construction and hospital construction to a single monetary result but weighs them directly.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Generalizes from the military commander's decision-making—which does not proceed from 'firing units' or 'war units' but directly from strategic judgment—to socialist economic decision-making.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Uses the wage-spiral argument to show that money wage negotiations are self-defeating: workers cannot see what their demands amount to because labour markets and goods markets are separated; in-kind negotiation over economic plans makes the real stakes immediately visible.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Argues that existing war-economy organizations (central offices, rationing, bulk reserves) provide the institutional skeleton that socialization can immediately occupy and extend.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Invokes Ballod-Atlanticus and Popper-Lynkeus as concrete precedents for planning in kind, showing that such plans can be scientifically constructed and are not utopian fantasies.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [
@@ -717,20 +759,53 @@
                 }
               ],
               "key_claims": [
-                "The central office for measurement in kind (Zentralstelle für Naturalrechnung) must design alternative economic plans specifying quantitative shifts in all sectors, allowing people's representatives to choose directly between different configurations of social life.",
-                "The economic plan replaces net profit as the index of economic efficiency: the efficiency of any individual measure can only be assessed by its fit within the better overall plan, not by its own balance sheet.",
-                "The economic plan replaces net profit as the incentive to production: premiums for higher output take its place, and the director of a socialist firm is rewarded for improving working conditions and reducing illness, not only for output maximization.",
-                "A fully socialized economy knows no taxes, since all incomes and living standards are directly determined by the totality rather than arising from independent transactions that can then be taxed.",
-                "Universal statistics—comprehensive, coordinated, and publicly accessible—are the necessary infrastructure for economic planning; the chaotic and fragmented state of existing statistics is a product of capitalist secrecy and competitive individualism.",
-                "The plan must be uniform and centralistic in principle: partial socialization without a total plan is not genuine socialization but only rearrangement of property within the same chaotic order.",
-                "The plan is not fixed in all details in advance but serves as a framework within which adjustments can be made, analogous to a state budget that admits in-year alterations."
+                {
+                  "description": "The central office for measurement in kind (Zentralstelle für Naturalrechnung) must design alternative economic plans specifying quantitative shifts in all sectors, allowing people's representatives to choose directly between different configurations of social life.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "The economic plan replaces net profit as the index of economic efficiency: the efficiency of any individual measure can only be assessed by its fit within the better overall plan, not by its own balance sheet.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "The economic plan replaces net profit as the incentive to production: premiums for higher output take its place, and the director of a socialist firm is rewarded for improving working conditions and reducing illness, not only for output maximization.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "A fully socialized economy knows no taxes, since all incomes and living standards are directly determined by the totality rather than arising from independent transactions that can then be taxed.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "Universal statistics—comprehensive, coordinated, and publicly accessible—are the necessary infrastructure for economic planning; the chaotic and fragmented state of existing statistics is a product of capitalist secrecy and competitive individualism.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "The plan must be uniform and centralistic in principle: partial socialization without a total plan is not genuine socialization but only rearrangement of property within the same chaotic order.",
+                  "title": "Claim 6"
+                },
+                {
+                  "description": "The plan is not fixed in all details in advance but serves as a framework within which adjustments can be made, analogous to a state budget that admits in-year alterations.",
+                  "title": "Claim 7"
+                }
               ],
               "overview": "Neurath treats the economic plan not as a supplement to market coordination but as its structural replacement. The plan is a multidimensional inventory of all social inputs and outputs—raw materials, machines, labour, conditions of life—designed by a central office and submitted to popular representatives for political decision. It replaces both the price signal (as index of economic efficiency) and net profit (as incentive to production) with direct comparison of alternative total configurations of social life. The plan's function is simultaneously technical (specifying quantitative flows throughout the economy), political (representing the will of the collective about desirable distributions of welfare), and epistemological (making the economy transparent and controllable where money obscures it).",
               "philosophical_commitments": [
-                "Centralism as a structural requirement: only a sufficiently centralized institutional form can implement the principle 'by society for society'; autonomous sub-units exchanging goods among themselves preserve capitalist logic regardless of ownership.",
-                "Transparency as a social value: the plan makes the economy 'transparent and controllable', removing the 'veiling concealments' produced by currency, exchange rates, boom and depression.",
-                "Planning as rational agency: the socialized economy treats society as a single giant concern, applying the same rational calculation a factory manager or farm owner applies to their own enterprise.",
-                "Democratic legitimacy: the choice between alternative plans belongs to people's representatives, not to technical experts; social engineers prepare arrays of possibilities but do not select among them."
+                {
+                  "description": "Centralism as a structural requirement: only a sufficiently centralized institutional form can implement the principle 'by society for society'; autonomous sub-units exchanging goods among themselves preserve capitalist logic regardless of ownership.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Transparency as a social value: the plan makes the economy 'transparent and controllable', removing the 'veiling concealments' produced by currency, exchange rates, boom and depression.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Planning as rational agency: the socialized economy treats society as a single giant concern, applying the same rational calculation a factory manager or farm owner applies to their own enterprise.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Democratic legitimacy: the choice between alternative plans belongs to people's representatives, not to technical experts; social engineers prepare arrays of possibilities but do not select among them.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Through War Economy to Economy in Kind",
@@ -740,11 +815,26 @@
             },
             "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money": {
               "argumentative_moves": [
-                "Deploys Engels's Anti-Dühring at length to show that the Marx-Engels position on moneyless socialism was settled early and consistently; Dühring's labour-money scheme is the paradigm case Neurath repeatedly returns to as a negative example.",
-                "Argues that partial socialization without a total plan is not socialization at all: nationalizing individual firms while the overall economy remains unplanned only changes the form of exploitation, not its substance.",
-                "Points to the internal contradictions of market socialism: in a largely centralized late-capitalist economy, prices of raw materials and semi-finished products are already set 'arbitrarily' by concerns and trusts; market socialist prices would be equally conventional and could not serve as genuine efficiency signals.",
-                "Identifies guild socialism as another form of the Dühring error: retaining a producer-consumer distinction and inter-guild exchange into the socialist period preserves commodity relations.",
-                "Uses the Mises engagement strategically: by showing that Mises himself invokes a non-monetary welfare concept when condemning monopoly, Neurath demonstrates that the case for money calculation as the uniquely rational basis of economic administration is internally unstable."
+                {
+                  "description": "Deploys Engels's Anti-Dühring at length to show that the Marx-Engels position on moneyless socialism was settled early and consistently; Dühring's labour-money scheme is the paradigm case Neurath repeatedly returns to as a negative example.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Argues that partial socialization without a total plan is not socialization at all: nationalizing individual firms while the overall economy remains unplanned only changes the form of exploitation, not its substance.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Points to the internal contradictions of market socialism: in a largely centralized late-capitalist economy, prices of raw materials and semi-finished products are already set 'arbitrarily' by concerns and trusts; market socialist prices would be equally conventional and could not serve as genuine efficiency signals.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Identifies guild socialism as another form of the Dühring error: retaining a producer-consumer distinction and inter-guild exchange into the socialist period preserves commodity relations.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Uses the Mises engagement strategically: by showing that Mises himself invokes a non-monetary welfare concept when condemning monopoly, Neurath demonstrates that the case for money calculation as the uniquely rational basis of economic administration is internally unstable.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: unmapped.",
               "findings": [
@@ -763,20 +853,53 @@
                 }
               ],
               "key_claims": [
-                "Money and commodity are specifically capitalist categories; socialism is defined by their abolition, not merely by changes in ownership.",
-                "Labour vouchers, even if usable for consumer distribution, cannot regulate production: they are not money, do not circulate, and cannot serve as a general denominator for the economy.",
-                "Any scheme that retains exchange relationships among enterprises—whether using metal money, labour money, or conventional index figures—preserves capitalist logic under socialist ownership ('capitalism of groups').",
-                "Dühring's economic commune system is self-refuting: by retaining metallic money and inter-commune exchange, it reproduces the basic law of commodity production as the basic law of an imagined socialist society.",
-                "The war economy, despite extensive central direction, was not genuine planning because it served the ruling classes, did not encompass a total plan, and was dismantled after the war; it illustrates the limits of partial socialization.",
-                "Market socialism (profit as a bookkeeping figure for assessing enterprise efficiency while central planning determines overall allocation) is only a transitional possibility; even here, the profit figure is conventional and arbitrary, not a genuine efficiency signal.",
-                "Statistical secrecy is essential to competitive individualism; socialist centralism requires full public transparency of economic data."
+                {
+                  "description": "Money and commodity are specifically capitalist categories; socialism is defined by their abolition, not merely by changes in ownership.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "Labour vouchers, even if usable for consumer distribution, cannot regulate production: they are not money, do not circulate, and cannot serve as a general denominator for the economy.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "Any scheme that retains exchange relationships among enterprises—whether using metal money, labour money, or conventional index figures—preserves capitalist logic under socialist ownership ('capitalism of groups').",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "Dühring's economic commune system is self-refuting: by retaining metallic money and inter-commune exchange, it reproduces the basic law of commodity production as the basic law of an imagined socialist society.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "The war economy, despite extensive central direction, was not genuine planning because it served the ruling classes, did not encompass a total plan, and was dismantled after the war; it illustrates the limits of partial socialization.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "Market socialism (profit as a bookkeeping figure for assessing enterprise efficiency while central planning determines overall allocation) is only a transitional possibility; even here, the profit figure is conventional and arbitrary, not a genuine efficiency signal.",
+                  "title": "Claim 6"
+                },
+                {
+                  "description": "Statistical secrecy is essential to competitive individualism; socialist centralism requires full public transparency of economic data.",
+                  "title": "Claim 7"
+                }
               ],
               "overview": "Neurath consistently and sharply distinguishes genuine socialism from all hybrid forms that retain money, commodity exchange, or labour vouchers as organizing principles of production. Against Dühring's confederal exchange economy, against guild socialist schemes of inter-enterprise commodity exchange, and against Russian experiments with conventional index figures, Neurath argues that any retention of exchange relationships among semi-autonomous economic units is structurally capitalist, regardless of the ownership form. True socialism requires a single economic personality—society—directing production and distributing conditions of life through a unified plan, with no internal market and no price signals.",
               "philosophical_commitments": [
-                "Commitment to Marx's and Engels's revolutionary reading: the transition from capitalism to socialism involves a structural break, not a gradual reform; the socialist economic order differs from the capitalist one as sharply as capitalism differs from feudalism, perhaps more so.",
-                "Hostility to economic individualism at the level of enterprises: the autonomy of individual firms, even if publicly owned, reproduces competitive logic if those firms exchange commodities among themselves.",
-                "Centralism as political necessity: only a centralized economic administration can implement the social will expressed in a democratic economic plan; decentralized models either collapse into capitalism or require non-economic coercive coordination.",
-                "Historicism about concepts: capitalist economic categories (commodity, money, cost, profit) are historically determined; they will become unintelligible in a genuinely post-capitalist order, and socialists should work to develop the new conceptual vocabulary now."
+                {
+                  "description": "Commitment to Marx's and Engels's revolutionary reading: the transition from capitalism to socialism involves a structural break, not a gradual reform; the socialist economic order differs from the capitalist one as sharply as capitalism differs from feudalism, perhaps more so.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Hostility to economic individualism at the level of enterprises: the autonomy of individual firms, even if publicly owned, reproduces competitive logic if those firms exchange commodities among themselves.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Centralism as political necessity: only a centralized economic administration can implement the social will expressed in a democratic economic plan; decentralized models either collapse into capitalism or require non-economic coercive coordination.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Historicism about concepts: capitalist economic categories (commodity, money, cost, profit) are historically determined; they will become unintelligible in a genuinely post-capitalist order, and socialists should work to develop the new conceptual vocabulary now.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Economic Plan and Calculation in Kind",
@@ -786,11 +909,26 @@
             },
             "theme_war_economy_as_planning_template": {
               "argumentative_moves": [
-                "Contrasts the war crisis (sudden, total, requiring centralized response) with normal capitalist crises (gradual, partial, self-correcting through liquidation) to establish that war economy requires its own theoretical treatment.",
-                "Appeals to historical precedents—Napoleonic wars, Balkan wars, First and Second World Wars—as empirical laboratories for war economy theory.",
-                "Argues from the feasibility of wartime planning to the feasibility of peacetime planning: if total mobilization for destruction is possible, total mobilization for welfare is possible.",
-                "Uses the fragmented, piecemeal character of actual war economies (e.g., sugar price raised without regard for side effects) as a negative argument: even imperfect planning outperforms the market, but comprehensive planning would do far better.",
-                "Proposes 'Theory of War Economy' as a distinct academic discipline that would, by treating war economy as a special case, simultaneously advance the generality of economic theory as a whole."
+                {
+                  "description": "Contrasts the war crisis (sudden, total, requiring centralized response) with normal capitalist crises (gradual, partial, self-correcting through liquidation) to establish that war economy requires its own theoretical treatment.",
+                  "title": "Move 1"
+                },
+                {
+                  "description": "Appeals to historical precedents—Napoleonic wars, Balkan wars, First and Second World Wars—as empirical laboratories for war economy theory.",
+                  "title": "Move 2"
+                },
+                {
+                  "description": "Argues from the feasibility of wartime planning to the feasibility of peacetime planning: if total mobilization for destruction is possible, total mobilization for welfare is possible.",
+                  "title": "Move 3"
+                },
+                {
+                  "description": "Uses the fragmented, piecemeal character of actual war economies (e.g., sugar price raised without regard for side effects) as a negative argument: even imperfect planning outperforms the market, but comprehensive planning would do far better.",
+                  "title": "Move 4"
+                },
+                {
+                  "description": "Proposes 'Theory of War Economy' as a distinct academic discipline that would, by treating war economy as a special case, simultaneously advance the generality of economic theory as a whole.",
+                  "title": "Move 5"
+                }
               ],
               "engagement": "Engagement level: partial. Benanav references the war economy primarily as historical context for the socialist calculation debate and as evidence that non-market coordination is feasible at scale. He acknowledges that wartime mobilization demonstrated planning's viability and uses it to rebut claims that large-scale non-market allocation is impossible. However, he does not preserve Neurath's core normative claim that the war economy provides a permanent organizational model and institutional precedent for peacetime socialism. Instead, Benanav treats the war-economy argument as a rhetorical lever against market fundamentalism rather than as the foundation of a positive planning architecture. The war economy appears in Benanav as one historical data point among others (alongside Soviet planning, Keynesian demand management, platform capitalism) rather than as Neurath's 'proof of concept' with direct institutional implications for socialist transition. Neurath's argument is specifically that the war economy is not merely an analogy for socialist planning but its organizational embryo: the central offices, rationing systems, and bulk reserves created by wartime necessity are institutions that socialization can directly inherit and extend. The war economy is a normative model precisely because it suspends profit as the allocative signal and directs production toward a collective goal. Benanav reduces this to a historical analogy proving feasibility, which is a significantly weaker claim. He does not engage Neurath's insistence that socialization must immediately occupy existing war-economy organizations, nor does he treat the war economy's institutional features (central measurement offices, in-kind rationing, comprehensive resource accounting) as blueprints for a permanent planning apparatus. The reduction of the war-economy argument from normative model to historical analogy is the primary divergence here, and it forecloses the entire downstream argument about transition strategy that Neurath builds on this foundation. Severity: high. This divergence is high severity because it strips the war-economy theme of its normative and institutional content. Neurath's claim that socialization is 'only a small additional political step' from war economy depends on the organizational continuity argument, not merely on the feasibility demonstration. By treating the war economy as historical analogy rather than as institutional template, Benanav loses the specific transitional mechanism Neurath is proposing. This matters for the AOI analysis because Benanav's own planning proposals then lack the concrete organizational grounding Neurath provides, making them more abstract and less actionable.",
               "findings": [
@@ -809,19 +947,49 @@
                 }
               ],
               "key_claims": [
-                "The war crisis differs qualitatively from normal capitalist crises: it hits all parts of the economy simultaneously and requires central coordination of all efforts and materials.",
-                "War economy suspends the decisive role of net profit; production occurs because it is recognized as appropriate, not because it is profitable to individual entrepreneurs.",
-                "The organizational apparatus created by wartime necessity—central offices, rationing systems, import/export controls, large associations—can be taken over and adapted for peacetime socialization.",
-                "The war demonstrated that even fragmentary planning suffices to overcome unemployment and intentional restriction of production.",
-                "A world war lasting years would necessarily introduce an administrative economy with growing regard for the interests of the people; socialization is then only a small additional political step.",
-                "The theory of war economy had been neglected because economic theory was not elastic enough to encompass various economic orders at once, treating one specific order as the economic order."
+                {
+                  "description": "The war crisis differs qualitatively from normal capitalist crises: it hits all parts of the economy simultaneously and requires central coordination of all efforts and materials.",
+                  "title": "Claim 1"
+                },
+                {
+                  "description": "War economy suspends the decisive role of net profit; production occurs because it is recognized as appropriate, not because it is profitable to individual entrepreneurs.",
+                  "title": "Claim 2"
+                },
+                {
+                  "description": "The organizational apparatus created by wartime necessity—central offices, rationing systems, import/export controls, large associations—can be taken over and adapted for peacetime socialization.",
+                  "title": "Claim 3"
+                },
+                {
+                  "description": "The war demonstrated that even fragmentary planning suffices to overcome unemployment and intentional restriction of production.",
+                  "title": "Claim 4"
+                },
+                {
+                  "description": "A world war lasting years would necessarily introduce an administrative economy with growing regard for the interests of the people; socialization is then only a small additional political step.",
+                  "title": "Claim 5"
+                },
+                {
+                  "description": "The theory of war economy had been neglected because economic theory was not elastic enough to encompass various economic orders at once, treating one specific order as the economic order.",
+                  "title": "Claim 6"
+                }
               ],
               "overview": "Neurath's most historically distinctive argumentative move: the claim that the organizational features of modern war economy—central direction of production and consumption, suspension of profit as the allocative signal, comprehensive mobilization of resources toward a collective goal—provide an empirical demonstration that large-scale non-market administration is feasible and, properly redirected, could serve social welfare rather than military ends. The war economy functions in Neurath's corpus not as an emergency exception but as a proof of concept and organizational precedent for the peacetime socialist administrative economy.",
               "philosophical_commitments": [
-                "Pluralism about economic orders: different economic systems have different rules and must be theorized separately rather than treated as variants of one universal type.",
-                "Empiricist orientation toward historical and institutional variation: economic theory should proceed from observed forms toward generalization, as modern physicists do with new combinations of empirical material.",
-                "Technocratic optimism about social engineering: the same rationalization of effort achieved in military conduct can be achieved in peacetime production and distribution.",
-                "Historicism about economic institutions: the free exchange economy is ending and the administrative economy is beginning; this is a historical tendency, not merely a normative preference."
+                {
+                  "description": "Pluralism about economic orders: different economic systems have different rules and must be theorized separately rather than treated as variants of one universal type.",
+                  "title": "Commitment 1"
+                },
+                {
+                  "description": "Empiricist orientation toward historical and institutional variation: economic theory should proceed from observed forms toward generalization, as modern physicists do with new combinations of empirical material.",
+                  "title": "Commitment 2"
+                },
+                {
+                  "description": "Technocratic optimism about social engineering: the same rationalization of effort achieved in military conduct can be achieved in peacetime production and distribution.",
+                  "title": "Commitment 3"
+                },
+                {
+                  "description": "Historicism about economic institutions: the free exchange economy is ending and the administrative economy is beginning; this is a historical tendency, not merely a normative preference.",
+                  "title": "Commitment 4"
+                }
               ],
               "source_documents": [
                 "Through War Economy to Economy in Kind",
@@ -856,120 +1024,11 @@
           "raw_prose": null,
           "reading_scaffold": null,
           "renderer_config": {
-            "_section_descriptions": {
-              "decontextualization": "One case of a finding lifted from its original context and redeployed in ways its source would not support.",
-              "flattening": "A single finding where complexity is crushed into false simplicity — nuance that doesn't survive the translation.",
-              "legitimation_borrowing": "One instance where association with credible sources or institutions is used to launder a weaker claim.",
-              "selective_citation": "Two instances of cherry-picked evidence: sources are real, but the selection tilts the picture toward a predetermined conclusion.",
-              "strategic_silence": "Two cases where what is left unsaid does the most work — key context, caveats, or counterevidence deliberately omitted.",
-              "unacknowledged_debt": "One finding where prior work or borrowed framing goes uncredited, obscuring intellectual lineage."
-            },
-            "_style_overrides": {
-              "accent_color": "#d63232",
-              "badge": {
-                "backgroundColor": "#333333",
-                "borderRadius": "2px",
-                "color": "#ffffff",
-                "fontSize": "0.65rem",
-                "fontWeight": "600",
-                "letterSpacing": "0.04em",
-                "padding": "2px 6px",
-                "textTransform": "uppercase"
-              },
-              "card": {
-                "backgroundColor": "#ffffff",
-                "borderLeft": "3px solid #d63232",
-                "borderRadius": "3px",
-                "boxShadow": "0 1px 3px rgba(0,0,0,0.07)",
-                "padding": "8px 10px"
-              },
-              "card_body": {
-                "color": "#555555",
-                "fontSize": "0.75rem",
-                "lineHeight": "1.45"
-              },
-              "card_header": {
-                "color": "#333333",
-                "fontSize": "0.82rem",
-                "fontWeight": "700",
-                "letterSpacing": "0.01em",
-                "marginBottom": "3px"
-              },
-              "chip": {
-                "backgroundColor": "#f0f0ee",
-                "border": "1px solid #dddddd",
-                "borderRadius": "2px",
-                "color": "#333333",
-                "fontSize": "0.68rem",
-                "padding": "2px 7px"
-              },
-              "chip_expanded": null,
-              "chip_label": null,
-              "hero_card": {
-                "backgroundColor": "#fff8f8",
-                "borderLeft": "4px solid #d63232",
-                "borderRadius": "3px",
-                "boxShadow": "0 1px 4px rgba(214,50,50,0.10)",
-                "gridColumn": "1 / -1",
-                "padding": "10px 12px"
-              },
-              "items_container": {
-                "display": "grid",
-                "gap": "8px",
-                "gridTemplateColumns": "minmax(0,1fr) minmax(0,1fr)",
-                "marginTop": "6px"
-              },
-              "prose": {
-                "color": "#444444",
-                "fontSize": "0.8rem",
-                "lineHeight": "1.5"
-              },
-              "prose_body": null,
-              "prose_lede": null,
-              "prose_quote": null,
-              "section_content": {
-                "padding": "4px 0 10px 0"
-              },
-              "section_description": {
-                "color": "#666666",
-                "fontSize": "0.74rem",
-                "fontStyle": "italic",
-                "lineHeight": "1.45",
-                "marginTop": "2px"
-              },
-              "section_header": {
-                "backgroundColor": "#f0f0ee",
-                "borderLeft": "4px solid #d63232",
-                "cursor": "pointer",
-                "marginBottom": "6px",
-                "padding": "7px 10px"
-              },
-              "section_title": {
-                "color": "#333333",
-                "fontSize": "0.85rem",
-                "fontWeight": "700",
-                "letterSpacing": "0.03em",
-                "textTransform": "uppercase"
-              },
-              "stat_label": null,
-              "stat_number": null,
-              "timeline_connector": null,
-              "timeline_node": null,
-              "view_header": {
-                "borderBottom": "3px solid #d63232",
-                "marginBottom": "14px",
-                "paddingBottom": "10px"
-              },
-              "view_wrapper": {
-                "backgroundColor": "#f7f7f5",
-                "padding": "12px 16px"
-              }
-            },
             "badge_field": "badge",
-            "columns": 2,
+            "columns": 1,
             "description_field": "description",
-            "expand_first": true,
             "group_by": "_category",
+            "group_style_map": "sin_type",
             "subtitle_field": "theme_name",
             "title_field": "title"
           },

@@ -4,11 +4,11 @@
   "job_id": "job-abe51e9f629f",
   "manifest_schema_version": 1,
   "plan_id": "plan-37746ee2a2cd",
-  "polish_state": "polished",
+  "polish_state": "partial",
   "prepared_at": "2026-03-14T23:15:42.697049",
-  "presentation_content_hash": "832a6e3aa2a12f7722c8f2a0546c5f5fdf0366f96823ebc7364222268668ac03",
+  "presentation_content_hash": "e2d2ed20d54c9a0104451efc4c4ef047edcf75d657107775098bf26c4f5a511e",
   "presentation_contract_version": 1,
-  "presentation_hash": "88ca6ebb7c16f9b22335be49fa7cc80cda5084c772fa9352de8987dd1052e162",
+  "presentation_hash": "684ee9029317b3b3087dbe478a1188c5deb95065c15fb7cac5c76d7ce10d15d3",
   "resolver_version": "bounded-dynamism-phase2",
   "strategy_summary": "This AOI analysis examines Aaron Benanav's work through the lens of Otto Neurath's political economy — specifically Neurath's theory of in-kind calculation, war economy as a planning model, socialist utility, and the critique of monetary commensuration. The four source corpus texts span Neurath's core arguments: that a socialist economy should operate through calculation in kind rather than money, that war economies demonstrate the feasibility of non-market coordination, that international planning is both necessary and achievable, and that socialist utility is categorically different from capitalist profit calculation. These are tightly clustered, technically dense texts with a distinctive vocabulary (Verwaltungswirtschaft, naturalwirtschaft, in-kind balances) and a polemical edge directed at both market socialists and orthodox Marxists. The analytical task is to determine whether Benanav genuinely engages, partially engages, ignores, or distorts these Neurathian commitments.\n\nBecause all four source documents belong to a single thinker and constitute a coherent, internally cross-referencing corpus, Phase 1.0 (Thematic Synthesis) is the interpretive keystone of the workflow. Neurath's themes are not self-evident to readers unfamiliar with the socialist calculation debate, and his claim-structure involves technical distinctions — between in-kind and monetary calculation, between war-economy planning and market socialism — that must be carefully reconstructed before engagement can be mapped. Standard depth is appropriate throughout: the corpus is substantive but bounded, and the four texts are relatively short and focused. The engagement mapping and sin-finding phases can proceed efficiently once the thematic map is established.",
   "style_school": "explanatory_narrative",
@@ -89,7 +89,11 @@
           "_default": {
             "sub_renderers": {
               "argumentative_moves": {
-                "renderer_type": "chip_grid"
+                "config": {
+                  "description_field": "description",
+                  "title_field": "title"
+                },
+                "renderer_type": "rich_description_list"
               },
               "engagement": {
                 "renderer_type": "annotated_prose"
@@ -104,13 +108,21 @@
                 "renderer_type": "mini_card_list"
               },
               "key_claims": {
-                "renderer_type": "chip_grid"
+                "config": {
+                  "description_field": "description",
+                  "title_field": "title"
+                },
+                "renderer_type": "rich_description_list"
               },
               "overview": {
                 "renderer_type": "annotated_prose"
               },
               "philosophical_commitments": {
-                "renderer_type": "chip_grid"
+                "config": {
+                  "description_field": "description",
+                  "title_field": "title"
+                },
+                "renderer_type": "rich_description_list"
               },
               "source_documents": {
                 "renderer_type": "chip_grid"
@@ -171,9 +183,10 @@
       "promoted_to_top_level": false,
       "renderer_config": {
         "badge_field": "badge",
-        "columns": 2,
+        "columns": 1,
         "description_field": "description",
         "group_by": "_category",
+        "group_style_map": "sin_type",
         "subtitle_field": "theme_name",
         "title_field": "title"
       },
