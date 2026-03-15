@@ -3,6 +3,11 @@ import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
 import App from '../App'
+import rendererRelease from '../../vendor/renderer-release.json'
+
+function hasRendererVersion(content: string) {
+  return content.includes(rendererRelease.renderer_package_version)
+}
 
 describe('AOI canary app', () => {
   test('renders the frozen Neurath AOI page in artifact mode', async () => {
@@ -16,6 +21,7 @@ describe('AOI canary app', () => {
     expect(screen.getByRole('tablist', { name: 'Thematic Analysis' }).parentElement).toHaveClass(
       'tab-shell--underline',
     )
+    expect(screen.getByText(hasRendererVersion)).toBeInTheDocument()
     expect(screen.queryByText(/click to expand/i)).not.toBeInTheDocument()
 
     await userEvent.click(screen.getByRole('tab', { name: 'By Sin Type' }))
@@ -112,6 +118,7 @@ describe('AOI canary app', () => {
       expect(screen.getByRole('heading', { name: 'Source Documents' })).toBeInTheDocument()
     })
     expect(screen.getByText('Live page loaded')).toBeInTheDocument()
+    expect(screen.getByText(hasRendererVersion)).toBeInTheDocument()
 
     if (resolveManifest) resolveManifest()
     if (resolveTrace) resolveTrace()

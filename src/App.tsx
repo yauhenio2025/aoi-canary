@@ -4,6 +4,7 @@ import { DesignTokenProvider } from '@the-syllabus/analysis-renderers'
 import artifactManifest from './fixtures/neurath-manifest.json'
 import artifactPage from './fixtures/neurath-page.json'
 import artifactTrace from './fixtures/neurath-trace.json'
+import rendererRelease from '../vendor/renderer-release.json'
 import './App.css'
 import { RendererHost } from './components/RendererHost'
 import { TabShell } from './components/TabShell'
@@ -17,6 +18,7 @@ const RESOLVED_ANALYZER_V2_URL =
 const DEFAULT_MODE: Mode = import.meta.env.VITE_AOI_MODE === 'live' ? 'live' : 'artifact'
 const DEFAULT_JOB_ID = import.meta.env.VITE_AOI_JOB_ID?.trim() || artifactPage.job_id
 const CONSUMER_KEY = 'aoi-canary'
+const RENDERER_SUMMARY = `${rendererRelease.renderer_package_version} · ${rendererRelease.renderer_tarball_sha256.slice(0, 8)}`
 
 interface LoadState {
   page: PagePresentation | null
@@ -240,6 +242,10 @@ export default function App() {
           <span className="status-label">Polish</span>
           <strong>{activeSummary?.polishState ?? 'raw'}</strong>
         </div>
+        <div className="status-card status-wide">
+          <span className="status-label">Renderer</span>
+          <strong>{RENDERER_SUMMARY}</strong>
+        </div>
       </section>
 
       {activeSummary ? (
@@ -296,6 +302,7 @@ export default function App() {
         </button>
         {debugOpen ? (
           <div className="debug-grid">
+            <DebugCard title="Renderer Build" data={rendererRelease} />
             <DebugCard title="Manifest" data={manifest} />
             <DebugCard title="Trace" data={trace} />
           </div>

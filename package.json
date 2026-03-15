@@ -5,14 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run verify:renderer-install",
     "build": "tsc -b && vite build",
+    "postbuild": "npm run verify:bundle",
     "lint": "eslint .",
     "preview": "vite preview",
+    "sync:renderer": "node scripts/sync-renderer-tarball.mjs",
+    "verify:renderer-install": "node scripts/verify-renderer-install.mjs",
+    "verify:bundle": "node scripts/verify-bundle.mjs",
+    "verify:live-renderer-build": "node scripts/verify-live-renderer-build.mjs",
     "test": "vitest run",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@the-syllabus/analysis-renderers": "file:vendor/the-syllabus-analysis-renderers-0.6.2.tgz",
+    "@the-syllabus/analysis-renderers": "file:vendor/the-syllabus-analysis-renderers-0.6.3.tgz",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

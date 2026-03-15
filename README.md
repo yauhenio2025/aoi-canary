@@ -57,12 +57,42 @@ npm run build
 
 ## Shared Renderer Package
 
-The canary consumes a vendored tarball snapshot:
+The canary consumes a vendored tarball snapshot of `@the-syllabus/analysis-renderers`.
 
-- `vendor/the-syllabus-analysis-renderers-0.5.5.tgz`
+Detailed release steps live in [`docs/renderer-release-workflow.md`](./docs/renderer-release-workflow.md).
 
-It also imports the shared renderer stylesheet:
+Supported workflow:
 
-- `@the-syllabus/analysis-renderers/styles`
+1. In `analyzer-v2/renderers-ui`, bump the package version and run:
 
-The app uses `DesignTokenProvider` with fallback tokens only. It does not fetch live style-school tokens in v1.
+```bash
+npm run release:pack
+```
+
+2. In `aoi-canary`, sync the produced tarball:
+
+```bash
+npm run sync:renderer -- /absolute/path/to/the-syllabus-analysis-renderers-X.Y.Z.tgz
+```
+
+3. Build and verify:
+
+```bash
+npm run build
+```
+
+4. After deploy, verify the blessed production site:
+
+```bash
+npm run verify:live-renderer-build
+```
+
+Important rules:
+
+- same-version tarballs are rejected on sync
+- the canary keeps exactly one active renderer tarball in `vendor/`
+- the build fails if installed package/version/hash drift from vendored metadata
+- post-deploy verification uses `https://aoi-canary.onrender.com/renderer-build.json`
+
+The app imports the shared renderer stylesheet via `@the-syllabus/analysis-renderers/styles`.
+It uses `DesignTokenProvider` with fallback tokens only. It does not fetch live style-school tokens in v1.
