@@ -12,7 +12,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@the-syllabus/analysis-renderers": "file:vendor/the-syllabus-analysis-renderers-0.5.6.tgz",
+    "@the-syllabus/analysis-renderers": "file:vendor/the-syllabus-analysis-renderers-0.5.7.tgz",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
