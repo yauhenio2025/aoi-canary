@@ -47,11 +47,10 @@ export function RendererHost({ view }: { view: ViewPayload }) {
         rendererType={view.renderer_type}
         scaffold={view.reading_scaffold ?? null}
       >
-        {(rendererScaffold) => (
+        {() => (
           <Renderer
             data={dataForView(view)}
             config={view.renderer_config ?? {}}
-            scaffold={rendererScaffold}
           />
         )}
       </ViewShell>
