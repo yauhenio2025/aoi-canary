@@ -1,0 +1,975 @@
+{
+  "artifacts_ready": false,
+  "consumer_key": "aoi-canary",
+  "execution_summary": {
+    "completed_at": "2026-03-14T23:15:42.697049",
+    "created_at": "2026-03-14T23:00:33.454186",
+    "phase_results": {
+      "1.0": {
+        "duration_ms": 249321,
+        "error": null,
+        "final_output_preview": "{\n  \"selected_source_thinker\": {\n    \"thinker_id\": \"otto_neurath\",\n    \"thinker_name\": \"Otto Neurath\"\n  },\n  \"source_documents\": [\n    {\n      \"source_document_id\": \"through_war_economy_to_economy_in_kind\",\n      \"title\": \"Through War Economy to Economy in Kind\",\n      \"subtitle\": \"Otto Neurath, 1919 (collected essays 1909–1919)\",\n      \"description\": \"A collection of Neurath's pre- and wartime essays arguing that the war economy demonstrated the viability of centralized administrative planning,",
+        "phase_name": "Source Thematic Synthesis",
+        "phase_number": 1.0,
+        "status": "completed",
+        "total_tokens": 83880
+      },
+      "2.0": {
+        "duration_ms": 202588,
+        "error": null,
+        "final_output_preview": "## International Planning for Freedom (aoi_engagement_mapping)\n\n```json\n{\n  \"engagements\": [\n    {\n      \"theme_id\": \"war_economy_as_planning_template\",\n      \"theme_name\": \"War Economy as Planning Template\",\n      \"engagement_level\": \"partial\",\n      \"benanav_position\": \"Benanav references the war economy primarily as a historical illustration of how states can mobilize resources at scale outside normal market mechanisms. He uses wartime mobilization as evidence that full employment and coordin",
+        "phase_name": "Engagement Mapping",
+        "phase_number": 2.0,
+        "status": "completed",
+        "total_tokens": 140364
+      },
+      "3.0": {
+        "duration_ms": 178725,
+        "error": null,
+        "final_output_preview": "{\n  \"findings\": [\n    {\n      \"theme_id\": \"War Economy as Planning Template\",\n      \"sin_type\": \"flattening\",\n      \"engagement_level\": \"partial\",\n      \"severity\": \"high\",\n      \"severity_rationale\": \"Neurath's war-economy argument is specifically an institutional transition argument: the existing organizational apparatus of wartime planning — central offices, in-kind rationing, bulk reserves, suspension of profit as allocative signal — constitutes the embryo of socialist administration and can",
+        "phase_name": "AOI Sin Findings",
+        "phase_number": 3.0,
+        "status": "completed",
+        "total_tokens": 212796
+      },
+      "4.0": {
+        "duration_ms": 91604,
+        "error": null,
+        "final_output_preview": "```json\n{\n  \"report_sections\": {\n    \"summary\": \"Benanav's two-part Beyond Capitalism essay engages Neurath substantively but asymmetrically. The engagement is genuine and consequential where Neurath functions as a methodological and political resource — scientific utopianism, democratic planning, the incompatibility of single-criterion optimization with socialist aims, and the compatibility of planning with freedom. It becomes selective, distorting, or strategically silent precisely where Neura",
+        "phase_name": "Thematic AOI Report",
+        "phase_number": 4.0,
+        "status": "completed",
+        "total_tokens": 143115
+      }
+    },
+    "started_at": "2026-03-14T23:03:40.339119",
+    "status": "completed",
+    "total_input_tokens": 536367,
+    "total_llm_calls": 7,
+    "total_output_tokens": 43788
+  },
+  "job_id": "job-abe51e9f629f",
+  "manifest_schema_version": 1,
+  "plan_id": "plan-37746ee2a2cd",
+  "prepared_at": "2026-03-14T23:15:42.697049",
+  "presentation_content_hash": "4eab43c9a62b201b37c703f5a8c0fc924df23d1bdb024fd6f55e40604949f4b0",
+  "presentation_contract_version": 1,
+  "presentation_hash": "1615532ca060e443be452dc2c5f19708b0c2c0ed80515ca053abd26ea8de3593",
+  "presentation_version": 2,
+  "refinement_applied": false,
+  "refinement_summary": "",
+  "resolver_version": "bounded-dynamism-phase2",
+  "strategy_summary": "This AOI analysis examines Aaron Benanav's work through the lens of Otto Neurath's political economy — specifically Neurath's theory of in-kind calculation, war economy as a planning model, socialist utility, and the critique of monetary commensuration. The four source corpus texts span Neurath's core arguments: that a socialist economy should operate through calculation in kind rather than money, that war economies demonstrate the feasibility of non-market coordination, that international planning is both necessary and achievable, and that socialist utility is categorically different from capitalist profit calculation. These are tightly clustered, technically dense texts with a distinctive vocabulary (Verwaltungswirtschaft, naturalwirtschaft, in-kind balances) and a polemical edge directed at both market socialists and orthodox Marxists. The analytical task is to determine whether Benanav genuinely engages, partially engages, ignores, or distorts these Neurathian commitments.\n\nBecause all four source documents belong to a single thinker and constitute a coherent, internally cross-referencing corpus, Phase 1.0 (Thematic Synthesis) is the interpretive keystone of the workflow. Neurath's themes are not self-evident to readers unfamiliar with the socialist calculation debate, and his claim-structure involves technical distinctions — between in-kind and monetary calculation, between war-economy planning and market socialism — that must be carefully reconstructed before engagement can be mapped. Standard depth is appropriate throughout: the corpus is substantive but bounded, and the four texts are relatively short and focused. The engagement mapping and sin-finding phases can proceed efficiently once the thematic map is established.",
+  "thinker_name": "Aaron Benanav",
+  "trace_schema_version": 1,
+  "view_count": 5,
+  "views": [
+    {
+      "chain_key": null,
+      "children": [
+        {
+          "chain_key": null,
+          "children": [],
+          "data_quality": "standard",
+          "derivation_kind": null,
+          "description": "Inventory of the selected source thinker's documents used to ground the AOI thematic analysis.",
+          "engine_key": "aoi_thematic_synthesis",
+          "has_structured_data": true,
+          "items": null,
+          "navigation_state": "normal",
+          "phase_number": 1.0,
+          "position": 1.1,
+          "presentation_stance": "evidence",
+          "priority": "secondary",
+          "promoted_to_top_level": false,
+          "prose_ref_view_key": null,
+          "rationale": "child of included parent",
+          "raw_prose": null,
+          "reading_scaffold": null,
+          "renderer_config": {
+            "badge_field": "badge",
+            "columns": 2,
+            "description_field": "description",
+            "subtitle_field": "subtitle",
+            "title_field": "title"
+          },
+          "renderer_type": "card_grid",
+          "scaffold_hosting_mode": "none",
+          "scope": "aggregated",
+          "selection_priority": "secondary",
+          "semantic_scaffold_type": "none",
+          "source_parent_view_key": "aoi_thematic_analysis",
+          "structured_data": [
+            {
+              "badge": "Otto Neurath",
+              "description": "AOI source corpus text for the selected thinker.",
+              "source_document_id": "through_war_economy_to_economy_in_kind",
+              "subtitle": "Otto Neurath",
+              "title": "Through War Economy to Economy in Kind"
+            },
+            {
+              "badge": "Otto Neurath",
+              "description": "AOI source corpus text for the selected thinker.",
+              "source_document_id": "international_planning_for_freedom",
+              "subtitle": "Otto Neurath",
+              "title": "International Planning for Freedom"
+            },
+            {
+              "badge": "Otto Neurath",
+              "description": "AOI source corpus text for the selected thinker.",
+              "source_document_id": "economic_plan_and_calculation_in_kind",
+              "subtitle": "Otto Neurath",
+              "title": "Economic Plan and Calculation in Kind"
+            },
+            {
+              "badge": "Otto Neurath",
+              "description": "AOI source corpus text for the selected thinker.",
+              "source_document_id": "socialist_utility_calculation_and_capitalist_profit_calculation",
+              "subtitle": "Otto Neurath",
+              "title": "Socialist Utility Calculation and Capitalist Profit Calculation"
+            }
+          ],
+          "structuring_policy": null,
+          "tab_count": null,
+          "top_level_group": null,
+          "view_key": "aoi_source_documents",
+          "view_name": "Source Documents",
+          "visibility": "if_data_exists"
+        },
+        {
+          "chain_key": null,
+          "children": [],
+          "data_quality": "standard",
+          "derivation_kind": null,
+          "description": "Theme-first AOI surface. Each theme becomes one accordion section exposing the source-theme overview, Benanav's engagement, and the flat findings tied to that theme.",
+          "engine_key": "aoi_sin_findings",
+          "has_structured_data": true,
+          "items": null,
+          "navigation_state": "normal",
+          "phase_number": 3.0,
+          "position": 1.2,
+          "presentation_stance": "comparison",
+          "priority": "secondary",
+          "promoted_to_top_level": false,
+          "prose_ref_view_key": null,
+          "rationale": "child of included parent",
+          "raw_prose": null,
+          "reading_scaffold": null,
+          "renderer_config": {
+            "expand_first": true,
+            "sections": [
+              {
+                "key": "theme_war_economy_as_planning_template",
+                "title": "War Economy as Planning Template"
+              },
+              {
+                "key": "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation",
+                "title": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation"
+              },
+              {
+                "key": "theme_the_economic_plan_as_central_institution_of_socialist_administration",
+                "title": "The Economic Plan as Central Institution of Socialist Administration"
+              },
+              {
+                "key": "theme_conditions_of_life_quality_of_life_and_socialist_utility",
+                "title": "Conditions of Life, Quality of Life, and Socialist Utility"
+              },
+              {
+                "key": "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money",
+                "title": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money"
+              },
+              {
+                "key": "theme_social_engineering_utopia_and_scientific_planning",
+                "title": "Social Engineering, Utopia, and Scientific Planning"
+              },
+              {
+                "key": "theme_planning_freedom_and_democratic_pluralism",
+                "title": "Planning, Freedom, and Democratic Pluralism"
+              }
+            ]
+          },
+          "renderer_type": "accordion",
+          "scaffold_hosting_mode": "none",
+          "scope": "aggregated",
+          "selection_priority": "secondary",
+          "semantic_scaffold_type": "none",
+          "source_parent_view_key": "aoi_thematic_analysis",
+          "structured_data": {
+            "theme_conditions_of_life_quality_of_life_and_socialist_utility": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [
+                {
+                  "badge": "high",
+                  "description": "Benanav's argument that welfare components are non-compensatory, that gains in one domain cannot fully offset losses in another, and that plan selection among non-dominated options is inherently political rather than technical directly reproduces the logical structure of Neurath's conditions-of-life framework. Neurath develops this through the relief map methodology and the specific claim that quality of life comparisons are ordinal but not cardinal. Benanav's multi-criterial optimization framework reaches similar conclusions through a different formal apparatus (multi-criteria decision analysis) without noting that Neurath had already established the philosophical foundations for the same conclusions in 1925. The footnote crediting Neurath (footnote 41 in Beyond Capitalism 1) attributes to him the specific institutional proposals around the central office for calculation in kind, but not the philosophical framework for welfare incommensurability that is more directly operative in Benanav's own argument.",
+                  "implication_for_argument": "By not acknowledging the debt to Neurath's conditions-of-life framework at the philosophical level, Benanav misses the opportunity to deploy Neurath's most sophisticated arguments against the objection that multi-criterial frameworks merely reflect normative preferences rather than structural features of rational social choice. The scholarly presentation of the multi-criterial framework would be more defensible if it explicitly grounded the incommensurability claim in Neurath's welfare theory.",
+                  "sin_type": "unacknowledged_debt",
+                  "sin_type_label": "Unacknowledged Debt",
+                  "source_document_id": "economic_plan_and_calculation_in_kind",
+                  "source_quote": "The pleasantness or unpleasantness of experience we propose to call 'quality of life' [Lebensstimmung] – or just 'quality'. We use this word which covers happiness as well as unhappiness; wealth as well as poverty... We cannot, however, say of one quality of life that it is twice or four and a half times as high as another.",
+                  "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                  "target_quote": "A multi-criterial economy would treat those choices as ethical and political, with different production methods reflecting different ways of balancing society's multiple goals. The same openness to adjudicated multiplicity would need to extend across the economy as a whole, creating a system in which coordination is not about discovering a singular optimal path but navigating trade-offs between competing priorities.",
+                  "theme_name": "Conditions of Life, Quality of Life, and Socialist Utility",
+                  "title": "Multi-Criterial Welfare Framework Derived from Neurath Without Full Acknowledgment"
+                },
+                {
+                  "badge": "high",
+                  "description": "Neurath's argument in the cited text is not merely that different values should not be reduced to a single metric but that capitalist profit calculation and socialist utility calculation are oriented toward structurally different goals that require structurally different calculation methods — and that this difference is irreducible. The capitalist goal (maximum monetary gain per enterprise) is amenable to unit calculation precisely because it defines a single commensurable objective. The socialist goal (maximum quality of life for all) is not amenable to unit calculation for the same reason that quality of life comparisons are ordinal rather than cardinal. Benanav cites Neurath to support the non-substitutability of values but does not engage the argument that this non-substitutability follows from the structural difference between the two calculation regimes. His own Beyond Capitalism framework retains inter-firm exchange with price-like signals (points), which Neurath's analysis would classify as preserving the structural form of capitalist calculation regardless of its content.",
+                  "implication_for_argument": "Benanav uses Neurath's authority to support the non-substitutability claim but does not engage the argument that connects non-substitutability to specific institutional requirements. This means Benanav's framework inherits the conclusion without the argument that constrains its institutional implications, leaving the dual-currency market mechanism undefended against the objection that it preserves the structural form of capitalist calculation.",
+                  "sin_type": "selective_citation",
+                  "sin_type_label": "Selective Citation",
+                  "source_document_id": "socialist_utility_calculation_and_capitalist_profit_calculation",
+                  "source_quote": "The goal of individual enterprises in the capitalist economy is the maximum gain of money and because of this money calculation makes sense, namely, to establish whether the maximum has been reached. In a socialist economy the goal is the maximum of happiness and quality of life for everyone, of utility, and because of this the calculation of utility, happiness and quality of life makes sense. (As far as we know this is impossible to do in units.)",
+                  "subtitle": "Beyond Capitalism 2 (NLR 154)",
+                  "target_quote": "The theoretical starting point here picks up from Neurath's insight that different goals and values—like good-quality work and housing for all, or sustainable agriculture and ecological balance—are not substitutable; they cannot be reduced to a single metric and ranked or 'optimized' accordingly. Their benefits need to be expressed in kind, for what they are themselves, and evaluated on that basis.",
+                  "theme_name": "Conditions of Life, Quality of Life, and Socialist Utility",
+                  "title": "Socialist Utility vs. Capitalist Profit Distinction Cited Without Its Technical Core"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Introduces the Robinson Crusoe analogy (following Marx) to show that a single economic actor allocates resources by direct comparison of alternatives without any need for a common monetary unit, then scales this up to social planning.",
+                  "Uses the two-farmer example to demonstrate that interpersonal welfare comparisons sometimes yield clear verdicts (both better off under one plan) and sometimes yield no verdict at all (one better off, one worse off), establishing that aggregate calculation is not always possible.",
+                  "Draws on Marx's and Engels's empirical descriptions of proletarian conditions of life to show that the concept was doing analytical work in Marxism from the beginning, even without systematic elaboration.",
+                  "Distinguishes the 'inventory of conditions of life' (the empirically accessible proxy for quality of life) from quality of life itself, making the theory practically applicable through statistics without claiming to measure subjective welfare directly.",
+                  "Argues against the Austrian value theory (Wieser) that a greater amount of goods can have 'less value' than a smaller amount only makes sense in a monetary context; this nonsensical result reveals the monetary presuppositions of the entire theoretical framework."
+                ],
+                "key_claims": [
+                  "Qualities of life can be ordinally ranked (higher, lower, equal) but cannot be measured in cardinal units; it is meaningless to say one quality of life is 'twice as high' as another.",
+                  "When measures produce gains for some and losses for others, there is often no way to calculate which total is preferable; such cases require direct political judgment, not computation.",
+                  "The appropriate analytical tool is the 'relief map of qualities of life': a representation of the distribution of welfare across a population, showing who gains and who loses under different plans, without collapsing into a single aggregate figure.",
+                  "Income descriptions are insufficient as welfare measures: two people with the same income but different life expectancies, working conditions, or access to non-market goods have different conditions of life.",
+                  "The socialist economy is concerned with utility in the Epicurean-utilitarian sense—the full range of pleasure and pain, including freedom, friendship, security, and cultural life—not only with material goods that can be bought for money.",
+                  "Conventional point systems can be introduced for purposes of distribution (equating heavy and light work, for instance) but must be checked against holistic judgments and do not constitute genuine measurement.",
+                  "Social utility calculation means comparing alternative economic orders in their entirety; the productivity of individual enterprises can only be assessed by their contribution to the better total plan."
+                ],
+                "philosophical_commitments": [
+                  "Social Epicureanism: the socialist order is the institutional expression of the Epicurean project of maximizing human happiness, extended from individuals to social groups and freed from theological obstruction.",
+                  "Anti-individualism in welfare theory: the relevant unit of analysis is the class or the whole society, not the isolated individual maximizing utility; solidarity and freedom from dependence are components of welfare.",
+                  "Ordinal rather than cardinal welfare: Neurath consistently resists the move from ranking to measurement, treating the demand for a cardinal unit as a confusion imported from monetary thinking.",
+                  "Pluralism about welfare components: there is no reason to distinguish 'economic' from 'non-economic' items in the analysis of happiness conditions; freedom, friendship, and self-governance belong to the welfare inventory alongside food and housing."
+                ],
+                "source_documents": [
+                  "Economic Plan and Calculation in Kind",
+                  "Socialist Utility Calculation and Capitalist Profit Calculation",
+                  "International Planning for Freedom"
+                ],
+                "summary": "Neurath develops a distinctive technical vocabulary for socialist welfare analysis that displaces both utility maximization (as typically understood) and monetary income measurement. 'Condition of life' (Lebenslage) names the proximate environment of the subject—food, housing, clothing, health, education, working time, leisure, freedom—that causally produces the 'quality of life' (Lebensstimmung), the experiential pleasantness or unpleasantness of existence. Neither can be reduced to a scalar quantity; comparisons between conditions or qualities of life yield ordinal rankings at best, and often cannot be ranked at all. 'Socialist utility' is the goal of the socialist economy understood in these terms: the maximum quality of life for all, not the maximum of any single measurable quantity."
+              },
+              "theme_id": "theme_conditions_of_life_quality_of_life_and_socialist_utility",
+              "theme_name": "Conditions of Life, Quality of Life, and Socialist Utility"
+            },
+            "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [
+                {
+                  "badge": "critical",
+                  "description": "Benanav correctly characterizes the conclusion of Neurath's in-kind calculation argument — no single unit can serve as the basis of socialist rationality — but does not engage the philosophical argument that generates it. Neurath's claim is not merely that current metrics are inadequate but that the relevant welfare quantities are structurally incommensurable: quality of life comparisons are ordinal at best, often yield no verdict at all, and this is a permanent feature of rational social choice rather than a technical limitation. The relief map methodology, the ordinal-but-not-cardinal welfare ranking, and the argument that plan selection requires direct political judgment rather than computation are all absent from Benanav's engagement. In Beyond Capitalism 1, Benanav does develop a multi-criterial framework that implicitly presupposes incommensurability, but he derives this from a different lineage (multi-criteria optimization theory) rather than from Neurath's philosophical argument, leaving the philosophical justification underspecified.",
+                  "implication_for_argument": "Benanav's multi-criterial economy in Beyond Capitalism depends on the claim that values are genuinely incommensurable and cannot be reduced to a single metric. This claim is theoretically central to his framework. By not engaging Neurath's philosophical argument for incommensurability, Benanav leaves this foundational claim without its strongest available defense. The result is that his framework appears to rest on a normative preference for pluralism rather than a structural argument about the nature of welfare measurement.",
+                  "sin_type": "selective_citation",
+                  "sin_type_label": "Selective Citation",
+                  "source_document_id": "economic_plan_and_calculation_in_kind",
+                  "source_quote": "There is no possibility of expressing the effects of measures on the quality of life of human groups under all circumstances in a uniform way and of comparing the effects in one case with the effects in another by way of calculation. In general it is only possible to juxtapose relief maps of the qualities of life; which of them is to be preferred has to be decided each time in the way we decide whether we prefer to eat this or that dish, whether we prefer this or that architectural plan.",
+                  "subtitle": "Automation and the Future of Work I (NLR 153)",
+                  "target_quote": "Neurath proposed calculation in kind as an alternative to both monetary calculation and labour-time accounting, insisting that no single unit could serve as the basis of socialist economic rationality.",
+                  "theme_name": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation",
+                  "title": "Naturalrechnung Cited Without Its Grounding Incommensurability Argument"
+                },
+                {
+                  "badge": "critical",
+                  "description": "Neurath's argument against Mises is not merely that socialist calculation is possible without money but that Mises himself tacitly concedes a non-monetary welfare standard when he condemns monopoly destruction of goods — thereby undermining his own claim that monetary calculation is the uniquely rational basis of economic administration. This immanent critique is Neurath's most technically specific contribution to the calculation debate. Benanav acknowledges Mises as the adversary but treats the Neurath-Mises confrontation as a historical episode rather than engaging its logical structure. He does not reproduce the argument that the case for monetary calculation is internally unstable, which means he loses Neurath's strongest resource for defending in-kind calculation against Austrian objections to his own planning proposals.",
+                  "implication_for_argument": "Without Neurath's immanent critique of Mises, Benanav's rejection of monetary metrics appears to rest on normative preference rather than structural argument. This weakens the theoretical foundations of the Beyond Capitalism framework precisely at the point where it is most exposed — the question of how a non-monetary economy can claim to be more rational than a monetary one rather than merely differently oriented.",
+                  "sin_type": "strategic_silence",
+                  "sin_type_label": "Strategic Silence",
+                  "source_document_id": "economic_plan_and_calculation_in_kind",
+                  "source_quote": "Even the most eager defenders of this point of view usually have to admit at some point or other that money calculation is not always the highest authority to pronounce judgement on social economic efficiency. Thereby they concede that even for them there exists another highest authority according to whose judgement in certain cases money calculation cannot be used.",
+                  "subtitle": "Automation and the Future of Work I (NLR 153)",
+                  "target_quote": "Neurath proposed calculation in kind as an alternative to both monetary calculation and labour-time accounting, insisting that no single unit could serve as the basis of socialist economic rationality.",
+                  "theme_name": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation",
+                  "title": "Neurath's Internal Critique of Mises Absent Despite Direct Relevance"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Engages Mises directly: shows that Mises's own discussion of monopoly destruction concedes the existence of a non-monetary welfare standard, and then generalizes this concession to undermine the entire case for monetary calculation as the uniquely rational basis for economic administration.",
+                  "Distinguishes socialist 'negative quantities' from capitalist 'costs': in capitalism, both labour expended and raw materials consumed appear as money costs; in socialism, only the displeasure of labour counts as a genuine negative entry, while raw materials used are simply reallocated from one side of the ledger to another.",
+                  "Uses the example of comparing economic plans differing in working hours and illness frequency to show that the choice cannot be resolved by calculation but requires direct judgment about which combination is preferable.",
+                  "Draws the contrast between school/hospital administration (which functions without individual monetary balance sheets) and capitalist enterprise, arguing that socialist enterprises should be understood on the school/hospital model.",
+                  "Points to the war economy as a historical instance where even partial in-kind calculation sufficed to direct large-scale production, vindicating the practical applicability of Naturalrechnung."
+                ],
+                "key_claims": [
+                  "Money calculation tells us nothing about true social wealth: dead people, ecological destruction, and intentional restriction of production do not appear as negative entries in capitalist profit accounts.",
+                  "No single unit—not money, not labour hours, not energy units—can serve as the basis of socialist economic calculation, because the relevant quantities are incommensurable.",
+                  "Calculation in kind means accounting for heterogeneous quantities (iron, coal, working hours, illness rates, housing) side by side, without a common denominator.",
+                  "In a planned socialist economy, money prices are fixed arbitrarily by associations or the state and lose their function as spontaneous signals of relative scarcity; monetary calculation therefore loses its 'autonomous character' even before full socialism.",
+                  "The Austrian theory of value (Mises, Wieser) is 'money theory without money': its concepts are derived from money institutions and cannot be transferred to a non-monetary order.",
+                  "Even defenders of money calculation (including Mises) implicitly invoke a non-monetary concept of wealth when condemning monopoly destruction of goods, thereby conceding the point.",
+                  "Calculation in kind can be applied both to the whole economy (the economic plan) and to individual enterprises (technical rationality assessments), but in neither case reduces to a single balance figure."
+                ],
+                "philosophical_commitments": [
+                  "Incommensurability of values: different components of human welfare cannot be reduced to a common scale; comparisons between economic plans require direct judgment, not calculation.",
+                  "Anti-reductionism: the attempt to find a single unit for social calculation is a category error, not a technical challenge awaiting solution.",
+                  "Empiricist suspicion of monetary abstraction: money prices veil rather than reveal underlying economic realities; 'currency', 'exchange rate', 'boom', 'depression' are conceptual obstructions to clear thought.",
+                  "Commitment to Marx's and Engels's position that money and commodity are specifically capitalist categories that do not carry over into socialism.",
+                  "The architect analogy: an economic planner, like an architect designing a fortress, combines available materials toward a complex of goals without needing to reduce their work to a single monetary figure."
+                ],
+                "source_documents": [
+                  "Through War Economy to Economy in Kind",
+                  "Economic Plan and Calculation in Kind",
+                  "Socialist Utility Calculation and Capitalist Profit Calculation"
+                ],
+                "summary": "The technical centerpiece of Neurath's economic thought. Neurath argues that monetary calculation is not merely impractical under socialism but structurally incapable of measuring true economic efficiency or social wealth, because money prices are determined by market forces that include monopoly manipulation, speculation, and the systematic exclusion of social costs. The correct alternative is calculation in kind (Naturalrechnung): accounting for all inputs and outputs in their heterogeneous physical and social units—tons of coal, working hours, frequency of illness, quantities of food—without reducing them to any common denominator. This irreducible multidimensionality is not a defect to be overcome but a permanent feature of rational social choice."
+              },
+              "theme_id": "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation",
+              "theme_name": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation"
+            },
+            "theme_planning_freedom_and_democratic_pluralism": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [],
+              "overview": {
+                "argumentative_moves": [
+                  "Inverts the standard argument that planning requires sacrificing freedom: argues instead that comprehensive planning, by removing market uniformity, actually enables more variety in life-forms and working arrangements than competition.",
+                  "Uses the English fireplace example to illustrate that efficiency standards cannot override the happiness value of traditional customs and homely comfort; social engineers must treat such attachments as genuine welfare inputs, not as irrationalities to be corrected.",
+                  "Develops a typology of eight possible social orders (differentiated by profit as director of production, profit as income source, and party plurality) and argues that types 3-8 are in principle compatible with international planning, while only types 1-2 (unrestricted capitalism) are not.",
+                  "Appeals to historical examples (Netherlands, England, USA) showing that civil liberty and toleration were built by merchants and patricians, not by ideological enthusiasts; this genealogy supports the claim that freedom-preserving planning requires attention to material interests and existing habits rather than ideological transformation.",
+                  "Distinguishes regional, national, and international planning as relatively independent but mutually supporting levels, arguing that far-reaching international planning does not require prior completion of national or regional planning."
+                ],
+                "key_claims": [
+                  "A socialized economy can accommodate greater variety of life-forms than free competition: six-hour days for the elderly, part-time work for parents, agricultural and industrial rotation—all are possible under planning and impossible under market uniformity.",
+                  "Freedom and civil liberty are 'happiness conditions', not merely instruments for other goods; they belong in the welfare inventory alongside food, housing, and health.",
+                  "Planning for freedom requires attention to the 'production of freedom': civil liberty is like a forest—easily destroyed, slow to grow, requiring specific institutional conditions to flourish.",
+                  "Democratic planning is characterized by more-than-one-party organization, multiplicity of loyalties, tolerance of dissent, and the muddle of self-government; these features, though technically inefficient, constitute part of the happiness they protect.",
+                  "Economic tolerance: socialist planning must respect the variety of civilizations and fit each into the administrative economy in its own way; 'world revolution' imposing a single socialist model is tyrannical and self-defeating.",
+                  "International planning bodies organized around specific resources (food, rubber, steel) operating with overlapping jurisdictions could reduce international tensions without requiring a world state, by creating a functional substitute for the integrative role formerly played by the international money order."
+                ],
+                "philosophical_commitments": [
+                  "Pluralism about forms of life and social organization: just as there should be multiple utopias rather than one, there should be multiple socialist forms rather than one mandatory model.",
+                  "Anti-sacrificial ethics of planning: organizations based on readiness to provide immediate happiness are more likely to preserve civil liberty than organizations based on readiness to sacrifice present welfare for future goals.",
+                  "Empirical approach to institutional design: the persistence of social atmospheres (Prussian obedience, Russian violence against rulers, English constitutional evolution) must be studied empirically; democratic institutions cannot be imposed without attending to existing habits and traditions.",
+                  "Pragmatic tolerance: the peaceful co-existence of socialism, guild socialism, and communal settlements within an overarching administrative plan is both possible and desirable; only violent revolutionary forms require exclusion."
+                ],
+                "source_documents": [
+                  "Through War Economy to Economy in Kind",
+                  "International Planning for Freedom",
+                  "Economic Plan and Calculation in Kind"
+                ],
+                "summary": "Neurath resists the identification of comprehensive planning with authoritarian uniformity. Across his corpus, he argues that a well-designed administrative economy can accommodate greater variety of life-forms, working arrangements, and individual choices than the market, because the market's equalizing tendencies (through competition and uniform 'world working hours') enforce a uniformity that planning can relax. The 1942 'International Planning for Freedom' essay develops this into an explicit defense of civil liberty, democratic pluralism, and tolerance as goals of and conditions for legitimate planning, not sacrifices to it. Neurath also introduces the concept of 'economic tolerance': the recognition that different civilizations may require different forms of socialist organization."
+              },
+              "theme_id": "theme_planning_freedom_and_democratic_pluralism",
+              "theme_name": "Planning, Freedom, and Democratic Pluralism"
+            },
+            "theme_social_engineering_utopia_and_scientific_planning": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [
+                {
+                  "badge": "medium",
+                  "description": "Neurath's social engineering methodology is not a free-standing methodological commitment but is specifically tied to the institutional apparatus of in-kind calculation: Ballod-Atlanticus and Popper-Lynkeus are the positive examples precisely because they constructed complete alternative plans using in-kind accounting. The social engineer's role — preparing multiple plan alternatives for democratic selection — presupposes that the plans are constructed in-kind, making alternative configurations of social life directly comparable. Benanav endorses the methodology (multiple plans, democratic selection, anti-propagandism) and invokes Neurath's authority for it, but proposes a Data Matrix and investment infrastructure that uses a dual-currency system rather than in-kind accounting as its technical basis. Neurath would not recognize this as the social engineering methodology he developed, since it lacks the specific technical instrument — calculation in kind — that makes alternative plan configurations genuinely comparable rather than abstractly posited.",
+                  "implication_for_argument": "Benanav uses Neurath's social engineering methodology to legitimize his constructive planning vision while proposing institutional mechanisms (dual-currency market exchange, firm-level operational autonomy) that Neurath regards as precluding the transparency that makes social engineering meaningful. The result is legitimation borrowing: Neurath's methodological authority is deployed for an institutional program he would not endorse.",
+                  "sin_type": "legitimation_borrowing",
+                  "sin_type_label": "Legitimation Borrowing",
+                  "source_document_id": "through_war_economy_to_economy_in_kind",
+                  "source_quote": "Utopias could thus be set alongside the constructions of engineers, and one might with full justice call them constructions of social engineers... Social engineering, to use the expression, likewise begins with fairy tale accounts of the golden age... while in the end it called forth systematic constructions as well, as sketched by Ballod-Atlanticus and Popper-Lynkeus.",
+                  "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                  "target_quote": "Neurath envisaged this process using in-kind units instead of monetary prices, with the plans mapping the economy as a set of direct physical relationships—how much food sustains a population; how many theatre tickets might contribute to a richer life.",
+                  "theme_name": "Social Engineering, Utopia, and Scientific Planning",
+                  "title": "Social Engineering Methodology Invoked to Legitimize Planning Without Its Technical Apparatus"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Historicizes the negative connotation of 'utopia': the same fantastic quality that characterized early mechanical engineering (Leonardo's flying machines) now characterizes social engineering; Daedalus's plans were not less engineering for being unrealized.",
+                  "Contrasts the social engineer's approach (multiple possible designs, empirical knowledge of constraints, democratic submission) with the propagandist's approach (single utopia, exaggerated claims, partisan struggle) and argues that the former produces better results even for practical purposes.",
+                  "Uses military planning as a positive analogy: generals maintained detailed knowledge of strategic precedent ('antiquarian method') and practiced constructing alternative war plans ('scientific utopianism') before every campaign; peacetime social planning should adopt the same methodology.",
+                  "Argues that the war demonstrated what social engineering can achieve: the unprecedented scale of industrial transformation achieved in years shows that deliberate reorganization of production is not inherently slower or less efficient than market evolution.",
+                  "Defends the 'converse Taylor system' as a concrete application of social engineering: rather than selecting workers for given roles (Taylor's method), reorganize roles to fit the actual distribution of human capacities, including the disabled and the non-standard."
+                ],
+                "key_claims": [
+                  "Social engineering treats the whole economy as a giant concern and applies the same rationality a factory manager or architect applies, but must treat human psychological characteristics as given constraints rather than as obstacles to be overcome.",
+                  "Utopias are social engineering constructions; the history of utopian thought is the prehistory of scientific social planning, and utopianism belongs within economic theory, not in its history.",
+                  "Scientific utopianism requires constructing multiple alternative social orders ('teams of utopias'), not selecting a single utopia and propagandizing for it.",
+                  "The 'converse Taylor system' exemplifies the social engineering approach: instead of fitting workers to given organizational forms, design organizational forms that fit the existing variety of human capacities and inclinations.",
+                  "Social planning cannot be separated from democratic legitimacy: the choice between plans belongs to the people and their representatives, not to expert social engineers, who should present arrays of possibilities but not make the final selection.",
+                  "The economic plan is itself a form of utopian construction: it is a scientifically elaborated picture of a possible future state of the total economy, designed to be realizable under specified conditions."
+                ],
+                "philosophical_commitments": [
+                  "Constructivism about social order: the social world is not a natural given but a human artifact that can be consciously designed and redesigned; the chief obstacle to rational planning is not technical difficulty but conceptual conservatism.",
+                  "Empiricism about future possibilities: the future is not deducible from past tendencies; multiple futures are open, and planning requires working through teams of possible orders rather than projecting a single trajectory.",
+                  "Anti-technocracy: expertise should inform but not replace democratic decision; social engineers are like brain trusts preparing options, not like rulers selecting ends.",
+                  "Humanism about planning: the goal is always human happiness in the full Epicurean sense, including freedom, self-development, and variety; planning that enforces uniformity or sacrifices present welfare to future goals is already failing on its own terms."
+                ],
+                "source_documents": [
+                  "Through War Economy to Economy in Kind",
+                  "International Planning for Freedom",
+                  "Economic Plan and Calculation in Kind"
+                ],
+                "summary": "Neurath develops a methodology for socialist planning under the label 'social engineering' and 'scientific utopianism'. Against both the Marxist dismissal of utopian thinking as unscientific and the technocratic aspiration to discover a single optimal solution, Neurath argues that the proper model for planning is the engineer who constructs multiple possible designs and submits them for democratic selection. The social planner must attend to psychological realities (human loves of novelty, attachment to tradition, willfulness) as the mechanical engineer attends to the properties of materials. Utopias, properly understood, are not unscientific fantasies but scientific constructions of possible social orders that can be compared and evaluated."
+              },
+              "theme_id": "theme_social_engineering_utopia_and_scientific_planning",
+              "theme_name": "Social Engineering, Utopia, and Scientific Planning"
+            },
+            "theme_the_economic_plan_as_central_institution_of_socialist_administration": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [
+                {
+                  "badge": "medium",
+                  "description": "Benanav presents Neurath's central office as a mechanism for democratic deliberation over alternative plans — which is accurate as far as it goes. But in Neurath's own text, the central office functions as the institutional replacement for market price signals throughout the economy: it designs plans that make explicit what in the market economy remains hidden behind price aggregates. More specifically, Neurath argues that the efficiency of individual enterprises can only be assessed by their fit within the better total plan — there is no enterprise-level efficiency assessment independent of the plan. Benanav's Investment Boards perform a similar macro-level coordination function, but his firms retain operational autonomy and face market-like budget constraints (the points system) that allow enterprise-level efficiency assessment without reference to the total plan. This is precisely the micro-level institutional function Neurath's plan replaces, and it is stripped from the context in which Benanav invokes Neurath's authority.",
+                  "implication_for_argument": "By decontextualizing the economic plan from its anti-price-signal function at the firm level, Benanav can invoke Neurath's institutional proposal while retaining market coordination mechanisms at the operational level. This produces an institutional architecture that uses Neurathian language (calculation in kind, relief maps, plan alternatives) for a structure Neurath would classify as partial socialization — the exact form he argues is internally contradictory.",
+                  "sin_type": "decontextualization",
+                  "sin_type_label": "Decontextualization",
+                  "source_document_id": "through_war_economy_to_economy_in_kind",
+                  "source_quote": "The central office for measurement in kind, as we might call the office mentioned above, would have as one of its tasks the presentation of the economic process at any given time, but above all would have to design the economic plans for the future. From these economic plans the people's representatives should be able to infer what sort of quantitative shifts would occur if dams are built, if all manure pits are cemented and the like, within the framework of the total economy.",
+                  "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                  "target_quote": "Neurath's concrete proposals for this involved a central office for calculation in kind, where experts, or 'social engineers', would develop comprehensive plans that dramatized the alternatives on which the public needed to decide.",
+                  "theme_name": "The Economic Plan as Central Institution of Socialist Administration",
+                  "title": "The Economic Plan Invoked Without Its Anti-Price-Signal Function at the Firm Level"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Draws an analogy between the economic plan and the state budget, then argues that the plan is more fundamental: even the budget does not reduce school construction and hospital construction to a single monetary result but weighs them directly.",
+                  "Generalizes from the military commander's decision-making—which does not proceed from 'firing units' or 'war units' but directly from strategic judgment—to socialist economic decision-making.",
+                  "Uses the wage-spiral argument to show that money wage negotiations are self-defeating: workers cannot see what their demands amount to because labour markets and goods markets are separated; in-kind negotiation over economic plans makes the real stakes immediately visible.",
+                  "Argues that existing war-economy organizations (central offices, rationing, bulk reserves) provide the institutional skeleton that socialization can immediately occupy and extend.",
+                  "Invokes Ballod-Atlanticus and Popper-Lynkeus as concrete precedents for planning in kind, showing that such plans can be scientifically constructed and are not utopian fantasies."
+                ],
+                "key_claims": [
+                  "The central office for measurement in kind (Zentralstelle für Naturalrechnung) must design alternative economic plans specifying quantitative shifts in all sectors, allowing people's representatives to choose directly between different configurations of social life.",
+                  "The economic plan replaces net profit as the index of economic efficiency: the efficiency of any individual measure can only be assessed by its fit within the better overall plan, not by its own balance sheet.",
+                  "The economic plan replaces net profit as the incentive to production: premiums for higher output take its place, and the director of a socialist firm is rewarded for improving working conditions and reducing illness, not only for output maximization.",
+                  "A fully socialized economy knows no taxes, since all incomes and living standards are directly determined by the totality rather than arising from independent transactions that can then be taxed.",
+                  "Universal statistics—comprehensive, coordinated, and publicly accessible—are the necessary infrastructure for economic planning; the chaotic and fragmented state of existing statistics is a product of capitalist secrecy and competitive individualism.",
+                  "The plan must be uniform and centralistic in principle: partial socialization without a total plan is not genuine socialization but only rearrangement of property within the same chaotic order.",
+                  "The plan is not fixed in all details in advance but serves as a framework within which adjustments can be made, analogous to a state budget that admits in-year alterations."
+                ],
+                "philosophical_commitments": [
+                  "Centralism as a structural requirement: only a sufficiently centralized institutional form can implement the principle 'by society for society'; autonomous sub-units exchanging goods among themselves preserve capitalist logic regardless of ownership.",
+                  "Transparency as a social value: the plan makes the economy 'transparent and controllable', removing the 'veiling concealments' produced by currency, exchange rates, boom and depression.",
+                  "Planning as rational agency: the socialized economy treats society as a single giant concern, applying the same rational calculation a factory manager or farm owner applies to their own enterprise.",
+                  "Democratic legitimacy: the choice between alternative plans belongs to people's representatives, not to technical experts; social engineers prepare arrays of possibilities but do not select among them."
+                ],
+                "source_documents": [
+                  "Through War Economy to Economy in Kind",
+                  "Economic Plan and Calculation in Kind",
+                  "Socialist Utility Calculation and Capitalist Profit Calculation"
+                ],
+                "summary": "Neurath treats the economic plan not as a supplement to market coordination but as its structural replacement. The plan is a multidimensional inventory of all social inputs and outputs—raw materials, machines, labour, conditions of life—designed by a central office and submitted to popular representatives for political decision. It replaces both the price signal (as index of economic efficiency) and net profit (as incentive to production) with direct comparison of alternative total configurations of social life. The plan's function is simultaneously technical (specifying quantitative flows throughout the economy), political (representing the will of the collective about desirable distributions of welfare), and epistemological (making the economy transparent and controllable where money obscures it)."
+              },
+              "theme_id": "theme_the_economic_plan_as_central_institution_of_socialist_administration",
+              "theme_name": "The Economic Plan as Central Institution of Socialist Administration"
+            },
+            "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money": {
+              "engagement": {
+                "benanav_position": "",
+                "divergence_description": "",
+                "engagement_level": "unmapped",
+                "severity": "n/a",
+                "severity_rationale": ""
+              },
+              "findings": [
+                {
+                  "badge": "critical",
+                  "description": "Benanav's Beyond Capitalism 2 explicitly retains inter-firm market exchange as a permanent feature of the multi-criterial economy, justified on grounds of flexibility, responsiveness, and informational advantages. This is precisely the institutional form Neurath identifies as the paradigm error in the socialist tradition — the retention of exchange relationships among enterprises, regardless of ownership form or currency denomination, reproduces capitalist logic. Benanav invokes Neurath's authority throughout Beyond Capitalism 1 for the planning and multi-criterial framework, but never engages Neurath's central institutional argument that genuine socialism requires the abolition of inter-enterprise commodity exchange. The silence is structural: if Benanav engaged this argument, he would have to either defend his market-exchange mechanism against it or concede that his proposals are not socialist in Neurath's sense.",
+                  "implication_for_argument": "Benanav's institutional design in Beyond Capitalism 2 retains precisely the feature Neurath identifies as constitutively capitalist — inter-enterprise exchange with price-like signals. By not engaging Neurath's anti-market-socialist argument, Benanav cannot determine whether his proposals meet the structural criteria for socialism that he himself invokes Neurath to establish. The result is an implicit contradiction between Benanav's Neurathian authority claims and his institutional design.",
+                  "sin_type": "strategic_silence",
+                  "sin_type_label": "Strategic Silence",
+                  "source_document_id": "economic_plan_and_calculation_in_kind",
+                  "source_quote": "The abolition of entrepreneurs is not sufficient to bring about a social or community economy (Gemeinwirtschaft). The aim of Engels' polemics against Dühring was precisely to show that if, after socialisation, the individual economic establishments retain far-reaching autonomous rights and exchange commodities and money between themselves, this will amount to engaging in capitalist economic practices. The capitalism of individuals would then be replaced by 'capitalism of groups'.",
+                  "subtitle": "Beyond Capitalism 2 (NLR 154)",
+                  "target_quote": "Even where final consumption is largely de-commodified, production must rely on extensive exchange among firms. We need only think of the wide range of intermediate goods and services required to produce the most basic final products.",
+                  "theme_name": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money",
+                  "title": "Neurath's Anti-Market-Socialist Argument Absent Despite Direct Relevance to Benanav's Institutional Design"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Deploys Engels's Anti-Dühring at length to show that the Marx-Engels position on moneyless socialism was settled early and consistently; Dühring's labour-money scheme is the paradigm case Neurath repeatedly returns to as a negative example.",
+                  "Argues that partial socialization without a total plan is not socialization at all: nationalizing individual firms while the overall economy remains unplanned only changes the form of exploitation, not its substance.",
+                  "Points to the internal contradictions of market socialism: in a largely centralized late-capitalist economy, prices of raw materials and semi-finished products are already set 'arbitrarily' by concerns and trusts; market socialist prices would be equally conventional and could not serve as genuine efficiency signals.",
+                  "Identifies guild socialism as another form of the Dühring error: retaining a producer-consumer distinction and inter-guild exchange into the socialist period preserves commodity relations.",
+                  "Uses the Mises engagement strategically: by showing that Mises himself invokes a non-monetary welfare concept when condemning monopoly, Neurath demonstrates that the case for money calculation as the uniquely rational basis of economic administration is internally unstable."
+                ],
+                "key_claims": [
+                  "Money and commodity are specifically capitalist categories; socialism is defined by their abolition, not merely by changes in ownership.",
+                  "Labour vouchers, even if usable for consumer distribution, cannot regulate production: they are not money, do not circulate, and cannot serve as a general denominator for the economy.",
+                  "Any scheme that retains exchange relationships among enterprises—whether using metal money, labour money, or conventional index figures—preserves capitalist logic under socialist ownership ('capitalism of groups').",
+                  "Dühring's economic commune system is self-refuting: by retaining metallic money and inter-commune exchange, it reproduces the basic law of commodity production as the basic law of an imagined socialist society.",
+                  "The war economy, despite extensive central direction, was not genuine planning because it served the ruling classes, did not encompass a total plan, and was dismantled after the war; it illustrates the limits of partial socialization.",
+                  "Market socialism (profit as a bookkeeping figure for assessing enterprise efficiency while central planning determines overall allocation) is only a transitional possibility; even here, the profit figure is conventional and arbitrary, not a genuine efficiency signal.",
+                  "Statistical secrecy is essential to competitive individualism; socialist centralism requires full public transparency of economic data."
+                ],
+                "philosophical_commitments": [
+                  "Commitment to Marx's and Engels's revolutionary reading: the transition from capitalism to socialism involves a structural break, not a gradual reform; the socialist economic order differs from the capitalist one as sharply as capitalism differs from feudalism, perhaps more so.",
+                  "Hostility to economic individualism at the level of enterprises: the autonomy of individual firms, even if publicly owned, reproduces competitive logic if those firms exchange commodities among themselves.",
+                  "Centralism as political necessity: only a centralized economic administration can implement the social will expressed in a democratic economic plan; decentralized models either collapse into capitalism or require non-economic coercive coordination.",
+                  "Historicism about concepts: capitalist economic categories (commodity, money, cost, profit) are historically determined; they will become unintelligible in a genuinely post-capitalist order, and socialists should work to develop the new conceptual vocabulary now."
+                ],
+                "source_documents": [
+                  "Economic Plan and Calculation in Kind",
+                  "Through War Economy to Economy in Kind",
+                  "Socialist Utility Calculation and Capitalist Profit Calculation"
+                ],
+                "summary": "Neurath consistently and sharply distinguishes genuine socialism from all hybrid forms that retain money, commodity exchange, or labour vouchers as organizing principles of production. Against Dühring's confederal exchange economy, against guild socialist schemes of inter-enterprise commodity exchange, and against Russian experiments with conventional index figures, Neurath argues that any retention of exchange relationships among semi-autonomous economic units is structurally capitalist, regardless of the ownership form. True socialism requires a single economic personality—society—directing production and distributing conditions of life through a unified plan, with no internal market and no price signals."
+              },
+              "theme_id": "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money",
+              "theme_name": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money"
+            },
+            "theme_war_economy_as_planning_template": {
+              "engagement": {
+                "benanav_position": "Benanav references the war economy primarily as historical context for the socialist calculation debate and as evidence that non-market coordination is feasible at scale. He acknowledges that wartime mobilization demonstrated planning's viability and uses it to rebut claims that large-scale non-market allocation is impossible. However, he does not preserve Neurath's core normative claim that the war economy provides a permanent organizational model and institutional precedent for peacetime socialism. Instead, Benanav treats the war-economy argument as a rhetorical lever against market fundamentalism rather than as the foundation of a positive planning architecture. The war economy appears in Benanav as one historical data point among others (alongside Soviet planning, Keynesian demand management, platform capitalism) rather than as Neurath's 'proof of concept' with direct institutional implications for socialist transition.",
+                "divergence_description": "Neurath's argument is specifically that the war economy is not merely an analogy for socialist planning but its organizational embryo: the central offices, rationing systems, and bulk reserves created by wartime necessity are institutions that socialization can directly inherit and extend. The war economy is a normative model precisely because it suspends profit as the allocative signal and directs production toward a collective goal. Benanav reduces this to a historical analogy proving feasibility, which is a significantly weaker claim. He does not engage Neurath's insistence that socialization must immediately occupy existing war-economy organizations, nor does he treat the war economy's institutional features (central measurement offices, in-kind rationing, comprehensive resource accounting) as blueprints for a permanent planning apparatus. The reduction of the war-economy argument from normative model to historical analogy is the primary divergence here, and it forecloses the entire downstream argument about transition strategy that Neurath builds on this foundation.",
+                "engagement_level": "partial",
+                "severity": "high",
+                "severity_rationale": "This divergence is high severity because it strips the war-economy theme of its normative and institutional content. Neurath's claim that socialization is 'only a small additional political step' from war economy depends on the organizational continuity argument, not merely on the feasibility demonstration. By treating the war economy as historical analogy rather than as institutional template, Benanav loses the specific transitional mechanism Neurath is proposing. This matters for the AOI analysis because Benanav's own planning proposals then lack the concrete organizational grounding Neurath provides, making them more abstract and less actionable."
+              },
+              "findings": [
+                {
+                  "badge": "high",
+                  "description": "Neurath's preface establishes that the war economy is not merely an analogy but a concrete predecessor institution: the organizations, measurement offices, and in-kind accounting systems created by wartime necessity are the direct precursors to socialist administration. His 1919 lecture makes the transition mechanism explicit — 'the present moment is specially suitable for socialization because the organizations of war still exist.' Benanav's formulation treats the same historical episode as a rhetorical demonstration that transformation is possible, without engaging the specific institutional argument that existing wartime organizations should be occupied and extended. The multidimensional content of Neurath's argument — the suspension of profit as allocative signal, the in-kind character of wartime rationing, the central measurement offices — disappears, leaving only the generic feasibility claim.",
+                  "implication_for_argument": "By reducing the war-economy argument to a feasibility demonstration, Benanav loses the institutional specificity that makes Neurath's planning proposals actionable rather than utopian. Benanav's own institutional designs in Beyond Capitalism 2 lack the empirical-transitional anchor Neurath provides, making them vulnerable to the exact objection Neurath thought he had answered: where do these institutions come from and how do we get to them?",
+                  "sin_type": "flattening",
+                  "sin_type_label": "Flattening",
+                  "source_document_id": "through_war_economy_to_economy_in_kind",
+                  "source_quote": "These considerations of things to come led me to the view that a world war would introduce the administrative economy of the future, since it would promote central control of all efforts and materials in the interest of the war. From this new order of things to an administrative economy in the interest of all seemed to me only a small step that would depend on political power.",
+                  "subtitle": "Automation and the Future of Work II (NLR 154)",
+                  "target_quote": "Wartime mobilizations show that rapid economic transformation is possible when states direct investment and production toward collective ends.",
+                  "theme_name": "War Economy as Planning Template",
+                  "title": "War Economy Reduced from Institutional Template to Historical Analogy"
+                }
+              ],
+              "overview": {
+                "argumentative_moves": [
+                  "Contrasts the war crisis (sudden, total, requiring centralized response) with normal capitalist crises (gradual, partial, self-correcting through liquidation) to establish that war economy requires its own theoretical treatment.",
+                  "Appeals to historical precedents—Napoleonic wars, Balkan wars, First and Second World Wars—as empirical laboratories for war economy theory.",
+                  "Argues from the feasibility of wartime planning to the feasibility of peacetime planning: if total mobilization for destruction is possible, total mobilization for welfare is possible.",
+                  "Uses the fragmented, piecemeal character of actual war economies (e.g., sugar price raised without regard for side effects) as a negative argument: even imperfect planning outperforms the market, but comprehensive planning would do far better.",
+                  "Proposes 'Theory of War Economy' as a distinct academic discipline that would, by treating war economy as a special case, simultaneously advance the generality of economic theory as a whole."
+                ],
+                "key_claims": [
+                  "The war crisis differs qualitatively from normal capitalist crises: it hits all parts of the economy simultaneously and requires central coordination of all efforts and materials.",
+                  "War economy suspends the decisive role of net profit; production occurs because it is recognized as appropriate, not because it is profitable to individual entrepreneurs.",
+                  "The organizational apparatus created by wartime necessity—central offices, rationing systems, import/export controls, large associations—can be taken over and adapted for peacetime socialization.",
+                  "The war demonstrated that even fragmentary planning suffices to overcome unemployment and intentional restriction of production.",
+                  "A world war lasting years would necessarily introduce an administrative economy with growing regard for the interests of the people; socialization is then only a small additional political step.",
+                  "The theory of war economy had been neglected because economic theory was not elastic enough to encompass various economic orders at once, treating one specific order as the economic order."
+                ],
+                "philosophical_commitments": [
+                  "Pluralism about economic orders: different economic systems have different rules and must be theorized separately rather than treated as variants of one universal type.",
+                  "Empiricist orientation toward historical and institutional variation: economic theory should proceed from observed forms toward generalization, as modern physicists do with new combinations of empirical material.",
+                  "Technocratic optimism about social engineering: the same rationalization of effort achieved in military conduct can be achieved in peacetime production and distribution.",
+                  "Historicism about economic institutions: the free exchange economy is ending and the administrative economy is beginning; this is a historical tendency, not merely a normative preference."
+                ],
+                "source_documents": [
+                  "Through War Economy to Economy in Kind",
+                  "International Planning for Freedom"
+                ],
+                "summary": "Neurath's most historically distinctive argumentative move: the claim that the organizational features of modern war economy—central direction of production and consumption, suspension of profit as the allocative signal, comprehensive mobilization of resources toward a collective goal—provide an empirical demonstration that large-scale non-market administration is feasible and, properly redirected, could serve social welfare rather than military ends. The war economy functions in Neurath's corpus not as an emergency exception but as a proof of concept and organizational precedent for the peacetime socialist administrative economy."
+              },
+              "theme_id": "theme_war_economy_as_planning_template",
+              "theme_name": "War Economy as Planning Template"
+            }
+          },
+          "structuring_policy": null,
+          "tab_count": null,
+          "top_level_group": null,
+          "view_key": "aoi_by_theme",
+          "view_name": "By Theme",
+          "visibility": "if_data_exists"
+        },
+        {
+          "chain_key": null,
+          "children": [],
+          "data_quality": "standard",
+          "derivation_kind": null,
+          "description": "AOI findings regrouped by the first-class sin taxonomy so the same bounded finding set can be inspected by misuse pattern rather than by source theme.",
+          "engine_key": "aoi_sin_findings",
+          "has_structured_data": true,
+          "items": null,
+          "navigation_state": "normal",
+          "phase_number": 3.0,
+          "position": 1.3,
+          "presentation_stance": "evidence",
+          "priority": "secondary",
+          "promoted_to_top_level": false,
+          "prose_ref_view_key": null,
+          "rationale": "child of included parent",
+          "raw_prose": null,
+          "reading_scaffold": null,
+          "renderer_config": {
+            "badge_field": "badge",
+            "columns": 2,
+            "description_field": "description",
+            "subtitle_field": "theme_name",
+            "title_field": "title"
+          },
+          "renderer_type": "card_grid",
+          "scaffold_hosting_mode": "none",
+          "scope": "aggregated",
+          "selection_priority": "secondary",
+          "semantic_scaffold_type": "none",
+          "source_parent_view_key": "aoi_thematic_analysis",
+          "structured_data": {
+            "decontextualization": [
+              {
+                "badge": "medium",
+                "description": "Benanav presents Neurath's central office as a mechanism for democratic deliberation over alternative plans — which is accurate as far as it goes. But in Neurath's own text, the central office functions as the institutional replacement for market price signals throughout the economy: it designs plans that make explicit what in the market economy remains hidden behind price aggregates. More specifically, Neurath argues that the efficiency of individual enterprises can only be assessed by their fit within the better total plan — there is no enterprise-level efficiency assessment independent of the plan. Benanav's Investment Boards perform a similar macro-level coordination function, but his firms retain operational autonomy and face market-like budget constraints (the points system) that allow enterprise-level efficiency assessment without reference to the total plan. This is precisely the micro-level institutional function Neurath's plan replaces, and it is stripped from the context in which Benanav invokes Neurath's authority.",
+                "implication_for_argument": "By decontextualizing the economic plan from its anti-price-signal function at the firm level, Benanav can invoke Neurath's institutional proposal while retaining market coordination mechanisms at the operational level. This produces an institutional architecture that uses Neurathian language (calculation in kind, relief maps, plan alternatives) for a structure Neurath would classify as partial socialization — the exact form he argues is internally contradictory.",
+                "sin_type": "decontextualization",
+                "sin_type_label": "Decontextualization",
+                "source_document_id": "through_war_economy_to_economy_in_kind",
+                "source_quote": "The central office for measurement in kind, as we might call the office mentioned above, would have as one of its tasks the presentation of the economic process at any given time, but above all would have to design the economic plans for the future. From these economic plans the people's representatives should be able to infer what sort of quantitative shifts would occur if dams are built, if all manure pits are cemented and the like, within the framework of the total economy.",
+                "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                "target_quote": "Neurath's concrete proposals for this involved a central office for calculation in kind, where experts, or 'social engineers', would develop comprehensive plans that dramatized the alternatives on which the public needed to decide.",
+                "theme_name": "The Economic Plan as Central Institution of Socialist Administration",
+                "title": "The Economic Plan Invoked Without Its Anti-Price-Signal Function at the Firm Level"
+              }
+            ],
+            "flattening": [
+              {
+                "badge": "high",
+                "description": "Neurath's preface establishes that the war economy is not merely an analogy but a concrete predecessor institution: the organizations, measurement offices, and in-kind accounting systems created by wartime necessity are the direct precursors to socialist administration. His 1919 lecture makes the transition mechanism explicit — 'the present moment is specially suitable for socialization because the organizations of war still exist.' Benanav's formulation treats the same historical episode as a rhetorical demonstration that transformation is possible, without engaging the specific institutional argument that existing wartime organizations should be occupied and extended. The multidimensional content of Neurath's argument — the suspension of profit as allocative signal, the in-kind character of wartime rationing, the central measurement offices — disappears, leaving only the generic feasibility claim.",
+                "implication_for_argument": "By reducing the war-economy argument to a feasibility demonstration, Benanav loses the institutional specificity that makes Neurath's planning proposals actionable rather than utopian. Benanav's own institutional designs in Beyond Capitalism 2 lack the empirical-transitional anchor Neurath provides, making them vulnerable to the exact objection Neurath thought he had answered: where do these institutions come from and how do we get to them?",
+                "sin_type": "flattening",
+                "sin_type_label": "Flattening",
+                "source_document_id": "through_war_economy_to_economy_in_kind",
+                "source_quote": "These considerations of things to come led me to the view that a world war would introduce the administrative economy of the future, since it would promote central control of all efforts and materials in the interest of the war. From this new order of things to an administrative economy in the interest of all seemed to me only a small step that would depend on political power.",
+                "subtitle": "Automation and the Future of Work II (NLR 154)",
+                "target_quote": "Wartime mobilizations show that rapid economic transformation is possible when states direct investment and production toward collective ends.",
+                "theme_name": "War Economy as Planning Template",
+                "title": "War Economy Reduced from Institutional Template to Historical Analogy"
+              }
+            ],
+            "legitimation_borrowing": [
+              {
+                "badge": "medium",
+                "description": "Neurath's social engineering methodology is not a free-standing methodological commitment but is specifically tied to the institutional apparatus of in-kind calculation: Ballod-Atlanticus and Popper-Lynkeus are the positive examples precisely because they constructed complete alternative plans using in-kind accounting. The social engineer's role — preparing multiple plan alternatives for democratic selection — presupposes that the plans are constructed in-kind, making alternative configurations of social life directly comparable. Benanav endorses the methodology (multiple plans, democratic selection, anti-propagandism) and invokes Neurath's authority for it, but proposes a Data Matrix and investment infrastructure that uses a dual-currency system rather than in-kind accounting as its technical basis. Neurath would not recognize this as the social engineering methodology he developed, since it lacks the specific technical instrument — calculation in kind — that makes alternative plan configurations genuinely comparable rather than abstractly posited.",
+                "implication_for_argument": "Benanav uses Neurath's social engineering methodology to legitimize his constructive planning vision while proposing institutional mechanisms (dual-currency market exchange, firm-level operational autonomy) that Neurath regards as precluding the transparency that makes social engineering meaningful. The result is legitimation borrowing: Neurath's methodological authority is deployed for an institutional program he would not endorse.",
+                "sin_type": "legitimation_borrowing",
+                "sin_type_label": "Legitimation Borrowing",
+                "source_document_id": "through_war_economy_to_economy_in_kind",
+                "source_quote": "Utopias could thus be set alongside the constructions of engineers, and one might with full justice call them constructions of social engineers... Social engineering, to use the expression, likewise begins with fairy tale accounts of the golden age... while in the end it called forth systematic constructions as well, as sketched by Ballod-Atlanticus and Popper-Lynkeus.",
+                "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                "target_quote": "Neurath envisaged this process using in-kind units instead of monetary prices, with the plans mapping the economy as a set of direct physical relationships—how much food sustains a population; how many theatre tickets might contribute to a richer life.",
+                "theme_name": "Social Engineering, Utopia, and Scientific Planning",
+                "title": "Social Engineering Methodology Invoked to Legitimize Planning Without Its Technical Apparatus"
+              }
+            ],
+            "selective_citation": [
+              {
+                "badge": "critical",
+                "description": "Benanav correctly characterizes the conclusion of Neurath's in-kind calculation argument — no single unit can serve as the basis of socialist rationality — but does not engage the philosophical argument that generates it. Neurath's claim is not merely that current metrics are inadequate but that the relevant welfare quantities are structurally incommensurable: quality of life comparisons are ordinal at best, often yield no verdict at all, and this is a permanent feature of rational social choice rather than a technical limitation. The relief map methodology, the ordinal-but-not-cardinal welfare ranking, and the argument that plan selection requires direct political judgment rather than computation are all absent from Benanav's engagement. In Beyond Capitalism 1, Benanav does develop a multi-criterial framework that implicitly presupposes incommensurability, but he derives this from a different lineage (multi-criteria optimization theory) rather than from Neurath's philosophical argument, leaving the philosophical justification underspecified.",
+                "implication_for_argument": "Benanav's multi-criterial economy in Beyond Capitalism depends on the claim that values are genuinely incommensurable and cannot be reduced to a single metric. This claim is theoretically central to his framework. By not engaging Neurath's philosophical argument for incommensurability, Benanav leaves this foundational claim without its strongest available defense. The result is that his framework appears to rest on a normative preference for pluralism rather than a structural argument about the nature of welfare measurement.",
+                "sin_type": "selective_citation",
+                "sin_type_label": "Selective Citation",
+                "source_document_id": "economic_plan_and_calculation_in_kind",
+                "source_quote": "There is no possibility of expressing the effects of measures on the quality of life of human groups under all circumstances in a uniform way and of comparing the effects in one case with the effects in another by way of calculation. In general it is only possible to juxtapose relief maps of the qualities of life; which of them is to be preferred has to be decided each time in the way we decide whether we prefer to eat this or that dish, whether we prefer this or that architectural plan.",
+                "subtitle": "Automation and the Future of Work I (NLR 153)",
+                "target_quote": "Neurath proposed calculation in kind as an alternative to both monetary calculation and labour-time accounting, insisting that no single unit could serve as the basis of socialist economic rationality.",
+                "theme_name": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation",
+                "title": "Naturalrechnung Cited Without Its Grounding Incommensurability Argument"
+              },
+              {
+                "badge": "high",
+                "description": "Neurath's argument in the cited text is not merely that different values should not be reduced to a single metric but that capitalist profit calculation and socialist utility calculation are oriented toward structurally different goals that require structurally different calculation methods — and that this difference is irreducible. The capitalist goal (maximum monetary gain per enterprise) is amenable to unit calculation precisely because it defines a single commensurable objective. The socialist goal (maximum quality of life for all) is not amenable to unit calculation for the same reason that quality of life comparisons are ordinal rather than cardinal. Benanav cites Neurath to support the non-substitutability of values but does not engage the argument that this non-substitutability follows from the structural difference between the two calculation regimes. His own Beyond Capitalism framework retains inter-firm exchange with price-like signals (points), which Neurath's analysis would classify as preserving the structural form of capitalist calculation regardless of its content.",
+                "implication_for_argument": "Benanav uses Neurath's authority to support the non-substitutability claim but does not engage the argument that connects non-substitutability to specific institutional requirements. This means Benanav's framework inherits the conclusion without the argument that constrains its institutional implications, leaving the dual-currency market mechanism undefended against the objection that it preserves the structural form of capitalist calculation.",
+                "sin_type": "selective_citation",
+                "sin_type_label": "Selective Citation",
+                "source_document_id": "socialist_utility_calculation_and_capitalist_profit_calculation",
+                "source_quote": "The goal of individual enterprises in the capitalist economy is the maximum gain of money and because of this money calculation makes sense, namely, to establish whether the maximum has been reached. In a socialist economy the goal is the maximum of happiness and quality of life for everyone, of utility, and because of this the calculation of utility, happiness and quality of life makes sense. (As far as we know this is impossible to do in units.)",
+                "subtitle": "Beyond Capitalism 2 (NLR 154)",
+                "target_quote": "The theoretical starting point here picks up from Neurath's insight that different goals and values—like good-quality work and housing for all, or sustainable agriculture and ecological balance—are not substitutable; they cannot be reduced to a single metric and ranked or 'optimized' accordingly. Their benefits need to be expressed in kind, for what they are themselves, and evaluated on that basis.",
+                "theme_name": "Conditions of Life, Quality of Life, and Socialist Utility",
+                "title": "Socialist Utility vs. Capitalist Profit Distinction Cited Without Its Technical Core"
+              }
+            ],
+            "strategic_silence": [
+              {
+                "badge": "critical",
+                "description": "Neurath's argument against Mises is not merely that socialist calculation is possible without money but that Mises himself tacitly concedes a non-monetary welfare standard when he condemns monopoly destruction of goods — thereby undermining his own claim that monetary calculation is the uniquely rational basis of economic administration. This immanent critique is Neurath's most technically specific contribution to the calculation debate. Benanav acknowledges Mises as the adversary but treats the Neurath-Mises confrontation as a historical episode rather than engaging its logical structure. He does not reproduce the argument that the case for monetary calculation is internally unstable, which means he loses Neurath's strongest resource for defending in-kind calculation against Austrian objections to his own planning proposals.",
+                "implication_for_argument": "Without Neurath's immanent critique of Mises, Benanav's rejection of monetary metrics appears to rest on normative preference rather than structural argument. This weakens the theoretical foundations of the Beyond Capitalism framework precisely at the point where it is most exposed — the question of how a non-monetary economy can claim to be more rational than a monetary one rather than merely differently oriented.",
+                "sin_type": "strategic_silence",
+                "sin_type_label": "Strategic Silence",
+                "source_document_id": "economic_plan_and_calculation_in_kind",
+                "source_quote": "Even the most eager defenders of this point of view usually have to admit at some point or other that money calculation is not always the highest authority to pronounce judgement on social economic efficiency. Thereby they concede that even for them there exists another highest authority according to whose judgement in certain cases money calculation cannot be used.",
+                "subtitle": "Automation and the Future of Work I (NLR 153)",
+                "target_quote": "Neurath proposed calculation in kind as an alternative to both monetary calculation and labour-time accounting, insisting that no single unit could serve as the basis of socialist economic rationality.",
+                "theme_name": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation",
+                "title": "Neurath's Internal Critique of Mises Absent Despite Direct Relevance"
+              },
+              {
+                "badge": "critical",
+                "description": "Benanav's Beyond Capitalism 2 explicitly retains inter-firm market exchange as a permanent feature of the multi-criterial economy, justified on grounds of flexibility, responsiveness, and informational advantages. This is precisely the institutional form Neurath identifies as the paradigm error in the socialist tradition — the retention of exchange relationships among enterprises, regardless of ownership form or currency denomination, reproduces capitalist logic. Benanav invokes Neurath's authority throughout Beyond Capitalism 1 for the planning and multi-criterial framework, but never engages Neurath's central institutional argument that genuine socialism requires the abolition of inter-enterprise commodity exchange. The silence is structural: if Benanav engaged this argument, he would have to either defend his market-exchange mechanism against it or concede that his proposals are not socialist in Neurath's sense.",
+                "implication_for_argument": "Benanav's institutional design in Beyond Capitalism 2 retains precisely the feature Neurath identifies as constitutively capitalist — inter-enterprise exchange with price-like signals. By not engaging Neurath's anti-market-socialist argument, Benanav cannot determine whether his proposals meet the structural criteria for socialism that he himself invokes Neurath to establish. The result is an implicit contradiction between Benanav's Neurathian authority claims and his institutional design.",
+                "sin_type": "strategic_silence",
+                "sin_type_label": "Strategic Silence",
+                "source_document_id": "economic_plan_and_calculation_in_kind",
+                "source_quote": "The abolition of entrepreneurs is not sufficient to bring about a social or community economy (Gemeinwirtschaft). The aim of Engels' polemics against Dühring was precisely to show that if, after socialisation, the individual economic establishments retain far-reaching autonomous rights and exchange commodities and money between themselves, this will amount to engaging in capitalist economic practices. The capitalism of individuals would then be replaced by 'capitalism of groups'.",
+                "subtitle": "Beyond Capitalism 2 (NLR 154)",
+                "target_quote": "Even where final consumption is largely de-commodified, production must rely on extensive exchange among firms. We need only think of the wide range of intermediate goods and services required to produce the most basic final products.",
+                "theme_name": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money",
+                "title": "Neurath's Anti-Market-Socialist Argument Absent Despite Direct Relevance to Benanav's Institutional Design"
+              }
+            ],
+            "unacknowledged_debt": [
+              {
+                "badge": "high",
+                "description": "Benanav's argument that welfare components are non-compensatory, that gains in one domain cannot fully offset losses in another, and that plan selection among non-dominated options is inherently political rather than technical directly reproduces the logical structure of Neurath's conditions-of-life framework. Neurath develops this through the relief map methodology and the specific claim that quality of life comparisons are ordinal but not cardinal. Benanav's multi-criterial optimization framework reaches similar conclusions through a different formal apparatus (multi-criteria decision analysis) without noting that Neurath had already established the philosophical foundations for the same conclusions in 1925. The footnote crediting Neurath (footnote 41 in Beyond Capitalism 1) attributes to him the specific institutional proposals around the central office for calculation in kind, but not the philosophical framework for welfare incommensurability that is more directly operative in Benanav's own argument.",
+                "implication_for_argument": "By not acknowledging the debt to Neurath's conditions-of-life framework at the philosophical level, Benanav misses the opportunity to deploy Neurath's most sophisticated arguments against the objection that multi-criterial frameworks merely reflect normative preferences rather than structural features of rational social choice. The scholarly presentation of the multi-criterial framework would be more defensible if it explicitly grounded the incommensurability claim in Neurath's welfare theory.",
+                "sin_type": "unacknowledged_debt",
+                "sin_type_label": "Unacknowledged Debt",
+                "source_document_id": "economic_plan_and_calculation_in_kind",
+                "source_quote": "The pleasantness or unpleasantness of experience we propose to call 'quality of life' [Lebensstimmung] – or just 'quality'. We use this word which covers happiness as well as unhappiness; wealth as well as poverty... We cannot, however, say of one quality of life that it is twice or four and a half times as high as another.",
+                "subtitle": "Beyond Capitalism 1 (NLR 153)",
+                "target_quote": "A multi-criterial economy would treat those choices as ethical and political, with different production methods reflecting different ways of balancing society's multiple goals. The same openness to adjudicated multiplicity would need to extend across the economy as a whole, creating a system in which coordination is not about discovering a singular optimal path but navigating trade-offs between competing priorities.",
+                "theme_name": "Conditions of Life, Quality of Life, and Socialist Utility",
+                "title": "Multi-Criterial Welfare Framework Derived from Neurath Without Full Acknowledgment"
+              }
+            ]
+          },
+          "structuring_policy": null,
+          "tab_count": null,
+          "top_level_group": null,
+          "view_key": "aoi_by_sin_type",
+          "view_name": "By Sin Type",
+          "visibility": "if_data_exists"
+        },
+        {
+          "chain_key": null,
+          "children": [],
+          "data_quality": "standard",
+          "derivation_kind": null,
+          "description": "Structured AOI closeout over the selected thinker: summary, engagement pattern, key divergences, sin distribution, and reading implications.",
+          "engine_key": "aoi_thematic_report",
+          "has_structured_data": true,
+          "items": null,
+          "navigation_state": "normal",
+          "phase_number": 4.0,
+          "position": 1.4,
+          "presentation_stance": "summary",
+          "priority": "secondary",
+          "promoted_to_top_level": false,
+          "prose_ref_view_key": null,
+          "rationale": "child of included parent",
+          "raw_prose": null,
+          "reading_scaffold": null,
+          "renderer_config": {
+            "expand_first": true,
+            "section_renderers": {
+              "engagement_pattern": {
+                "config": {
+                  "pull_quote_min_length": 90,
+                  "section_description": "Overall pattern of Benanav's engagement with the selected source thinker."
+                },
+                "renderer_type": "annotated_prose"
+              },
+              "key_divergences": {
+                "config": {
+                  "badge_field": "badge",
+                  "description_field": "description",
+                  "section_description": "Highest-salience AOI divergences.",
+                  "subtitle_field": "subtitle",
+                  "title_field": "title"
+                },
+                "renderer_type": "mini_card_list"
+              },
+              "reading_implications": {
+                "config": {
+                  "pull_quote_min_length": 90,
+                  "section_description": "What the bounded AOI result implies for reading Benanav's use of the selected source thinker."
+                },
+                "renderer_type": "annotated_prose"
+              },
+              "sin_distribution": {
+                "config": {
+                  "description_field": "description",
+                  "section_description": "Distribution of findings across the AOI sin taxonomy.",
+                  "subtitle_field": "count",
+                  "title_field": "sin_type"
+                },
+                "renderer_type": "mini_card_list"
+              },
+              "summary": {
+                "config": {
+                  "pull_quote_min_length": 90,
+                  "section_description": "Bounded AOI closeout summary."
+                },
+                "renderer_type": "annotated_prose"
+              }
+            },
+            "sections": [
+              {
+                "key": "summary",
+                "title": "Summary"
+              },
+              {
+                "key": "engagement_pattern",
+                "title": "Engagement Pattern"
+              },
+              {
+                "key": "key_divergences",
+                "title": "Key Divergences"
+              },
+              {
+                "key": "sin_distribution",
+                "title": "Sin Distribution"
+              },
+              {
+                "key": "reading_implications",
+                "title": "Reading Implications"
+              }
+            ]
+          },
+          "renderer_type": "accordion",
+          "scaffold_hosting_mode": "none",
+          "scope": "aggregated",
+          "selection_priority": "secondary",
+          "semantic_scaffold_type": "none",
+          "source_parent_view_key": "aoi_thematic_analysis",
+          "structured_data": {
+            "engagement_pattern": "Benanav's engagement with Neurath follows a consistent asymmetric gradient across all four source works. On the political-normative surface — democratic planning over market allocation, welfare pluralism over GDP maximization, planning as productive of freedom rather than antagonistic to it, the legitimacy of constructive socialist imagination — engagement is substantive and the convergence is real. On the technical-structural core — that in-kind calculation is not a transitional expedient but the permanent and necessary form of socialist economic rationality; that monetary calculation is not merely inadequate but structurally incapable of measuring social wealth; that any retention of inter-enterprise commodity exchange reproduces capitalist logic regardless of ownership form — engagement collapses into omission, framing reduction, or selective citation. The war economy argument, Neurath's primary empirical anchor for in-kind administration as historically demonstrated rather than merely theorized, is consistently reduced from normative institutional template to historical feasibility analogy. The Mises immanent critique — Neurath's most technically powerful argument — is named but not engaged. The socialist utility versus capitalist profit calculation distinction, the hinge on which the entire moneyless economy argument turns, is cited in a single footnote for its anti-reductionist conclusion while its structural implication (that no modified pricing mechanism can substitute for in-kind calculation) is ignored. The pattern is one of mining Neurath for conclusions while declining the arguments that constrain those conclusions institutionally.",
+            "key_divergences": [
+              {
+                "badge": "critical",
+                "description": "Benanav correctly identifies Neurath's in-kind calculation as the key socialist response to Mises and cites it as authority for his multi-criterial framework. However, he does not reproduce Neurath's structural argument that incommensurability of welfare components is permanent and irreducible — not a transitional limitation awaiting better metrics — and that this makes in-kind calculation not a second-best solution but the only structurally adequate form of socialist economic rationality. The relief map methodology, the ordinal-but-not-cardinal welfare ranking, and the argument that plan selection requires direct political judgment rather than computation are all absent. Benanav's own multi-criterial framework depends on the incommensurability claim but derives it from a different lineage (multi-criteria optimization theory) without the philosophical justification Neurath provides, leaving it exposed to the objection that sufficiently sophisticated welfare indices could serve as common denominators. More critically, Benanav's institutional design — a dual-currency system with inter-firm market exchange and price-like signals — is precisely what Neurath argues must be structurally abolished, not supplemented or modified.",
+                "subtitle": "In-kind calculation treated as one method among others rather than the permanent structural necessity Neurath argued",
+                "title": "Naturalrechnung Cited Without Its Grounding Incommensurability Argument"
+              },
+              {
+                "badge": "critical",
+                "description": "Benanav's Beyond Capitalism 2 explicitly retains inter-firm market exchange as a permanent coordinating mechanism, justified on grounds of flexibility and adaptive responsiveness. This is precisely the institutional form Neurath identifies as the paradigm error in socialist thought — the 'capitalism of groups' thesis derived from Engels's Anti-Dühring: any scheme retaining exchange relationships among enterprises, regardless of ownership form or currency denomination, reproduces capitalist logic. Neurath's systematic argument that partial socialization without a total plan is not genuine socialization, that labour vouchers cannot regulate production even if they distribute consumption, and that market socialist prices are either arbitrary (losing their efficiency-signal function) or genuine (reproducing capitalist allocation) — all directly relevant to evaluating Benanav's proposals — are entirely absent from Benanav's engagement. The silence is structural: engaging this argument would require Benanav either to defend his market-exchange mechanism against it or to concede that his proposals fall outside Neurath's definition of genuine socialism.",
+                "subtitle": "Beyond Capitalism retains inter-firm commodity exchange while invoking Neurathian authority for planning",
+                "title": "Neurath's Anti-Market-Socialist Argument Absent Despite Direct Relevance"
+              },
+              {
+                "badge": "critical",
+                "description": "Benanav cites Neurath's 1925 'Socialist Utility Calculation and Capitalist Profit Calculation' in a footnote as authority for the non-substitutability of values. This is the favorable slice of Neurath's position. But the same text contains the argument that socialist calculation and capitalist profit calculation are structurally incompatible forms of economic rationality — not merely differently oriented, but requiring qualitatively different institutional forms — because the socialist goal (maximum quality of life for all) is formally incommensurable while the capitalist goal (maximum monetary gain per enterprise) defines a single commensurable objective for which unit calculation is appropriate. The implication that no modification of the pricing mechanism, including dual currencies, can substitute for in-kind calculation in a genuinely socialist economy is precisely what Benanav needs to confront and does not. The citation provides Neurathian authority for the conclusion while the argument that constrains its institutional implications is omitted.",
+                "subtitle": "The normative foundation of Neurath's economic program invoked for conclusions while its structural implications are ignored",
+                "title": "Socialist Utility vs. Capitalist Profit Distinction Cited Without Its Technical Core"
+              },
+              {
+                "badge": "high",
+                "description": "Neurath's war-economy argument is specifically an institutional transition argument: the organizational apparatus created by wartime necessity — central offices, in-kind rationing, bulk reserves, suspension of profit as allocative signal — constitutes the embryo of socialist administration and can be directly occupied and extended. Benanav consistently reduces this to a generic feasibility demonstration: large-scale non-market coordination is historically possible. The specific institutional argument — that socialization in 1919 required 'only a small additional political step' precisely because the organizational apparatus already existed — is never engaged. This reduction strips Neurath's most distinctive empirical claim of its operational content, and leaves Benanav's own institutional proposals (Investment Boards, Data Matrix, Technical Associations) without the empirical-transitional anchor Neurath provides, making them more abstract and less actionable relative to the Neurathian benchmark they invoke.",
+                "subtitle": "The empirical anchor of Neurath's planning theory stripped of its transitional and organizational content",
+                "title": "War Economy Reduced from Institutional Template to Historical Analogy"
+              },
+              {
+                "badge": "high",
+                "description": "Benanav's core welfare argument — that benefits across different criteria cannot be reduced to a single metric and that plan selection requires direct political judgment rather than technical optimization — replicates Neurath's conditions-of-life framework and relief map methodology. The credit given to Neurath focuses on his institutional proposals rather than the welfare epistemology that is more directly operative in Benanav's own argument. By not acknowledging the debt at the philosophical level, Benanav misses the opportunity to deploy Neurath's most sophisticated arguments against the objection that multi-criterial frameworks merely reflect normative preferences rather than structural features of rational social choice. The unacknowledged debt also means the framework inherits the conclusion without the argument, leaving the incommensurability claim underdefended.",
+                "subtitle": "Conditions-of-life framework and relief map methodology operative in Benanav's argument but unacknowledged at the philosophical level",
+                "title": "Multi-Criterial Welfare Framework Derived from Neurath Without Full Acknowledgment"
+              },
+              {
+                "badge": "medium",
+                "description": "Benanav presents Neurath's central office for calculation in kind as a precedent for democratic deliberation over alternative plans — accurate as far as it goes. But in Neurath's argument, the central office functions as the institutional replacement for market price signals throughout the economy, including at the enterprise level: the efficiency of individual firms can only be assessed by their fit within a better total plan, not by their own operational balance. Benanav's firms retain operational autonomy and face market-like budget constraints (the points system) that allow enterprise-level efficiency assessment without reference to a total in-kind plan. By invoking Neurath's institutional proposal while stripping it from the context that makes it intelligible — its anti-price-signal function at the micro level — Benanav creates the impression of Neurathian institutional grounding for an architecture Neurath would classify as partial socialization.",
+                "subtitle": "Neurath's central institutional proposal decontextualized from the micro-level replacement function that makes it structurally significant",
+                "title": "The Economic Plan Invoked Without Its Anti-Price-Signal Function at the Firm Level"
+              }
+            ],
+            "reading_implications": "Readers of Benanav's Beyond Capitalism essays should approach the Neurathian framework with a calibrated skepticism about what has and has not been inherited. The genuine intellectual debts are real and consequential: Benanav correctly identifies Neurath's multi-criterial orientation, his democratic utopianism, and his argument that planning can produce rather than constrain freedom as important resources for contemporary socialist thought. These inheritances are not merely rhetorical — they structure the substantive architecture of Benanav's proposals. However, the specific institutional conclusions Benanav draws — that a dual-currency market system retaining inter-firm commodity exchange and price-like signals can constitute a genuine post-capitalist economy — are precisely what Neurath's technical arguments are designed to rule out. Readers who encounter Neurath in Benanav's footnotes and treat the citation as evidence that Benanav's institutional design is Neurathian in its foundations should read Neurath's 'Economic Plan and Calculation in Kind' and 'Socialist Utility Calculation and Capitalist Profit Calculation' directly. Those texts contain the arguments Benanav does not engage: that in-kind calculation is the permanent structural form of socialist rationality (not a transitional expedient), that the socialist utility versus capitalist profit distinction entails specific institutional requirements no pricing mechanism can substitute for, and that any economy retaining enterprise-level commodity exchange — however modified its currency form — falls on the wrong side of the line between genuine socialism and what Neurath calls 'capitalism of groups.' The implication is that Benanav's post-scarcity and automation arguments, evaluated against the Neurath he invokes as authority, occupy a theoretical position closer to sophisticated market socialism than to Neurath's moneyless administrative economy — a position Neurath spent considerable energy arguing against. Whether Benanav's framework is nonetheless defensible on its own terms is a separate question; the AOI finding is that it cannot straightforwardly claim Neurathian warrant for its institutional design while remaining silent on Neurath's central institutional argument.",
+            "sin_distribution": [
+              {
+                "count": 2,
+                "description": "Benanav cites Neurath's in-kind calculation proposal and his socialist utility vs. capitalist profit distinction as authority for the multi-criterial framework while engaging only their anti-reductionist conclusions. The philosophical arguments that ground those conclusions — permanent incommensurability, the structural difference between socialist and capitalist calculation regimes — are not reproduced, leaving the framework without the strongest available defense of its foundational claims.",
+                "sin_type": "selective_citation"
+              },
+              {
+                "count": 2,
+                "description": "Two critical omissions with structural significance: Neurath's immanent critique of Mises (showing that even Mises concedes a non-monetary welfare standard, thereby undermining the case for monetary calculation as uniquely rational) is named but not engaged, despite its direct relevance to Benanav's defense of non-monetary planning. Neurath's systematic argument against market socialism and labour-money (any retention of enterprise-level commodity exchange reproduces capitalist logic) is entirely absent, despite being directly applicable to Benanav's dual-currency market mechanism.",
+                "sin_type": "strategic_silence"
+              },
+              {
+                "count": 1,
+                "description": "The war economy argument is consistently reduced from a normative institutional model — whose specific organizational forms (central offices, in-kind rationing, suspension of profit) provide the direct empirical template for socialist transition — to a generic historical analogy demonstrating political feasibility. This strips the argument of its most distinctive content: the claim that the transition to socialism runs through already-existing institutional forms.",
+                "sin_type": "flattening"
+              },
+              {
+                "count": 1,
+                "description": "Benanav's multi-criterial welfare framework — built around the non-compensatory, ordinally rankable but not cardinally measurable character of welfare components — directly replicates Neurath's conditions-of-life framework and relief map methodology. The credit given to Neurath focuses on his institutional proposals rather than the welfare epistemology operative in Benanav's own argument, constituting an unacknowledged philosophical debt.",
+                "sin_type": "unacknowledged_debt"
+              },
+              {
+                "count": 1,
+                "description": "Neurath's central office for calculation in kind is invoked as precedent for democratic deliberation while being stripped from the context that gives it structural significance: its function as the institutional replacement for price signals at the enterprise level, not merely a macro-level investment coordination mechanism.",
+                "sin_type": "decontextualization"
+              },
+              {
+                "count": 1,
+                "description": "Benanav invokes Neurath's social engineering methodology — multiple alternative plans, democratic submission, anti-propagandist utopianism — to legitimize his constructive planning vision, while proposing institutional mechanisms (dual-currency market exchange, firm-level operational autonomy with price-like signals) that Neurath regards as precluding the transparency that makes social engineering meaningful. Neurath's methodological authority is deployed for an institutional program he would not endorse.",
+                "sin_type": "legitimation_borrowing"
+              }
+            ],
+            "summary": "Benanav's two-part Beyond Capitalism essay engages Neurath substantively but asymmetrically. The engagement is genuine and consequential where Neurath functions as a methodological and political resource — scientific utopianism, democratic planning, the incompatibility of single-criterion optimization with socialist aims, and the compatibility of planning with freedom. It becomes selective, distorting, or strategically silent precisely where Neurath is most technically distinctive: the permanent structural necessity of in-kind calculation, the categorical rejection of any economy retaining commodity exchange among enterprises, and the specific institutional architecture (central measurement office, multidimensional in-kind plan, universal statistics) that gives those conclusions their operational force. The net result is that Benanav invokes Neurathian authority for a post-capitalist planning project whose institutional core — a dual-currency market system retaining inter-firm exchange and price-like signals — is precisely the hybrid form Neurath argued, at length, was structurally incapable of constituting genuine socialism. Whether this constitutes productive creative misreading, selective appropriation, or inadvertent legitimation borrowing is the central question the evidence forces, and on balance the answer is selective appropriation shading into legitimation borrowing: Benanav takes Neurath's conclusions without Neurath's arguments, and deploys Neurath's authority for institutional arrangements Neurath explicitly argued against."
+          },
+          "structuring_policy": null,
+          "tab_count": null,
+          "top_level_group": null,
+          "view_key": "aoi_thematic_report",
+          "view_name": "Report",
+          "visibility": "if_data_exists"
+        }
+      ],
+      "data_quality": "standard",
+      "derivation_kind": null,
+      "description": "Top-level AOI thematic analysis surface for one selected source thinker. Organizes source documents, theme-led findings, sin-type groupings, and the structured report under one parent container.",
+      "engine_key": null,
+      "has_structured_data": false,
+      "items": null,
+      "navigation_state": "normal",
+      "phase_number": null,
+      "position": 1.0,
+      "presentation_stance": "interactive",
+      "priority": "primary",
+      "promoted_to_top_level": false,
+      "prose_ref_view_key": null,
+      "rationale": "The primary AOI surface for this single-thinker thematic analysis. The tab container with its auto-included child views (source documents, by-theme grouping, by-sin-type grouping, and report detail) provides exactly the right navigational structure for a bounded four-text source corpus. The interactive stance allows readers to move between the thematic overview, the engagement map, and the specific sin findings without losing orientation.",
+      "raw_prose": null,
+      "reading_scaffold": null,
+      "renderer_config": {
+        "default_tab": 1,
+        "show_count_badges": true,
+        "tab_style": "underline"
+      },
+      "renderer_type": "tab",
+      "scaffold_hosting_mode": "none",
+      "scope": "aggregated",
+      "selection_priority": "primary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": null,
+      "structured_data": null,
+      "structuring_policy": null,
+      "tab_count": null,
+      "top_level_group": null,
+      "view_key": "aoi_thematic_analysis",
+      "view_name": "Thematic Analysis",
+      "visibility": "if_data_exists"
+    }
+  ]
+}

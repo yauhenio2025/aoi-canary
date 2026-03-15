@@ -1,0 +1,242 @@
+{
+  "artifacts_ready": false,
+  "consumer_key": "aoi-canary",
+  "job_id": "job-abe51e9f629f",
+  "manifest_schema_version": 1,
+  "plan_id": "plan-37746ee2a2cd",
+  "prepared_at": "2026-03-14T23:15:42.697049",
+  "presentation_content_hash": "4eab43c9a62b201b37c703f5a8c0fc924df23d1bdb024fd6f55e40604949f4b0",
+  "presentation_contract_version": 1,
+  "presentation_hash": "1615532ca060e443be452dc2c5f19708b0c2c0ed80515ca053abd26ea8de3593",
+  "resolver_version": "bounded-dynamism-phase2",
+  "strategy_summary": "This AOI analysis examines Aaron Benanav's work through the lens of Otto Neurath's political economy — specifically Neurath's theory of in-kind calculation, war economy as a planning model, socialist utility, and the critique of monetary commensuration. The four source corpus texts span Neurath's core arguments: that a socialist economy should operate through calculation in kind rather than money, that war economies demonstrate the feasibility of non-market coordination, that international planning is both necessary and achievable, and that socialist utility is categorically different from capitalist profit calculation. These are tightly clustered, technically dense texts with a distinctive vocabulary (Verwaltungswirtschaft, naturalwirtschaft, in-kind balances) and a polemical edge directed at both market socialists and orthodox Marxists. The analytical task is to determine whether Benanav genuinely engages, partially engages, ignores, or distorts these Neurathian commitments.\n\nBecause all four source documents belong to a single thinker and constitute a coherent, internally cross-referencing corpus, Phase 1.0 (Thematic Synthesis) is the interpretive keystone of the workflow. Neurath's themes are not self-evident to readers unfamiliar with the socialist calculation debate, and his claim-structure involves technical distinctions — between in-kind and monetary calculation, between war-economy planning and market socialism — that must be carefully reconstructed before engagement can be mapped. Standard depth is appropriate throughout: the corpus is substantive but bounded, and the four texts are relatively short and focused. The engagement mapping and sin-finding phases can proceed efficiently once the thematic map is established.",
+  "thinker_name": "Aaron Benanav",
+  "trace_schema_version": 1,
+  "view_count": 5,
+  "views": [
+    {
+      "child_view_keys": [
+        "aoi_by_sin_type",
+        "aoi_by_theme",
+        "aoi_source_documents",
+        "aoi_thematic_report"
+      ],
+      "derivation_kind": null,
+      "description": "Top-level AOI thematic analysis surface for one selected source thinker. Organizes source documents, theme-led findings, sin-type groupings, and the structured report under one parent container.",
+      "display_parent_view_key": null,
+      "legacy_visibility": "if_data_exists",
+      "navigation_state": "normal",
+      "position": 1.0,
+      "presentation_stance": "interactive",
+      "promoted_to_top_level": false,
+      "renderer_config": {
+        "default_tab": 1,
+        "show_count_badges": true,
+        "tab_style": "underline"
+      },
+      "renderer_type": "tab",
+      "scaffold_hosting_mode": "none",
+      "selection_priority": "primary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": null,
+      "structuring_policy": null,
+      "top_level_group": null,
+      "view_key": "aoi_thematic_analysis",
+      "view_name": "Thematic Analysis"
+    },
+    {
+      "child_view_keys": [],
+      "derivation_kind": null,
+      "description": "Inventory of the selected source thinker's documents used to ground the AOI thematic analysis.",
+      "display_parent_view_key": "aoi_thematic_analysis",
+      "legacy_visibility": "if_data_exists",
+      "navigation_state": "normal",
+      "position": 1.1,
+      "presentation_stance": "evidence",
+      "promoted_to_top_level": false,
+      "renderer_config": {
+        "badge_field": "badge",
+        "columns": 2,
+        "description_field": "description",
+        "subtitle_field": "subtitle",
+        "title_field": "title"
+      },
+      "renderer_type": "card_grid",
+      "scaffold_hosting_mode": "none",
+      "selection_priority": "secondary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": "aoi_thematic_analysis",
+      "structuring_policy": null,
+      "top_level_group": null,
+      "view_key": "aoi_source_documents",
+      "view_name": "Source Documents"
+    },
+    {
+      "child_view_keys": [],
+      "derivation_kind": null,
+      "description": "Theme-first AOI surface. Each theme becomes one accordion section exposing the source-theme overview, Benanav's engagement, and the flat findings tied to that theme.",
+      "display_parent_view_key": "aoi_thematic_analysis",
+      "legacy_visibility": "if_data_exists",
+      "navigation_state": "normal",
+      "position": 1.2,
+      "presentation_stance": "comparison",
+      "promoted_to_top_level": false,
+      "renderer_config": {
+        "expand_first": true,
+        "sections": [
+          {
+            "key": "theme_war_economy_as_planning_template",
+            "title": "War Economy as Planning Template"
+          },
+          {
+            "key": "theme_in_kind_calculation_naturalrechnung_and_the_rejection_of_monetary_calculation",
+            "title": "In-Kind Calculation (Naturalrechnung) and the Rejection of Monetary Calculation"
+          },
+          {
+            "key": "theme_the_economic_plan_as_central_institution_of_socialist_administration",
+            "title": "The Economic Plan as Central Institution of Socialist Administration"
+          },
+          {
+            "key": "theme_conditions_of_life_quality_of_life_and_socialist_utility",
+            "title": "Conditions of Life, Quality of Life, and Socialist Utility"
+          },
+          {
+            "key": "theme_the_socialist_administrative_economy_as_moneyless_order_against_market_socialism_and_labour_money",
+            "title": "The Socialist Administrative Economy as Moneyless Order: Against Market Socialism and Labour-Money"
+          },
+          {
+            "key": "theme_social_engineering_utopia_and_scientific_planning",
+            "title": "Social Engineering, Utopia, and Scientific Planning"
+          },
+          {
+            "key": "theme_planning_freedom_and_democratic_pluralism",
+            "title": "Planning, Freedom, and Democratic Pluralism"
+          }
+        ]
+      },
+      "renderer_type": "accordion",
+      "scaffold_hosting_mode": "none",
+      "selection_priority": "secondary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": "aoi_thematic_analysis",
+      "structuring_policy": null,
+      "top_level_group": null,
+      "view_key": "aoi_by_theme",
+      "view_name": "By Theme"
+    },
+    {
+      "child_view_keys": [],
+      "derivation_kind": null,
+      "description": "AOI findings regrouped by the first-class sin taxonomy so the same bounded finding set can be inspected by misuse pattern rather than by source theme.",
+      "display_parent_view_key": "aoi_thematic_analysis",
+      "legacy_visibility": "if_data_exists",
+      "navigation_state": "normal",
+      "position": 1.3,
+      "presentation_stance": "evidence",
+      "promoted_to_top_level": false,
+      "renderer_config": {
+        "badge_field": "badge",
+        "columns": 2,
+        "description_field": "description",
+        "subtitle_field": "theme_name",
+        "title_field": "title"
+      },
+      "renderer_type": "card_grid",
+      "scaffold_hosting_mode": "none",
+      "selection_priority": "secondary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": "aoi_thematic_analysis",
+      "structuring_policy": null,
+      "top_level_group": null,
+      "view_key": "aoi_by_sin_type",
+      "view_name": "By Sin Type"
+    },
+    {
+      "child_view_keys": [],
+      "derivation_kind": null,
+      "description": "Structured AOI closeout over the selected thinker: summary, engagement pattern, key divergences, sin distribution, and reading implications.",
+      "display_parent_view_key": "aoi_thematic_analysis",
+      "legacy_visibility": "if_data_exists",
+      "navigation_state": "normal",
+      "position": 1.4,
+      "presentation_stance": "summary",
+      "promoted_to_top_level": false,
+      "renderer_config": {
+        "expand_first": true,
+        "section_renderers": {
+          "engagement_pattern": {
+            "config": {
+              "pull_quote_min_length": 90,
+              "section_description": "Overall pattern of Benanav's engagement with the selected source thinker."
+            },
+            "renderer_type": "annotated_prose"
+          },
+          "key_divergences": {
+            "config": {
+              "badge_field": "badge",
+              "description_field": "description",
+              "section_description": "Highest-salience AOI divergences.",
+              "subtitle_field": "subtitle",
+              "title_field": "title"
+            },
+            "renderer_type": "mini_card_list"
+          },
+          "reading_implications": {
+            "config": {
+              "pull_quote_min_length": 90,
+              "section_description": "What the bounded AOI result implies for reading Benanav's use of the selected source thinker."
+            },
+            "renderer_type": "annotated_prose"
+          },
+          "sin_distribution": {
+            "config": {
+              "description_field": "description",
+              "section_description": "Distribution of findings across the AOI sin taxonomy.",
+              "subtitle_field": "count",
+              "title_field": "sin_type"
+            },
+            "renderer_type": "mini_card_list"
+          },
+          "summary": {
+            "config": {
+              "pull_quote_min_length": 90,
+              "section_description": "Bounded AOI closeout summary."
+            },
+            "renderer_type": "annotated_prose"
+          }
+        },
+        "sections": [
+          {
+            "key": "summary",
+            "title": "Summary"
+          },
+          {
+            "key": "engagement_pattern",
+            "title": "Engagement Pattern"
+          },
+          {
+            "key": "key_divergences",
+            "title": "Key Divergences"
+          },
+          {
+            "key": "sin_distribution",
+            "title": "Sin Distribution"
+          },
+          {
+            "key": "reading_implications",
+            "title": "Reading Implications"
+          }
+        ]
+      },
+      "renderer_type": "accordion",
+      "scaffold_hosting_mode": "none",
+      "selection_priority": "secondary",
+      "semantic_scaffold_type": "none",
+      "source_parent_view_key": "aoi_thematic_analysis",
+      "structuring_policy": null,
+      "top_level_group": null,
+      "view_key": "aoi_thematic_report",
+      "view_name": "Report"
+    }
+  ]
+}

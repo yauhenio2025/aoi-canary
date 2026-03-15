@@ -1,0 +1,279 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  color: #1a1d23;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b4c4f;
+  font-weight: 700;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  line-height: 1.1;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.lede {
+  max-width: 62ch;
+  margin: 0.75rem 0 0;
+  color: #5b6470;
+  line-height: 1.6;
+}
+
+.mode-controls {
+  display: grid;
+  gap: 1rem;
+  min-width: 320px;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  border: 1px solid #d8dde5;
+  border-radius: 999px;
+  padding: 0.2rem;
+  background: #f5f7fa;
+}
+
+.mode-toggle button,
+.debug-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.mode-toggle button {
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.mode-toggle button.active {
+  background: #1f2937;
+  color: #fff;
+}
+
+.mode-toggle button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.job-input {
+  display: grid;
+  gap: 0.4rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.job-input input {
+  border: 1px solid #d8dde5;
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  background: #fff;
+}
+
+.status-row,
+.meta-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.status-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.meta-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.status-card,
+.meta-card,
+.strategy-card,
+.canary-surface,
+.debug-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+}
+
+.status-card,
+.meta-card {
+  padding: 1rem 1.1rem;
+}
+
+.status-wide {
+  min-width: 0;
+}
+
+.status-label,
+.meta-card span {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7c8795;
+}
+
+.strategy-card {
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.strategy-card p {
+  margin: 0;
+  color: #344152;
+  line-height: 1.6;
+}
+
+.canary-surface {
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.empty-state {
+  border: 1px dashed #d1d5db;
+  border-radius: 14px;
+  padding: 2rem;
+  background: #f8fafc;
+}
+
+.empty-state h2 {
+  margin-top: 0;
+}
+
+.tab-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.tab-button {
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid #d8dde5;
+  background: #f6f8fb;
+  color: #475569;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-button.active {
+  background: #7f1d1d;
+  color: #fff;
+  border-color: #7f1d1d;
+}
+
+.tab-panel-header {
+  margin-bottom: 0.9rem;
+}
+
+.tab-panel-header h2 {
+  margin: 0 0 0.35rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.tab-panel-header p {
+  margin: 0;
+  color: #5b6470;
+}
+
+.unsupported-card {
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  background: rgba(251, 191, 36, 0.12);
+  color: #92400e;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.unsupported-card code,
+.empty-state code {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+}
+
+.debug-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.debug-toggle {
+  justify-self: flex-start;
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.debug-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.debug-card {
+  padding: 1rem 1.1rem;
+  overflow: hidden;
+}
+
+.debug-card h2 {
+  margin-top: 0;
+}
+
+.debug-card pre {
+  margin: 0;
+  max-height: 28rem;
+  overflow: auto;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+@media (max-width: 960px) {
+  .app-header,
+  .status-row,
+  .meta-grid,
+  .debug-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header {
+    display: grid;
+  }
+
+  .mode-controls {
+    min-width: 0;
+  }
+}
