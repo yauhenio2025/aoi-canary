@@ -28,24 +28,56 @@ describe('AOI canary app', () => {
   })
 
   test('fetches live presenter payloads with the aoi-canary consumer key', async () => {
-    const fetchMock = vi.fn()
-    fetchMock
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({ artifacts_ready: true }),
-      })
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => (await import('../fixtures/neurath-page.json')).default,
-      })
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => (await import('../fixtures/neurath-manifest.json')).default,
-      })
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => (await import('../fixtures/neurath-trace.json')).default,
-      })
+    const pageFixture = (await import('../fixtures/neurath-page.json')).default
+    const manifestFixture = (await import('../fixtures/neurath-manifest.json')).default
+    const traceFixture = (await import('../fixtures/neurath-trace.json')).default
+
+    let resolveManifest: (() => void) | undefined
+    let resolveTrace: (() => void) | undefined
+    let resolveStatus: (() => void) | undefined
+
+    const fetchMock = vi.fn((input: string | URL | Request) => {
+      const url = String(input)
+
+      if (url.includes('/v1/presenter/page/')) {
+        return Promise.resolve({
+          ok: true,
+          json: async () => pageFixture,
+        })
+      }
+
+      if (url.includes('/v1/presenter/manifest/')) {
+        return new Promise((resolve) => {
+          resolveManifest = () =>
+            resolve({
+              ok: true,
+              json: async () => manifestFixture,
+            })
+        })
+      }
+
+      if (url.includes('/v1/presenter/trace/')) {
+        return new Promise((resolve) => {
+          resolveTrace = () =>
+            resolve({
+              ok: true,
+              json: async () => traceFixture,
+            })
+        })
+      }
+
+      if (url.includes('/v1/presenter/status/')) {
+        return new Promise((resolve) => {
+          resolveStatus = () =>
+            resolve({
+              ok: true,
+              json: async () => ({ artifacts_ready: true }),
+            })
+        })
+      }
+
+      throw new Error(`Unexpected fetch URL: ${url}`)
+    })
 
     vi.stubGlobal('fetch', fetchMock)
 
@@ -62,7 +94,18 @@ describe('AOI canary app', () => {
 
     const calledUrls = fetchMock.mock.calls.map((call) => String(call[0]))
     expect(calledUrls.every((url) => url.includes('consumer_key=aoi-canary'))).toBe(true)
-    expect(screen.getByText('Live presenter artifacts loaded')).toBeInTheDocument()
+    await waitFor(() => {
+      expect(screen.getByRole('heading', { name: 'Source Documents' })).toBeInTheDocument()
+    })
+    expect(screen.getByText('Live page loaded')).toBeInTheDocument()
+
+    if (resolveManifest) resolveManifest()
+    if (resolveTrace) resolveTrace()
+    if (resolveStatus) resolveStatus()
+
+    await waitFor(() => {
+      expect(screen.getByText('Live page loaded')).toBeInTheDocument()
+    })
 
     vi.unstubAllGlobals()
   })

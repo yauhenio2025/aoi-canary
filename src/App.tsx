@@ -18,9 +18,9 @@ const DEFAULT_JOB_ID = import.meta.env.VITE_AOI_JOB_ID?.trim() || artifactPage.j
 const CONSUMER_KEY = 'aoi-canary'
 
 interface LoadState {
-  page: PagePresentation
-  manifest: ManifestLike
-  trace: TraceLike
+  page: PagePresentation | null
+  manifest: ManifestLike | null
+  trace: TraceLike | null
   status: Record<string, unknown> | null
   statusUnavailable?: boolean
 }
@@ -30,6 +30,13 @@ const ARTIFACT_STATE: LoadState = {
   manifest: artifactManifest as ManifestLike,
   trace: artifactTrace as TraceLike,
   status: { artifacts_ready: true, source: 'artifact' },
+}
+
+const EMPTY_LIVE_STATE: LoadState = {
+  page: null,
+  manifest: null,
+  trace: null,
+  status: null,
 }
 
 function toErrorMessage(error: unknown): string {
@@ -58,23 +65,16 @@ export default function App() {
     let cancelled = false
 
     const qs = `consumer_key=${encodeURIComponent(CONSUMER_KEY)}`
-    Promise.all([
-      fetchJson<PagePresentation>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/page/${jobId}?slim=true&${qs}`),
-      fetchJson<ManifestLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/manifest/${jobId}?${qs}`),
-      fetchJson<TraceLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/trace/${jobId}?${qs}`),
-      fetchJson<Record<string, unknown>>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/status/${jobId}?${qs}`)
-        .then((status) => ({ status, statusUnavailable: false }))
-        .catch(() => ({ status: null, statusUnavailable: true })),
-    ])
-      .then(([page, manifest, trace, statusState]) => {
+    setLiveState(EMPTY_LIVE_STATE)
+    setError(null)
+
+    fetchJson<PagePresentation>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/page/${jobId}?slim=true&${qs}`)
+      .then((page) => {
         if (cancelled) return
-        setLiveState({
+        setLiveState((current) => ({
+          ...(current ?? EMPTY_LIVE_STATE),
           page,
-          manifest,
-          trace,
-          status: statusState.status,
-          statusUnavailable: statusState.statusUnavailable,
-        })
+        }))
       })
       .catch((err) => {
         if (cancelled) return
@@ -82,13 +82,55 @@ export default function App() {
         setError(toErrorMessage(err))
       })
 
+    fetchJson<ManifestLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/manifest/${jobId}?${qs}`)
+      .then((manifest) => {
+        if (cancelled) return
+        setLiveState((current) => ({
+          ...(current ?? EMPTY_LIVE_STATE),
+          manifest,
+        }))
+      })
+      .catch(() => {
+        if (cancelled) return
+      })
+
+    fetchJson<TraceLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/trace/${jobId}?${qs}`)
+      .then((trace) => {
+        if (cancelled) return
+        setLiveState((current) => ({
+          ...(current ?? EMPTY_LIVE_STATE),
+          trace,
+        }))
+      })
+      .catch(() => {
+        if (cancelled) return
+      })
+
+    fetchJson<Record<string, unknown>>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/status/${jobId}?${qs}`)
+      .then((status) => {
+        if (cancelled) return
+        setLiveState((current) => ({
+          ...(current ?? EMPTY_LIVE_STATE),
+          status,
+          statusUnavailable: false,
+        }))
+      })
+      .catch(() => {
+        if (cancelled) return
+        setLiveState((current) => ({
+          ...(current ?? EMPTY_LIVE_STATE),
+          status: null,
+          statusUnavailable: true,
+        }))
+      })
+
     return () => {
       cancelled = true
     }
   }, [jobId, mode])
 
-  const loading = mode === 'live' && liveState === null && error === null
-  const state = mode === 'live' ? liveState : ARTIFACT_STATE
+  const loading = mode === 'live' && !(liveState?.page) && error === null
+  const state = mode === 'live' && liveState?.page ? liveState : mode === 'live' ? null : ARTIFACT_STATE
   const page = state?.page ?? null
   const manifest = state?.manifest ?? null
   const trace = state?.trace ?? null
@@ -108,13 +150,13 @@ export default function App() {
   }, [page])
 
   const liveStatusLabel = loading
-    ? 'Loading live presenter artifacts…'
+    ? 'Loading live presenter page…'
     : error
       ? `Live mode error: ${error}`
       : mode === 'live' && liveState?.statusUnavailable
-        ? 'Live presenter artifacts loaded (status unavailable)'
+        ? 'Live page loaded (status unavailable)'
       : mode === 'live'
-        ? 'Live presenter artifacts loaded'
+        ? 'Live page loaded'
         : 'Frozen artifact-backed mode'
 
   return (
