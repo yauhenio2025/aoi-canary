@@ -22,6 +22,7 @@ interface LoadState {
   manifest: ManifestLike
   trace: TraceLike
   status: Record<string, unknown> | null
+  statusUnavailable?: boolean
 }
 
 const ARTIFACT_STATE: LoadState = {
@@ -58,14 +59,22 @@ export default function App() {
 
     const qs = `consumer_key=${encodeURIComponent(CONSUMER_KEY)}`
     Promise.all([
-      fetchJson<Record<string, unknown>>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/status/${jobId}?${qs}`),
       fetchJson<PagePresentation>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/page/${jobId}?slim=true&${qs}`),
       fetchJson<ManifestLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/manifest/${jobId}?${qs}`),
       fetchJson<TraceLike>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/trace/${jobId}?${qs}`),
+      fetchJson<Record<string, unknown>>(`${RESOLVED_ANALYZER_V2_URL}/v1/presenter/status/${jobId}?${qs}`)
+        .then((status) => ({ status, statusUnavailable: false }))
+        .catch(() => ({ status: null, statusUnavailable: true })),
     ])
-      .then(([status, page, manifest, trace]) => {
+      .then(([page, manifest, trace, statusState]) => {
         if (cancelled) return
-        setLiveState({ status, page, manifest, trace })
+        setLiveState({
+          page,
+          manifest,
+          trace,
+          status: statusState.status,
+          statusUnavailable: statusState.statusUnavailable,
+        })
       })
       .catch((err) => {
         if (cancelled) return
@@ -102,6 +111,8 @@ export default function App() {
     ? 'Loading live presenter artifacts…'
     : error
       ? `Live mode error: ${error}`
+      : mode === 'live' && liveState?.statusUnavailable
+        ? 'Live presenter artifacts loaded (status unavailable)'
       : mode === 'live'
         ? 'Live presenter artifacts loaded'
         : 'Frozen artifact-backed mode'
