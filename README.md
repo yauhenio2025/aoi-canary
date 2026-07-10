@@ -5,7 +5,7 @@ Thin consumer canary for the analyzer-v2 Anxiety of Influence Neurath proof.
 This app is intentionally narrow:
 
 - it renders the pinned `aoi-canary` AOI Neurath artifacts first
-- it can switch to live presenter fetches against analyzer-v2
+- it can switch to live analyzer result-contract fetches against analyzer-v2
 - it hosts only a generic local `TabShell`
 - it relies on the shared `@the-syllabus/analysis-renderers` package for child views
 - it does not perform AOI-specific grouping, provenance reconstruction, or semantic joins
@@ -16,7 +16,10 @@ This app is intentionally narrow:
   - default mode
   - renders the frozen Neurath `page_slim.json` checked into `src/fixtures/`
 - `live`
-  - fetches presenter payloads from analyzer-v2 using `consumer_key=aoi-canary`
+  - discovery-first, result-backed live mode over analyzer `results` routes using `consumer_key=aoi-canary`
+  - uses `result_discovery -> result_manifest -> result_presentation`
+  - keeps presenter `trace/status` only as secondary debug aids
+  - never silently falls back to artifact content when live discovery or result fetches fail
 
 ## Environment
 
@@ -24,11 +27,29 @@ Optional variables:
 
 ```bash
 VITE_ANALYZER_V2_URL=http://localhost:8000
+VITE_AOI_PROJECT_ID=project-aoi-proof
+VITE_AOI_WORKFLOW_KEY=anxiety_of_influence_thematic_single_thinker
 VITE_AOI_JOB_ID=job-abe51e9f629f
 VITE_AOI_MODE=artifact
 ```
 
 If `VITE_ANALYZER_V2_URL` is omitted, live mode falls back to the current origin.
+
+Notes:
+
+- `VITE_AOI_PROJECT_ID` is required for discovery-first live mode
+- `VITE_AOI_WORKFLOW_KEY` defaults to `anxiety_of_influence_thematic_single_thinker`
+- `VITE_AOI_JOB_ID` is debug-only; if set, live mode bypasses discovery and still uses manifest-first fetch order
+
+## URL Overrides
+
+For bounded debugging, live discovery scope can be overridden via URL params:
+
+```text
+?project_id=project-aoi-proof&workflow_key=anxiety_of_influence_thematic_single_thinker
+```
+
+These override env defaults for discovery, but Tier A acceptance still counts only the AOI workflow proof path.
 
 ## Renderer Boundary
 

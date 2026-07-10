@@ -1,0 +1,47 @@
+{
+  "request_kind": "source_selection",
+  "proof_fixture_key": "phase_e_transient_second_consumer_aoi_source_selection_v1",
+  "proof_bundle_identity": "communications/PROOF_phase_e_transient_second_consumer_aoi_canary_source_selection_2026-03-30.json",
+  "planning_decision_id": "planning-decision-d6b6bb0cd7ac",
+  "display": {
+    "thinker_name": "Otto Neurath",
+    "strategy_summary": "Replay one analyzer-owned AOI source-selection request fixture through aoi-canary without host-local analytical reconstruction."
+  },
+  "compose_call": {
+    "method": "POST",
+    "endpoint": "/v1/presenter/compose-from-selection"
+  },
+  "expected_root_renderer": "tab",
+  "expected_raw_json_view_keys": [
+    "compose_intent_04_aoi_thematic_report"
+  ],
+  "request": {
+    "workflow_key": "anxiety_of_influence_thematic_single_thinker",
+    "consumer_key": "aoi-canary",
+    "source_v2_job_id": "job-744edf255ad5",
+    "selection": [
+      {
+        "source_family_key": "thematic_synthesis",
+        "selection_rank": 1,
+        "rationale": "This is the primary composition input for an AOI synthesis. It contains overall_synthesis, themes, selected_source_thinker, and source_documents — exactly the structured thematic material needed to write a bounded single-thinker AOI synthesis. Its composition_role_hint of synthesis_primary confirms it as the anchor source."
+      },
+      {
+        "source_family_key": "sin_findings",
+        "selection_rank": 2,
+        "rationale": "Sin findings provide the granular evidence bank (findings indexed by sin type and theme) that gives the synthesis its analytical backbone. For a single-thinker AOI workflow, identifying specific sins of omission, distortion, or misreading is essential to grounding the synthesis in concrete textual behavior."
+      },
+      {
+        "source_family_key": "engagement_mapping",
+        "selection_rank": 3,
+        "rationale": "Engagement mapping supplies the structural contrast layer — which themes were engaged, ignored, distorted, or only partially addressed. This directly informs the handoff composition by revealing the pattern of influence anxiety and selective engagement, adding necessary texture beyond raw findings."
+      },
+      {
+        "source_family_key": "thematic_report",
+        "selection_rank": 4,
+        "rationale": "The AOI report provides a pre-integrated narrative with summary, key divergences, reading implications, and sin distribution. For a bounded transient handoff, this closeout artifact helps frame the composition arc and ensures the synthesis aligns with already-derived high-level conclusions rather than reconstructing them from scratch."
+      }
+    ],
+    "user_intent": "Write an Anxiety of Influence synthesis for the selected thinker, drawing on thematic findings, sin evidence, and engagement patterns from this saved result.",
+    "selection_summary": "All four available families are selected because this is a bounded single-thinker AOI synthesis task and each family contributes a distinct, non-redundant compositional layer: thematic_synthesis anchors the primary content, sin_findings supplies evidentiary detail, engagement_mapping provides the structural contrast pattern, and thematic_report closes the arc with integrated narrative framing. No family was extraneous to this workflow."
+  }
+}

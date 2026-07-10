@@ -91,6 +91,42 @@
   background: #fff;
 }
 
+.job-input small {
+  color: #7c8795;
+  font-weight: 500;
+}
+
+.proof-selector {
+  display: grid;
+  gap: 0.45rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.proof-selector__buttons {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.proof-selector__buttons button {
+  border: 1px solid #d8dde5;
+  border-radius: 999px;
+  background: #fff;
+  color: #475569;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.55rem 0.95rem;
+}
+
+.proof-selector__buttons button.active {
+  background: #7f1d1d;
+  border-color: #7f1d1d;
+  color: #fff;
+}
+
 .status-row,
 .meta-grid {
   display: grid;

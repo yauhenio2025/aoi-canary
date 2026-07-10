@@ -1,0 +1,23 @@
+{
+  "request_kind": "source_profile",
+  "proof_fixture_key": "phase_e_aoi_canary_source_profile_dossier_v1",
+  "proof_bundle_identity": "communications/PROOF_phase_e_transient_second_consumer_aoi_canary_source_profile_dossier_2026-03-31.json",
+  "display": {
+    "thinker_name": "Otto Neurath",
+    "strategy_summary": "Replay one analyzer-owned AOI source-profile dossier request fixture through aoi-canary without host-local analytical reconstruction."
+  },
+  "compose_call": {
+    "method": "POST",
+    "endpoint": "/v1/presenter/compose-from-source"
+  },
+  "expected_root_renderer": "tab",
+  "expected_raw_json_view_keys": [
+    "compose_intent_02_aoi_thematic_report"
+  ],
+  "request": {
+    "workflow_key": "anxiety_of_influence_thematic_single_thinker",
+    "consumer_key": "aoi-canary",
+    "source_v2_job_id": "job-744edf255ad5",
+    "profile": "dossier"
+  }
+}
