@@ -2,6 +2,10 @@
 
 Thin consumer canary for the analyzer-v2 Anxiety of Influence Neurath proof.
 
+## Archived Render deployment
+
+The Render deployment is being retired. Its sanitized configuration snapshot, captured on 2026-08-06 before retirement actions, is preserved in [docs/render-retirement.md](docs/render-retirement.md). The snapshot records configuration and secret names only; it is not a backup of secrets or application data.
+
 This app is intentionally narrow:
 
 - it renders the pinned `aoi-canary` AOI Neurath artifacts first
